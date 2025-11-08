@@ -453,27 +453,11 @@ function LeadsTable({ columns, leads, team, onUpdate, onDelete }: { columns: str
         <tbody className="divide-y divide-neutral-200 dark:divide-neutral-800">
           {leads.map((l) => (
             <tr key={l.id} className="hover:bg-neutral-50/50 dark:hover:bg-neutral-800/40">
-              {columns.map((c, idx) => {
-                if (c === "__contact__") {
-                  const name = contactKeys?.nameKey ? l.fields?.[contactKeys.nameKey] : l.name;
-                  const phone = contactKeys?.phoneKey ? l.fields?.[contactKeys.phoneKey] : l.phone;
-                  const post = contactKeys?.postKey ? l.fields?.[contactKeys.postKey] : undefined;
-                  return (
-                    <Td key={`${l.id}-contact-${idx}`}>
-                      <div className="flex items-center gap-3 whitespace-nowrap">
-                        <div className="font-medium truncate max-w-[220px]">{name || "—"}</div>
-                        <div className="text-neutral-600 truncate max-w-[140px]">{phone || "—"}</div>
-                        <div className="text-neutral-600 truncate max-w-[80px]">{post || ""}</div>
-                      </div>
-                    </Td>
-                  );
-                }
-                return (
-                  <Td key={`${l.id}-${c}-${idx}`}>
-                    <div className="truncate max-w-[220px]">{l.fields?.[c] ?? ""}</div>
-                  </Td>
-                );
-              })}
+              {columns.map((c, idx) => (
+                <Td key={`${l.id}-${c}-${idx}`}>
+                  <div className="truncate whitespace-nowrap">{l.fields?.[c] ?? ""}</div>
+                </Td>
+              ))}
 
               <Td>
                 <select

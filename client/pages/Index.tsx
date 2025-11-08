@@ -284,6 +284,7 @@ export default function Index() {
             </div>
             <LeadsTable
               columns={columns}
+              contactKeys={contactKeys}
               leads={filteredLeads}
               team={teamQ.data?.items || []}
               onUpdate={(id, patch) => updateLead.mutate({ id, patch })}

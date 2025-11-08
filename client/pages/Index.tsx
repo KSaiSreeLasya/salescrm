@@ -550,7 +550,7 @@ function TeamSection({ team, onCreate, onUpdate, onDelete }: { team: Salesperson
             {team.map((p) => (
               <tr key={p.id} className="hover:bg-neutral-50/50 dark:hover:bg-neutral-800/40">
                 <Td className="font-medium">{p.name}</Td>
-                <Td>{p.email || "���"}</Td>
+                <Td>{p.email || "—"}</Td>
                 <Td>
                   <label className="inline-flex items-center gap-2 text-xs">
                     <input type="checkbox" checked={p.active} onChange={(e) => onUpdate(p.id, { active: e.target.checked })} />
@@ -593,7 +593,7 @@ function Input({ label, value, onChange, className }: { label: string; value: st
 
 function Th({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
-    <th className={`px-2 py-2 align-top text-left text-xs font-semibold uppercase tracking-wider text-neutral-600 dark:text-neutral-400 max-w-[220px] border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900 ${className}`}>
+    <th className={`px-2 py-2 align-top text-left text-xs font-semibold uppercase tracking-wider text-neutral-600 dark:text-neutral-400 max-w-[160px] border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900 ${className}`}>
       <div className="whitespace-normal break-words">{children}</div>
     </th>
   );

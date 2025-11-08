@@ -438,7 +438,7 @@ function NewLead({ onCreate }: { onCreate: (payload: Partial<Lead>) => void }) {
 
 function LeadsTable({ columns, leads, team, onUpdate, onDelete }: { columns: string[]; leads: Lead[]; team: Salesperson[]; onUpdate: (id: string, patch: Partial<Lead>) => void; onDelete: (id: string) => void }) {
   return (
-    <div className="mt-4 overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
+    <div className="mt-4 overflow-visible rounded-2xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
       <table className="min-w-full table-fixed divide-y divide-neutral-200 dark:divide-neutral-800 text-xs leading-tight">
         <thead className="bg-neutral-50/60 dark:bg-neutral-800/40">
           <tr>
@@ -536,7 +536,7 @@ function TeamSection({ team, onCreate, onUpdate, onDelete }: { team: Salesperson
           </button>
         </div>
       </div>
-      <div className="mt-4 overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
+      <div className="mt-4 overflow-visible rounded-2xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
         <table className="min-w-full table-fixed divide-y divide-neutral-200 dark:divide-neutral-800 text-xs leading-tight">
           <thead className="bg-neutral-50/60 dark:bg-neutral-800/40">
             <tr>
@@ -550,7 +550,7 @@ function TeamSection({ team, onCreate, onUpdate, onDelete }: { team: Salesperson
             {team.map((p) => (
               <tr key={p.id} className="hover:bg-neutral-50/50 dark:hover:bg-neutral-800/40">
                 <Td className="font-medium">{p.name}</Td>
-                <Td>{p.email || "—"}</Td>
+                <Td>{p.email || "���"}</Td>
                 <Td>
                   <label className="inline-flex items-center gap-2 text-xs">
                     <input type="checkbox" checked={p.active} onChange={(e) => onUpdate(p.id, { active: e.target.checked })} />

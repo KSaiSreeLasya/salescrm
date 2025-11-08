@@ -6,6 +6,12 @@
 
 export type LeadStatus =
   | "new"
+  | "call"
+  | "not lifted"
+  | "quotation sent"
+  | "site visit"
+  | "advance payment"
+  | "lead finished"
   | "contacted"
   | "qualified"
   | "won"
@@ -13,6 +19,9 @@ export type LeadStatus =
 
 export interface Lead {
   id: string;
+  // store original sheet fields dynamically
+  fields: Record<string, string | undefined>;
+  // convenience columns
   name: string;
   email?: string;
   phone?: string;
@@ -36,6 +45,7 @@ export interface Salesperson {
 export interface ConfigState {
   sheetUrl?: string;
   lastSyncAt?: string; // ISO
+  headers?: string[]; // last seen sheet headers (preserve order)
 }
 
 export interface Paginated<T> {

@@ -50,22 +50,61 @@ export default function Index() {
   const [search, setSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState<string>("all");
 
-  const columns = useMemo(() => {
+  const { columns, contactKeys } = useMemo(() => {
     const cfgHeaders = configQ.data?.headers;
-    if (cfgHeaders && cfgHeaders.length) return cfgHeaders;
     const items = leadsQ.data?.items || [];
-    const seen = new Set<string>();
-    const cols: string[] = [];
-    for (const l of items) {
-      const keys = Object.keys(l.fields || {});
-      for (const k of keys) {
-        if (!seen.has(k)) {
-          seen.add(k);
-          cols.push(k);
+    const headers: string[] = cfgHeaders && cfgHeaders.length
+      ? [...cfgHeaders]
+      : (() => {
+          const seen = new Set<string>();
+          const cols: string[] = [];
+          for (const l of items) {
+            const keys = Object.keys(l.fields || {});
+            for (const k of keys) {
+              if (!seen.has(k)) {
+                seen.add(k);
+                cols.push(k);
+              }
+            }
+          }
+          return cols;
+        })();
+
+    const find = (patterns: RegExp[]) => {
+      for (const h of headers) {
+        for (const p of patterns) {
+          if (p.test(h.toLowerCase())) return h;
         }
       }
+      return undefined;
+    };
+
+    const nameKey = find([/\bname\b/, /full\s*name/, /full_name/]);
+    const phoneKey = find([/phone/, /mobile/, /contact/]);
+    const postKey = find([/post\W*code/, /postcode/, /postal/]);
+
+    // Build displayed columns: replace name/phone/postcode with a single contact column
+    const displayed: string[] = [];
+    const used = new Set<string>();
+    let insertedCombined = false;
+    for (const h of headers) {
+      if (nameKey && h === nameKey && !insertedCombined) {
+        displayed.push("__contact__");
+        insertedCombined = true;
+        used.add(nameKey);
+        if (phoneKey) used.add(phoneKey);
+        if (postKey) used.add(postKey);
+        continue;
+      }
+      if (used.has(h)) continue;
+      displayed.push(h);
     }
-    return cols;
+    if (nameKey && !insertedCombined) displayed.unshift("__contact__");
+
+    return {
+      columns: displayed,
+      contactKeys: { nameKey, phoneKey, postKey },
+    };
   }, [configQ.data?.headers, leadsQ.data?.items]);
 
   const filteredLeads = useMemo(() => {

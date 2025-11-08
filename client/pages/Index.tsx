@@ -455,7 +455,7 @@ function LeadsTable({ columns, leads, team, onUpdate, onDelete }: { columns: str
             <tr key={l.id} className="hover:bg-neutral-50/50 dark:hover:bg-neutral-800/40">
               {columns.map((c, idx) => (
                 <Td key={`${l.id}-${c}-${idx}`}>
-                  <div className="truncate whitespace-nowrap">{l.fields?.[c] ?? ""}</div>
+                  <div className="truncate whitespace-nowrap">{(l.fields && l.fields[c]) ? l.fields[c] : "."}</div>
                 </Td>
               ))}
 

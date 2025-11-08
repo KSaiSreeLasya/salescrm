@@ -178,13 +178,13 @@ export default function Index() {
   }, [leadsQ.data?.items, search, statusFilter, columns]);
 
   const kpis = useMemo(() => {
-    const items = leadsQ.data?.items || [];
+    const items = filteredLeads || [];
     const total = items.length;
     const assigned = items.filter((l) => !!l.ownerId).length;
     const unassigned = total - assigned;
     const won = items.filter((l) => l.status === "won").length;
     return { total, assigned, unassigned, won };
-  }, [leadsQ.data?.items]);
+  }, [filteredLeads]);
 
   const createLead = useMutation({
     mutationFn: async (payload: Partial<Lead>) => {
@@ -473,10 +473,9 @@ function Kpis({
     { label: "Total Leads", value: total },
     { label: "Assigned", value: assigned },
     { label: "Unassigned", value: unassigned },
-    { label: "Won", value: won },
   ];
   return (
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
       {items.map((k) => (
         <div
           key={k.label}
@@ -706,7 +705,15 @@ function LeadsTable({
                         onSave={(next) => onUpdate(l.id, { fields: { [c.key]: next } })}
                       />
                     ) : (
-                      <div className="truncate whitespace-nowrap">{raw || "."}</div>
+                      (() => {
+                        const low = (c.label || c.key || '').toLowerCase();
+                        const isWrapField = /email|street|address|post|phone|full name/.test(low);
+                        return (
+                          <div className={`${isWrapField ? 'whitespace-normal break-words' : 'truncate whitespace-nowrap'}`}>
+                            {raw || "."}
+                          </div>
+                        );
+                      })()
                     )}
                   </Td>
                 );

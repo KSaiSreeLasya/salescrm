@@ -22,7 +22,91 @@ const FILE_LEADS = "leads.json";
 const FILE_SALESPERSONS = "salespersons.json";
 const FILE_CONFIG = "config.json";
 
+const SUPABASE_URL = process.env.SUPABASE_URL;
+const SUPABASE_SERVICE_ROLE = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+function hasSupabase() {
+  return !!SUPABASE_URL && !!SUPABASE_SERVICE_ROLE;
+}
+
+async function supabaseFetch(path: string, opts: RequestInit = {}) {
+  const url = `${SUPABASE_URL.replace(/\/+$/, "")}/rest/v1/${path}`;
+  const headers: Record<string, string> = {
+    apikey: SUPABASE_SERVICE_ROLE || "",
+    Authorization: `Bearer ${SUPABASE_SERVICE_ROLE || ""}`,
+    "Content-Type": "application/json",
+    Prefer: "return=representation",
+  };
+  opts.headers = { ...(opts.headers || {}), ...headers } as any;
+  const res = await fetch(url, opts);
+  if (!res.ok) {
+    const text = await res.text().catch(() => "");
+    throw new Error(`Supabase error ${res.status}: ${text}`);
+  }
+  return res;
+}
+
+async function supabaseListLeads(): Promise<Lead[]> {
+  const res = await supabaseFetch("leads?select=*&order=createdAt.desc");
+  const data = await res.json();
+  // ensure types
+  return (data || []).map((d: any) => ({
+    id: d.id,
+    fields: d.fields || {},
+    name: d.name,
+    email: d.email || undefined,
+    phone: d.phone || undefined,
+    company: d.company || undefined,
+    source: d.source || undefined,
+    status: d.status || "new",
+    ownerId: d.ownerId || null,
+    notes: d.notes || undefined,
+    createdAt: d.createdAt,
+    updatedAt: d.updatedAt,
+  }));
+}
+
+async function supabaseGetSalespersons(): Promise<Salesperson[]> {
+  const res = await supabaseFetch("salespersons?select=*&order=name.asc");
+  const data = await res.json();
+  return (data || []).map((d: any) => ({
+    id: d.id,
+    name: d.name,
+    email: d.email || undefined,
+    active: !!d.active,
+    createdAt: d.createdAt,
+  }));
+}
+
+async function supabaseGetConfig(): Promise<ConfigState> {
+  try {
+    const res = await supabaseFetch("config?select=*&limit=1");
+    const data = await res.json();
+    const row = (data && data[0]) || {};
+    return {
+      sheetUrl: row.sheetUrl || undefined,
+      lastSyncAt: row.lastSyncAt || undefined,
+      headers: row.headers || undefined,
+    };
+  } catch (e) {
+    return DEFAULT_STATE.config;
+  }
+}
+
 export async function getState(): Promise<CRMState> {
+  if (hasSupabase()) {
+    try {
+      const [leads, salespersons, config] = await Promise.all([
+        supabaseListLeads(),
+        supabaseGetSalespersons(),
+        supabaseGetConfig(),
+      ]);
+      return { leads, salespersons, config };
+    } catch (e) {
+      // fallback
+    }
+  }
+
   const [leads, salespersons, config] = await Promise.all([
     readJSON<Lead[]>(FILE_LEADS, DEFAULT_STATE.leads),
     readJSON<Salesperson[]>(FILE_SALESPERSONS, DEFAULT_STATE.salespersons),
@@ -32,34 +116,90 @@ export async function getState(): Promise<CRMState> {
 }
 
 async function saveLeads(leads: Lead[]) {
+  if (hasSupabase()) {
+    try {
+      // Upsert each lead individually (simple and robust)
+      for (const l of leads) {
+        const body = {
+          id: l.id,
+          fields: l.fields || {},
+          name: l.name,
+          email: l.email || null,
+          phone: l.phone || null,
+          company: l.company || null,
+          source: l.source || null,
+          status: l.status,
+          ownerId: l.ownerId || null,
+          notes: l.notes || null,
+          createdAt: l.createdAt,
+          updatedAt: l.updatedAt,
+        };
+        // upsert via POST with on_conflict requires query param ?on_conflict=id
+        await supabaseFetch("leads?on_conflict=id", {
+          method: "POST",
+          body: JSON.stringify(body),
+        });
+      }
+      return;
+    } catch (e) {
+      // fallback to file
+    }
+  }
   await writeJSON(FILE_LEADS, leads);
 }
 
 async function saveSalespersons(salespersons: Salesperson[]) {
+  if (hasSupabase()) {
+    try {
+      for (const s of salespersons) {
+        const body = {
+          id: s.id,
+          name: s.name,
+          email: s.email || null,
+          active: s.active,
+          createdAt: s.createdAt,
+        };
+        await supabaseFetch("salespersons?on_conflict=id", {
+          method: "POST",
+          body: JSON.stringify(body),
+        });
+      }
+      return;
+    } catch (e) {
+      // fallback
+    }
+  }
   await writeJSON(FILE_SALESPERSONS, salespersons);
 }
 
 export async function saveConfig(config: ConfigState) {
+  if (hasSupabase()) {
+    try {
+      const body = { id: 1, sheetUrl: config.sheetUrl || null, lastSyncAt: config.lastSyncAt || null, headers: config.headers || null };
+      await supabaseFetch("config?on_conflict=id", {
+        method: "POST",
+        body: JSON.stringify(body),
+      });
+      return;
+    } catch (e) {
+      // fallback
+    }
+  }
   await writeJSON(FILE_CONFIG, config);
 }
 
 export async function listLeads(): Promise<Lead[]> {
-  const { leads } = await getState();
+  const state = await getState();
+  const leads = state.leads;
   const filtered = leads.filter((l) => {
-    const vals = Object.values(l.fields || {}).map((v) =>
-      (v || "").toString().trim(),
-    );
+    const vals = Object.values(l.fields || {}).map((v) => (v || "").toString().trim());
     const nonEmpty = vals.filter((v) => v !== "");
     if (nonEmpty.length === 0) return false;
     if (nonEmpty.length === 1) {
       const v = nonEmpty[0];
-      const dateLike =
-        /^\d{1,2}[\-/]\d{1,2}[\-/]\d{2,4}$/.test(v) ||
-        /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(v);
+      const dateLike = /^\d{1,2}[\-/]\d{1,2}[\-/]\d{2,4}$/.test(v) || /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(v);
       const totalLike = /^sum|^total|^subtotal/i.test(v);
-      const numericOnly = /^[-+]?\d{1,3}(?:[\,\d]*)(?:\.\d+)?$/.test(
-        v.replace(/\s+/g, ""),
-      );
+      const numericOnly = /^[-+]?\d{1,3}(?:[\,\d]*)(?:\.\d+)?$/.test(v.replace(/\s+/g, ""));
       if (dateLike || totalLike || numericOnly) return false;
     }
     return true;
@@ -68,29 +208,49 @@ export async function listLeads(): Promise<Lead[]> {
 }
 
 export async function listSalespersons(): Promise<Salesperson[]> {
-  const { salespersons } = await getState();
-  return salespersons.sort((a, b) => a.name.localeCompare(b.name));
+  const state = await getState();
+  return state.salespersons.sort((a, b) => a.name.localeCompare(b.name));
 }
 
-export async function createSalesperson(
-  input: Pick<Salesperson, "name" | "email">,
-) {
-  const state = await getState();
+export async function createSalesperson(input: Pick<Salesperson, "name" | "email">) {
+  const now = new Date().toISOString();
   const person: Salesperson = {
     id: randomUUID(),
     name: input.name,
     email: input.email,
     active: true,
-    createdAt: new Date().toISOString(),
+    createdAt: now,
   };
+  if (hasSupabase()) {
+    try {
+      await supabaseFetch("salespersons", {
+        method: "POST",
+        body: JSON.stringify(person),
+      });
+      return person;
+    } catch (e) {
+      // continue to file fallback
+    }
+  }
+  const state = await getState();
   await saveSalespersons([...state.salespersons, person]);
   return person;
 }
 
-export async function updateSalesperson(
-  id: string,
-  patch: Partial<Salesperson>,
-) {
+export async function updateSalesperson(id: string, patch: Partial<Salesperson>) {
+  if (hasSupabase()) {
+    try {
+      await supabaseFetch(`salespersons?id=eq.${id}`, {
+        method: "PATCH",
+        body: JSON.stringify(patch),
+      });
+      const items = await supabaseGetSalespersons();
+      const updated = items.find((s) => s.id === id) || null;
+      return updated;
+    } catch (e) {
+      // fallback
+    }
+  }
   const state = await getState();
   const idx = state.salespersons.findIndex((s) => s.id === id);
   if (idx === -1) return null;
@@ -101,13 +261,20 @@ export async function updateSalesperson(
 }
 
 export async function deleteSalesperson(id: string) {
+  if (hasSupabase()) {
+    try {
+      await supabaseFetch(`salespersons?id=eq.${id}`, { method: "DELETE" });
+      // unassign leads
+      await supabaseFetch(`leads?ownerId=eq.${id}`, { method: "PATCH", body: JSON.stringify({ ownerId: null }) });
+      return true;
+    } catch (e) {
+      // fallback
+    }
+  }
   const state = await getState();
   const next = state.salespersons.filter((s) => s.id !== id);
   await saveSalespersons(next);
-  // Unassign leads owned by this salesperson
-  const leads = state.leads.map((l) =>
-    l.ownerId === id ? { ...l, ownerId: null } : l,
-  );
+  const leads = state.leads.map((l) => (l.ownerId === id ? { ...l, ownerId: null } : l));
   await saveLeads(leads);
   return true;
 }
@@ -136,12 +303,29 @@ export async function createLead(input: Partial<Lead>) {
     createdAt: now,
     updatedAt: now,
   };
+  if (hasSupabase()) {
+    try {
+      await supabaseFetch("leads", { method: "POST", body: JSON.stringify(lead) });
+      return lead;
+    } catch (e) {
+      // fallback
+    }
+  }
   const state = await getState();
   await saveLeads([lead, ...state.leads]);
   return lead;
 }
 
 export async function updateLead(id: string, patch: Partial<Lead>) {
+  if (hasSupabase()) {
+    try {
+      await supabaseFetch(`leads?id=eq.${id}`, { method: "PATCH", body: JSON.stringify(patch) });
+      const items = await supabaseListLeads();
+      return items.find((l) => l.id === id) || null;
+    } catch (e) {
+      // fallback
+    }
+  }
   const state = await getState();
   const idx = state.leads.findIndex((l) => l.id === id);
   if (idx === -1) return null;
@@ -154,8 +338,7 @@ export async function updateLead(id: string, patch: Partial<Lead>) {
     name: (patch.name as string) || mergedFields["Name"] || current.name,
     email: (patch.email as string) || mergedFields["Email"] || current.email,
     phone: (patch.phone as string) || mergedFields["Phone"] || current.phone,
-    company:
-      (patch.company as string) || mergedFields["Company"] || current.company,
+    company: (patch.company as string) || mergedFields["Company"] || current.company,
     notes: (patch.notes as string) || mergedFields["Notes"] || current.notes,
     updatedAt: new Date().toISOString(),
   };
@@ -165,6 +348,14 @@ export async function updateLead(id: string, patch: Partial<Lead>) {
 }
 
 export async function deleteLead(id: string) {
+  if (hasSupabase()) {
+    try {
+      await supabaseFetch(`leads?id=eq.${id}`, { method: "DELETE" });
+      return true;
+    } catch (e) {
+      // fallback
+    }
+  }
   const state = await getState();
   const next = state.leads.filter((l) => l.id !== id);
   await saveLeads(next);
@@ -175,12 +366,9 @@ export async function assignUnassignedLeads() {
   const state = await getState();
   const active = state.salespersons.filter((s) => s.active);
   if (active.length === 0) return 0;
-  // Calculate current load per salesperson
   const load = new Map<string, number>();
   for (const s of active) load.set(s.id, 0);
-  for (const l of state.leads)
-    if (l.ownerId && load.has(l.ownerId))
-      load.set(l.ownerId, (load.get(l.ownerId) || 0) + 1);
+  for (const l of state.leads) if (l.ownerId && load.has(l.ownerId)) load.set(l.ownerId, (load.get(l.ownerId) || 0) + 1);
 
   let assigned = 0;
   const leads = state.leads.map((l) => {
@@ -189,11 +377,7 @@ export async function assignUnassignedLeads() {
       if (target) {
         assigned++;
         load.set(target, (load.get(target) || 0) + 1);
-        return {
-          ...l,
-          ownerId: target,
-          updatedAt: new Date().toISOString(),
-        } as Lead;
+        return { ...l, ownerId: target, updatedAt: new Date().toISOString() } as Lead;
       }
     }
     return l;
@@ -214,21 +398,10 @@ function findLeastLoaded(load: Map<string, number>): string | null {
   return minKey;
 }
 
-export async function importFromCsvRows(
-  rows: Record<string, string>[],
-  headers?: string[],
-) {
+export async function importFromCsvRows(rows: Record<string, string>[], headers?: string[]) {
   const state = await getState();
-  const byEmail = new Map(
-    state.leads
-      .filter((l) => l.email)
-      .map((l) => [l.email!.toLowerCase(), l] as const),
-  );
-  const byPhone = new Map(
-    state.leads
-      .filter((l) => l.phone)
-      .map((l) => [normalizePhone(l.phone!), l] as const),
-  );
+  const byEmail = new Map(state.leads.filter((l) => l.email).map((l) => [l.email!.toLowerCase(), l] as const));
+  const byPhone = new Map(state.leads.filter((l) => l.phone).map((l) => [normalizePhone(l.phone!), l] as const));
 
   let imported = 0;
   let updated = 0;
@@ -236,42 +409,21 @@ export async function importFromCsvRows(
   const now = new Date().toISOString();
 
   for (const r of rows) {
-    // Skip rows that are empty or look like date separators / totals
     const values = Object.values(r).map((v) => (v ?? "").toString().trim());
     const nonEmpty = values.filter((v) => v !== "");
     if (nonEmpty.length === 0) continue;
 
-    // heuristics: skip rows with a single non-empty cell that looks like a date, month label, total, or numeric sum
     if (nonEmpty.length === 1) {
       const v = nonEmpty[0];
-      const dateLike =
-        /^\d{1,2}[\-/] \d{1,2}[\-/] \d{2,4}$/.test(v) ||
-        /^\d{1,2}[\-/]\d{1,2}[\-/]\d{2,4}$/.test(v) ||
-        /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(v);
+      const dateLike = /^\d{1,2}[\-/] \d{1,2}[\-/] \d{2,4}$/.test(v) || /^\d{1,2}[\-/]\d{1,2}[\-/]\d{2,4}$/.test(v) || /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(v);
       const totalLike = /^sum|^total|^subtotal/i.test(v);
-      const numericOnly = /^[-+]?\d{1,3}(?:[\,\d]*)(?:\.\d+)?$/.test(
-        v.replace(/\s+/g, ""),
-      );
+      const numericOnly = /^[-+]?\d{1,3}(?:[\,\d]*)(?:\.\d+)?$/.test(v.replace(/\s+/g, ""));
       if (dateLike || totalLike || numericOnly) continue;
     }
 
-    const name =
-      r["name"] ||
-      r["Name"] ||
-      r["full_name"] ||
-      r["Full Name"] ||
-      r["lead_name"] ||
-      "";
-    const email =
-      (r["email"] || r["Email"] || r["e-mail"] || r["E-mail"] || "").trim() ||
-      undefined;
-    const phoneRaw = (
-      r["phone"] ||
-      r["Phone"] ||
-      r["mobile"] ||
-      r["Mobile"] ||
-      ""
-    ).trim();
+    const name = r["name"] || r["Name"] || r["full_name"] || r["Full Name"] || r["lead_name"] || "";
+    const email = (r["email"] || r["Email"] || r["e-mail"] || r["E-mail"] || "").trim() || undefined;
+    const phoneRaw = (r["phone"] || r["Phone"] || r["mobile"] || r["Mobile"] || "").trim();
     const phone = phoneRaw ? normalizePhone(phoneRaw) : undefined;
     const company = r["company"] || r["Company"] || undefined;
     const source = r["source"] || r["Source"] || r["utm_source"] || undefined;
@@ -299,9 +451,7 @@ export async function importFromCsvRows(
         fields: { ...existing.fields, ...fields },
         updatedAt: now,
       };
-      state.leads = state.leads.map((l) =>
-        l.id === existing!.id ? merged : l,
-      );
+      state.leads = state.leads.map((l) => (l.id === existing!.id ? merged : l));
       updated++;
     } else {
       const newLead: Lead = {
@@ -323,7 +473,7 @@ export async function importFromCsvRows(
     }
   }
 
-  await writeJSON("leads.json", state.leads);
+  await saveLeads(state.leads);
   const assigned = await assignUnassignedLeads();
   return { imported, updated, assigned };
 }
@@ -372,7 +522,6 @@ export function parseCSV(text: string): {
       }
     }
   }
-  // flush last cell/row
   pushCell();
   rows.push([...arr]);
 

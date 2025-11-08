@@ -12,6 +12,8 @@ const statusOptions: { value: LeadStatus; label: string }[] = [
   { value: "new", label: "New" },
   { value: "call", label: "Call" },
   { value: "not lifted", label: "Not lifted" },
+  { value: "not connected", label: "Not connected" },
+  { value: "voice message", label: "Voice Message" },
   { value: "quotation sent", label: "Quotation sent" },
   { value: "site visit", label: "Site visit" },
   { value: "advance payment", label: "Advance payment" },

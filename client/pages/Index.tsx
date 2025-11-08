@@ -509,12 +509,7 @@ function CellField({ lead, fieldKey, onChange }: { lead: Lead; fieldKey: string;
   const [value, setValue] = useState<string>((lead.fields && (lead.fields[fieldKey] || "")) || "");
   useEffect(() => setValue((lead.fields && (lead.fields[fieldKey] || "")) || ""), [lead.id, fieldKey, lead.fields]);
   return (
-    <input
-      value={value}
-      onChange={(e) => setValue(e.target.value)}
-      onBlur={() => onChange(value)}
-      className="w-full rounded-md border border-neutral-200 bg-white px-2 py-1 text-xs dark:border-neutral-700 dark:bg-neutral-800 whitespace-normal break-words"
-    />
+    <div className="w-full px-2 py-1 text-xs text-neutral-800 dark:text-neutral-100 whitespace-normal break-words">{value}</div>
   );
 }
 
@@ -597,14 +592,14 @@ function Input({ label, value, onChange, className }: { label: string; value: st
 
 function Th({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
-    <th className={`px-2 py-2 align-top text-left text-xs font-semibold uppercase tracking-wider text-neutral-600 dark:text-neutral-400 max-w-[200px] ${className}`}>
+    <th className={`px-2 py-2 align-top text-left text-xs font-semibold uppercase tracking-wider text-neutral-600 dark:text-neutral-400 max-w-[220px] border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900 ${className}`}>
       <div className="whitespace-normal break-words">{children}</div>
     </th>
   );
 }
 function Td({ children, className = "", colSpan }: { children: React.ReactNode; className?: string; colSpan?: number }) {
   return (
-    <td colSpan={colSpan} className={`px-2 py-2 align-top text-xs whitespace-normal break-words max-w-[200px] ${className}`}>
+    <td colSpan={colSpan} className={`px-2 py-2 align-top text-xs whitespace-normal break-words max-w-[220px] border border-neutral-200 dark:border-neutral-700 ${className}`}>
       {children}
     </td>
   );

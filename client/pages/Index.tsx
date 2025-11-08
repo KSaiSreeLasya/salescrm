@@ -440,8 +440,8 @@ function LeadsTable({ columns, leads, team, onUpdate, onDelete }: { columns: str
         <tbody className="divide-y divide-neutral-200 dark:divide-neutral-800">
           {leads.map((l) => (
             <tr key={l.id} className="hover:bg-neutral-50/50 dark:hover:bg-neutral-800/40">
-              {columns.map((c) => (
-                <Td key={c}>
+              {columns.map((c, idx) => (
+                <Td key={`${l.id}-${c}-${idx}`}>
                   <CellField lead={l} fieldKey={c} onChange={(next) => onUpdate(l.id, { fields: { ...(l.fields || {}), [c]: next } })} />
                 </Td>
               ))}

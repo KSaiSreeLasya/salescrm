@@ -16,6 +16,18 @@ const statusOptions: { value: LeadStatus; label: string }[] = [
   { value: "lost", label: "Lost" },
 ];
 
+// Make headers human readable e.g. 'full_name' -> 'Full Name'
+function beautifyHeader(h?: string) {
+  if (!h) return "";
+  return h
+    .replace(/[_\-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .split(" ")
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(" ");
+}
+
 function useApi<T>(key: string[], url: string) {
   return useQuery<T>({
     queryKey: key,
@@ -426,11 +438,11 @@ function NewLead({ onCreate }: { onCreate: (payload: Partial<Lead>) => void }) {
 function LeadsTable({ columns, leads, team, onUpdate, onDelete }: { columns: string[]; leads: Lead[]; team: Salesperson[]; onUpdate: (id: string, patch: Partial<Lead>) => void; onDelete: (id: string) => void }) {
   return (
     <div className="mt-4 overflow-x-auto rounded-2xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
-      <table className="min-w-full table-auto divide-y divide-neutral-200 dark:divide-neutral-800">
+      <table className="min-w-full table-auto divide-y divide-neutral-200 dark:divide-neutral-800 text-xs leading-tight">
         <thead className="bg-neutral-50/60 dark:bg-neutral-800/40">
           <tr>
             {columns.map((c, idx) => (
-              <Th key={`${c}-${idx}`}>{c}</Th>
+              <Th key={`${c}-${idx}`} title={c}>{beautifyHeader(c)}</Th>
             ))}
             <Th>Status</Th>
             <Th>Owner</Th>
@@ -463,7 +475,7 @@ function LeadsTable({ columns, leads, team, onUpdate, onDelete }: { columns: str
                 <select
                   value={l.ownerId || ""}
                   onChange={(e) => onUpdate(l.id, { ownerId: e.target.value || null })}
-                  className="w-44 rounded-md border border-neutral-200 bg-white px-2 py-1 text-sm dark:border-neutral-700 dark:bg-neutral-800"
+                  className="w-36 rounded-md border border-neutral-200 bg-white px-2 py-1 text-xs dark:border-neutral-700 dark:bg-neutral-800"
                 >
                   <option value="">Unassigned</option>
                   {team.map((p) => (
@@ -501,7 +513,7 @@ function CellField({ lead, fieldKey, onChange }: { lead: Lead; fieldKey: string;
       value={value}
       onChange={(e) => setValue(e.target.value)}
       onBlur={() => onChange(value)}
-      className="w-full rounded-md border border-neutral-200 bg-white px-2 py-1 text-sm dark:border-neutral-700 dark:bg-neutral-800 whitespace-normal break-words"
+      className="w-full rounded-md border border-neutral-200 bg-white px-2 py-1 text-xs dark:border-neutral-700 dark:bg-neutral-800 whitespace-normal break-words"
     />
   );
 }
@@ -529,7 +541,7 @@ function TeamSection({ team, onCreate, onUpdate, onDelete }: { team: Salesperson
         </div>
       </div>
       <div className="mt-4 overflow-x-auto rounded-2xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
-        <table className="min-w-full table-auto divide-y divide-neutral-200 dark:divide-neutral-800">
+        <table className="min-w-full table-auto divide-y divide-neutral-200 dark:divide-neutral-800 text-xs leading-tight">
           <thead className="bg-neutral-50/60 dark:bg-neutral-800/40">
             <tr>
               <Th>Name</Th>
@@ -585,14 +597,14 @@ function Input({ label, value, onChange, className }: { label: string; value: st
 
 function Th({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
-    <th className={`px-4 py-3 align-top text-left text-xs font-semibold uppercase tracking-wider text-neutral-600 dark:text-neutral-400 ${className}`}>
+    <th className={`px-2 py-2 align-top text-left text-xs font-semibold uppercase tracking-wider text-neutral-600 dark:text-neutral-400 max-w-[200px] ${className}`}>
       <div className="whitespace-normal break-words">{children}</div>
     </th>
   );
 }
 function Td({ children, className = "", colSpan }: { children: React.ReactNode; className?: string; colSpan?: number }) {
   return (
-    <td colSpan={colSpan} className={`px-4 py-3 align-top text-sm whitespace-normal break-words ${className}`}>
+    <td colSpan={colSpan} className={`px-2 py-2 align-top text-xs whitespace-normal break-words max-w-[200px] ${className}`}>
       {children}
     </td>
   );

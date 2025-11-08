@@ -164,7 +164,7 @@ function findLeastLoaded(load: Map<string, number>): string | null {
   return minKey;
 }
 
-export async function importFromCsvRows(rows: Record<string, string>[]) {
+export async function importFromCsvRows(rows: Record<string, string>[], headers?: string[]) {
   const state = await getState();
   const byEmail = new Map(state.leads.filter((l) => l.email).map((l) => [l.email!.toLowerCase(), l] as const));
   const byPhone = new Map(state.leads.filter((l) => l.phone).map((l) => [normalizePhone(l.phone!), l] as const));
@@ -181,12 +181,16 @@ export async function importFromCsvRows(rows: Record<string, string>[]) {
     const phone = phoneRaw ? normalizePhone(phoneRaw) : undefined;
     const company = r["company"] || r["Company"] || undefined;
     const source = r["source"] || r["Source"] || r["utm_source"] || undefined;
-    const status = (r["status"] || r["Status"] || "").toLowerCase() as LeadStatus;
+    const statusRaw = (r["status"] || r["Status"] || "").trim().toLowerCase();
+    const status = (statusRaw || "new") as LeadStatus;
     const notes = r["notes"] || r["Notes"] || undefined;
 
     let existing: Lead | undefined;
     if (email) existing = byEmail.get(email.toLowerCase());
     if (!existing && phone) existing = byPhone.get(phone);
+
+    const fields: Record<string, string | undefined> = {};
+    for (const k of Object.keys(r)) fields[k] = r[k] ?? undefined;
 
     if (existing) {
       const merged: Lead = {
@@ -198,6 +202,7 @@ export async function importFromCsvRows(rows: Record<string, string>[]) {
         source: source ?? existing.source,
         status: (status || existing.status) as LeadStatus,
         notes: notes ?? existing.notes,
+        fields: { ...existing.fields, ...fields },
         updatedAt: now,
       };
       state.leads = state.leads.map((l) => (l.id === existing!.id ? merged : l));
@@ -213,6 +218,7 @@ export async function importFromCsvRows(rows: Record<string, string>[]) {
         status: (status || "new") as LeadStatus,
         ownerId: null,
         notes,
+        fields,
         createdAt: now,
         updatedAt: now,
       };
@@ -230,7 +236,7 @@ export function normalizePhone(p: string) {
   return p.replace(/[^\d+]/g, "");
 }
 
-export function parseCSV(text: string): Record<string, string>[] {
+export function parseCSV(text: string): { headers: string[]; rows: Record<string, string>[] } {
   const rows: string[][] = [];
   let cur = "";
   let inQuotes = false;
@@ -271,7 +277,7 @@ export function parseCSV(text: string): Record<string, string>[] {
   pushCell();
   rows.push([...arr]);
 
-  if (rows.length === 0) return [];
+  if (rows.length === 0) return { headers: [], rows: [] };
   const headers = rows[0].map((h) => h.trim());
   const out: Record<string, string>[] = [];
   for (let i = 1; i < rows.length; i++) {
@@ -283,5 +289,5 @@ export function parseCSV(text: string): Record<string, string>[] {
     }
     out.push(obj);
   }
-  return out;
+  return { headers, rows: out };
 }

@@ -429,8 +429,8 @@ function LeadsTable({ columns, leads, team, onUpdate, onDelete }: { columns: str
       <table className="min-w-full divide-y divide-neutral-200 dark:divide-neutral-800">
         <thead className="bg-neutral-50/60 dark:bg-neutral-800/40">
           <tr>
-            {columns.map((c) => (
-              <Th key={c}>{c}</Th>
+            {columns.map((c, idx) => (
+              <Th key={`${c}-${idx}`}>{c}</Th>
             ))}
             <Th>Status</Th>
             <Th>Owner</Th>

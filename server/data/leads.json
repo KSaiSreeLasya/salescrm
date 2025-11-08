@@ -1,5 +1,309 @@
 [
   {
+    "id": "c9ce46ed-a2ec-4efe-a372-2c7f14c26457",
+    "name": "",
+    "status": "new",
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
+    "fields": {
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "full name": "",
+      "phone": "",
+      "email": "",
+      "street address": "",
+      "post_code": "",
+      "lead_status": "",
+      "": ""
+    },
+    "createdAt": "2025-11-08T07:10:13.151Z",
+    "updatedAt": "2025-11-08T07:10:13.509Z"
+  },
+  {
+    "id": "b6592741-0e57-4476-8dec-11d29c000d22",
+    "name": "",
+    "status": "new",
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
+    "fields": {
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "full name": "",
+      "phone": "",
+      "email": "",
+      "street address": "",
+      "post_code": "",
+      "lead_status": "",
+      "": ""
+    },
+    "createdAt": "2025-11-08T07:06:58.310Z",
+    "updatedAt": "2025-11-08T07:06:58.667Z"
+  },
+  {
+    "id": "ad02f692-0911-4ac8-89cf-a2f5737e982a",
+    "name": "",
+    "status": "new",
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
+    "fields": {
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "full name": "",
+      "phone": "",
+      "email": "",
+      "street address": "",
+      "post_code": "",
+      "lead_status": "",
+      "": ""
+    },
+    "createdAt": "2025-11-08T07:04:00.182Z",
+    "updatedAt": "2025-11-08T07:04:00.562Z"
+  },
+  {
+    "id": "8214992e-3cbf-4294-ab28-2de0f630e4ea",
+    "name": "",
+    "status": "new",
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
+    "fields": {
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "full name": "",
+      "phone": "",
+      "email": "",
+      "street address": "",
+      "post_code": "",
+      "lead_status": "",
+      "": ""
+    },
+    "createdAt": "2025-11-08T07:03:04.668Z",
+    "updatedAt": "2025-11-08T07:03:05.054Z"
+  },
+  {
+    "id": "7c5d4be2-4d40-42ba-8b40-e77dfb8042bc",
+    "name": "",
+    "status": "new",
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
+    "fields": {
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "full name": "",
+      "phone": "",
+      "email": "",
+      "street address": "",
+      "post_code": "",
+      "lead_status": "",
+      "": ""
+    },
+    "createdAt": "2025-11-08T06:59:04.685Z",
+    "updatedAt": "2025-11-08T06:59:05.064Z"
+  },
+  {
+    "id": "d01ac6f6-745b-4006-9cc0-7a35271e86ed",
+    "name": "",
+    "status": "new",
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
+    "fields": {
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "full name": "",
+      "phone": "",
+      "email": "",
+      "street address": "",
+      "post_code": "",
+      "lead_status": "",
+      "": ""
+    },
+    "createdAt": "2025-11-08T06:58:55.815Z",
+    "updatedAt": "2025-11-08T06:58:56.171Z"
+  },
+  {
+    "id": "97446905-ecfd-4428-948e-d2b50ec7c5b8",
+    "name": "",
+    "status": "new",
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
+    "fields": {
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "full name": "",
+      "phone": "",
+      "email": "",
+      "street address": "",
+      "post_code": "",
+      "lead_status": "",
+      "": ""
+    },
+    "createdAt": "2025-11-08T06:55:46.957Z",
+    "updatedAt": "2025-11-08T06:55:47.324Z"
+  },
+  {
+    "id": "c9033c9b-4b76-46a7-a798-3dd490b79fa0",
+    "name": "",
+    "status": "new",
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
+    "fields": {
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "full name": "",
+      "phone": "",
+      "email": "",
+      "street address": "",
+      "post_code": "",
+      "lead_status": "",
+      "": ""
+    },
+    "createdAt": "2025-11-08T06:50:46.423Z",
+    "updatedAt": "2025-11-08T06:50:46.777Z"
+  },
+  {
+    "id": "74814efc-1c79-42a1-b65e-f520d337da89",
+    "name": "",
+    "status": "new",
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
+    "fields": {
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "full name": "",
+      "phone": "",
+      "email": "",
+      "street address": "",
+      "post_code": "",
+      "lead_status": "",
+      "": ""
+    },
+    "createdAt": "2025-11-08T06:45:47.014Z",
+    "updatedAt": "2025-11-08T06:45:47.370Z"
+  },
+  {
+    "id": "f9b4bebd-e847-48f9-8ad0-236743fee814",
+    "name": "",
+    "status": "new",
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
+    "fields": {
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "full name": "",
+      "phone": "",
+      "email": "",
+      "street address": "",
+      "post_code": "",
+      "lead_status": "",
+      "": ""
+    },
+    "createdAt": "2025-11-08T06:40:53.357Z",
+    "updatedAt": "2025-11-08T06:40:53.717Z"
+  },
+  {
+    "id": "6efe7df4-9b70-4dd8-9390-fb51e15404e8",
+    "name": "",
+    "status": "new",
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
+    "fields": {
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "full name": "",
+      "phone": "",
+      "email": "",
+      "street address": "",
+      "post_code": "",
+      "lead_status": "",
+      "": ""
+    },
+    "createdAt": "2025-11-08T06:40:21.643Z",
+    "updatedAt": "2025-11-08T06:40:21.650Z"
+  },
+  {
+    "id": "8c6c3ebd-e014-41a1-83ea-ceabebd9869d",
+    "name": "",
+    "status": "new",
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
+    "fields": {
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "full name": "",
+      "phone": "",
+      "email": "",
+      "street address": "",
+      "post_code": "",
+      "lead_status": "",
+      "": ""
+    },
+    "createdAt": "2025-11-08T06:37:35.734Z",
+    "updatedAt": "2025-11-08T06:37:35.743Z"
+  },
+  {
+    "id": "65375500-6b2b-4708-8f79-537549a5fc62",
+    "name": "",
+    "status": "new",
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
+    "fields": {
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "full name": "",
+      "phone": "",
+      "email": "",
+      "street address": "",
+      "post_code": "",
+      "lead_status": "",
+      "": ""
+    },
+    "createdAt": "2025-11-08T06:32:35.673Z",
+    "updatedAt": "2025-11-08T06:32:35.678Z"
+  },
+  {
+    "id": "65516ffc-7959-42da-93b7-1b80e98a9858",
+    "name": "",
+    "status": "new",
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
+    "fields": {
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "full name": "",
+      "phone": "",
+      "email": "",
+      "street address": "",
+      "post_code": "",
+      "lead_status": "",
+      "": ""
+    },
+    "createdAt": "2025-11-08T06:27:35.826Z",
+    "updatedAt": "2025-11-08T06:27:35.832Z"
+  },
+  {
+    "id": "68e680a0-3d85-42e3-af63-8541613b44c1",
+    "name": "",
+    "status": "new",
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
+    "fields": {
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "full name": "",
+      "phone": "",
+      "email": "",
+      "street address": "",
+      "post_code": "",
+      "lead_status": "",
+      "": ""
+    },
+    "createdAt": "2025-11-08T06:22:40.737Z",
+    "updatedAt": "2025-11-08T06:22:40.745Z"
+  },
+  {
+    "id": "ec143685-a20e-4fd5-bfce-fc258f34b562",
+    "name": "",
+    "status": "new",
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
+    "fields": {
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "full name": "",
+      "phone": "",
+      "email": "",
+      "street address": "",
+      "post_code": "",
+      "lead_status": "",
+      "": ""
+    },
+    "createdAt": "2025-11-08T06:20:48.102Z",
+    "updatedAt": "2025-11-08T06:20:48.137Z"
+  },
+  {
     "id": "27a1dc79-2b9d-474d-90d7-d3c4a18fd68a",
     "name": "",
     "status": "new",
@@ -851,11 +1155,13 @@
       "email": "akhilesh.vudutha@gmail.com",
       "street address": "Uddamarri",
       "post_code": "500078",
-      "lead_status": "",
-      "": ""
+      "lead_status": "power bill 2000",
+      "": "",
+      "note1": "",
+      "note2": ""
     },
     "createdAt": "2025-11-08T05:58:29.249Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z"
+    "updatedAt": "2025-11-08T07:10:13.151Z"
   },
   {
     "id": "4c48ee86-031a-4140-b550-fdd81a6634b6",
@@ -872,11 +1178,11 @@
       "email": "vijaybunty34@gmail.com",
       "street address": "Block 3",
       "post_code": "500055",
-      "lead_status": "",
+      "lead_status": "voice mail",
       "": ""
     },
     "createdAt": "2025-11-08T05:58:29.249Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z"
+    "updatedAt": "2025-11-08T07:10:13.151Z"
   },
   {
     "id": "4458ea61-82d5-455c-b2ec-5a651084979e",
@@ -893,11 +1199,11 @@
       "email": "vamshimohan12@gmail.com",
       "street address": "Peerzadiguda",
       "post_code": "500098",
-      "lead_status": "",
+      "lead_status": "power bill 2000",
       "": ""
     },
     "createdAt": "2025-11-08T05:58:29.249Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z"
+    "updatedAt": "2025-11-08T07:10:13.151Z"
   },
   {
     "id": "4b15a7b0-04b8-4862-85b9-737fb6db870b",
@@ -918,7 +1224,7 @@
       "": ""
     },
     "createdAt": "2025-11-08T05:58:29.249Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z"
+    "updatedAt": "2025-11-08T07:10:13.151Z"
   },
   {
     "id": "e10c6853-b89c-4be6-9311-182c4f92f7c9",
@@ -939,7 +1245,7 @@
       "": ""
     },
     "createdAt": "2025-11-08T05:58:29.249Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z"
+    "updatedAt": "2025-11-08T07:10:13.151Z"
   },
   {
     "id": "b1b89c0f-b505-4366-a1e5-1cb0ed0fac33",
@@ -960,7 +1266,7 @@
       "": ""
     },
     "createdAt": "2025-11-08T05:58:29.249Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z"
+    "updatedAt": "2025-11-08T07:10:13.151Z"
   },
   {
     "id": "96242e17-1f0e-4a47-b228-6b61cd3b3d3c",
@@ -981,7 +1287,7 @@
       "": ""
     },
     "createdAt": "2025-11-08T05:58:29.249Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z"
+    "updatedAt": "2025-11-08T07:10:13.151Z"
   },
   {
     "id": "69457be4-c184-4e5b-8007-6071360d8f53",
@@ -998,11 +1304,11 @@
       "email": "harshadevaraya2612@gmail.com",
       "street address": "dornakal",
       "post_code": "506381",
-      "lead_status": "",
+      "lead_status": "call back",
       "": ""
     },
     "createdAt": "2025-11-08T05:58:29.249Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z"
+    "updatedAt": "2025-11-08T07:10:13.151Z"
   },
   {
     "id": "98f459cd-933d-4820-9d3e-da5ca0372fba",
@@ -1019,11 +1325,11 @@
       "email": "harishpatnaik22@gmail.com",
       "street address": "20-1392 Papireddy Colony Chandanagar Serilingamaplly 500019",
       "post_code": "500019",
-      "lead_status": "",
+      "lead_status": "repeatd lead",
       "": ""
     },
     "createdAt": "2025-11-08T05:58:29.249Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z"
+    "updatedAt": "2025-11-08T07:10:13.151Z"
   },
   {
     "id": "422d754c-96fa-4c0a-aeb8-c810cfd3f5e2",
@@ -1040,11 +1346,11 @@
       "email": "chintukrishna@gmail.com",
       "street address": "hyd",
       "post_code": "509321",
-      "lead_status": "",
+      "lead_status": "call back",
       "": ""
     },
     "createdAt": "2025-11-08T05:58:29.249Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z"
+    "updatedAt": "2025-11-08T07:10:13.151Z"
   },
   {
     "id": "ec2f355c-9044-4ed3-bfa2-b03c8dedf34f",
@@ -1061,11 +1367,11 @@
       "email": "kannappa.skating@gmail.com",
       "street address": "quthbullapur",
       "post_code": "500055",
-      "lead_status": "",
+      "lead_status": "send 3 kwp",
       "": ""
     },
     "createdAt": "2025-11-08T05:58:29.249Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z"
+    "updatedAt": "2025-11-08T07:10:13.151Z"
   },
   {
     "id": "d320257b-e510-4a76-8484-32aac31d8e21",
@@ -1082,11 +1388,11 @@
       "email": "alekhyarajesh567@gmail.com",
       "street address": "bpl",
       "post_code": "504351",
-      "lead_status": "",
+      "lead_status": "call back",
       "": ""
     },
     "createdAt": "2025-11-08T05:58:29.249Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z"
+    "updatedAt": "2025-11-08T07:10:13.151Z"
   },
   {
     "id": "d6a07ac0-3f97-442e-86a2-f5d8303b28d8",
@@ -2274,7 +2580,7 @@
       "": ""
     },
     "createdAt": "2025-11-08T05:38:29.316Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z"
+    "updatedAt": "2025-11-08T07:10:13.151Z"
   },
   {
     "id": "2a7e45ea-67e2-4f47-9940-9b37ae15a7ca",
@@ -2613,7 +2919,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "1600",
@@ -2634,7 +2940,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "600",
@@ -2655,7 +2961,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "1500",
@@ -2676,7 +2982,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "2500",
@@ -2697,7 +3003,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "1500",
@@ -2718,7 +3024,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "2000",
@@ -2747,7 +3053,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "1500",
@@ -2768,7 +3074,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "350 units",
@@ -2789,7 +3095,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "500",
@@ -2810,7 +3116,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "3000",
@@ -2831,7 +3137,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "2500 to 3000",
@@ -2852,7 +3158,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "1200",
@@ -2873,7 +3179,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "2000",
@@ -2902,7 +3208,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building",
       "what_is_your_average_monthly_electricity_bill?": "18000",
@@ -2923,7 +3229,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "600",
@@ -2944,7 +3250,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society",
       "what_is_your_average_monthly_electricity_bill?": "2000",
@@ -2965,7 +3271,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "5 00 to 600",
@@ -2986,7 +3292,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "3000 to 4000",
@@ -3007,7 +3313,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "6000",
@@ -3028,7 +3334,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society",
       "what_is_your_average_monthly_electricity_bill?": "30000",
@@ -3049,7 +3355,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society",
       "what_is_your_average_monthly_electricity_bill?": "House",
@@ -3070,7 +3376,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "3000",
@@ -3091,7 +3397,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "300units",
@@ -3120,7 +3426,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "1300",
@@ -3141,7 +3447,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "3 kiloo",
@@ -3162,7 +3468,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society",
       "what_is_your_average_monthly_electricity_bill?": "70000",
@@ -3183,7 +3489,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "3500",
@@ -3204,7 +3510,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "3500",
@@ -3225,7 +3531,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "2000 below",
@@ -3254,7 +3560,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "2000",
@@ -3275,7 +3581,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "S",
@@ -3296,7 +3602,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society",
       "what_is_your_average_monthly_electricity_bill?": "2000",
@@ -3317,7 +3623,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "2000",
@@ -3338,7 +3644,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "3600",
@@ -3359,7 +3665,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "5000",
@@ -3380,7 +3686,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "2000 or 3000",
@@ -3401,7 +3707,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "How to install",
@@ -3422,7 +3728,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building",
       "what_is_your_average_monthly_electricity_bill?": "5000",
@@ -3443,7 +3749,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "7000",
@@ -3464,7 +3770,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building",
       "what_is_your_average_monthly_electricity_bill?": "4000",
@@ -3485,7 +3791,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "500",
@@ -3506,7 +3812,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "school_/_college_/_hospital",
       "what_is_your_average_monthly_electricity_bill?": "20000",
@@ -3527,7 +3833,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building",
       "what_is_your_average_monthly_electricity_bill?": "30000",
@@ -3547,7 +3853,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "2000",
@@ -3568,7 +3874,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "2000",
@@ -3589,7 +3895,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "3000",
@@ -3618,7 +3924,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "2500",
@@ -3639,7 +3945,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "2000",
@@ -3660,7 +3966,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "1400",
@@ -3681,7 +3987,7 @@
     "status": "new",
     "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house",
       "what_is_your_average_monthly_electricity_bill?": "2000",
@@ -3702,7 +4008,7 @@
     "status": "new",
     "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-08T05:25:02.643Z",
-    "updatedAt": "2025-11-08T06:09:57.337Z",
+    "updatedAt": "2025-11-08T07:10:13.151Z",
     "fields": {
       "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society",
       "what_is_your_average_monthly_electricity_bill?": "25000",

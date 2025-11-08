@@ -15,6 +15,7 @@ import {
   importSheet,
   assignLeads,
 } from "./routes/sheets";
+import { adminImportSheet } from "./routes/admin";
 
 import { startSheetSync } from "./scheduler";
 
@@ -49,6 +50,9 @@ export function createServer() {
   app.put("/api/config", updateConfig);
   app.post("/api/import-sheet", importSheet);
   app.post("/api/assign-leads", assignLeads);
+
+  // Admin-only on-demand import (requires ADMIN_TOKEN in env and header x-admin-token or Authorization: Bearer <token>)
+  app.post("/api/admin/import-sheet", adminImportSheet);
 
   // Background sync
   startSheetSync();

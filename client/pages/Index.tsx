@@ -168,7 +168,8 @@ export default function Index() {
       if (nonEmptyKeys.length === 0) return false;
 
       // skip rows where the only non-empty cell is the date column
-      if (dateKey && nonEmptyKeys.length === 1 && nonEmptyKeys[0] === dateKey) return false;
+      if (dateKey && nonEmptyKeys.length === 1 && nonEmptyKeys[0] === dateKey)
+        return false;
 
       return true;
     });

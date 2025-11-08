@@ -4,6 +4,12 @@ import type { Lead, LeadStatus, Salesperson, ImportSheetResponse, ConfigState } 
 
 const statusOptions: { value: LeadStatus; label: string }[] = [
   { value: "new", label: "New" },
+  { value: "call", label: "Call" },
+  { value: "not lifted", label: "Not lifted" },
+  { value: "quotation sent", label: "Quotation sent" },
+  { value: "site visit", label: "Site visit" },
+  { value: "advance payment", label: "Advance payment" },
+  { value: "lead finished", label: "Lead finished" },
   { value: "contacted", label: "Contacted" },
   { value: "qualified", label: "Qualified" },
   { value: "won", label: "Won" },
@@ -32,17 +38,33 @@ export default function Index() {
   const [search, setSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState<string>("all");
 
+  const columns = useMemo(() => {
+    const cfgHeaders = configQ.data?.headers;
+    if (cfgHeaders && cfgHeaders.length) return cfgHeaders;
+    const items = leadsQ.data?.items || [];
+    const seen = new Set<string>();
+    const cols: string[] = [];
+    for (const l of items) {
+      const keys = Object.keys(l.fields || {});
+      for (const k of keys) {
+        if (!seen.has(k)) {
+          seen.add(k);
+          cols.push(k);
+        }
+      }
+    }
+    return cols;
+  }, [configQ.data?.headers, leadsQ.data?.items]);
+
   const filteredLeads = useMemo(() => {
     const src = leadsQ.data?.items || [];
     const s = search.toLowerCase();
     const byText = s
-      ? src.filter(
-          (l) =>
-            l.name.toLowerCase().includes(s) ||
-            (l.email || "").toLowerCase().includes(s) ||
-            (l.phone || "").toLowerCase().includes(s) ||
-            (l.company || "").toLowerCase().includes(s),
-        )
+      ? src.filter((l) => {
+          // search across fields
+          const fv = Object.values(l.fields || {}).join(" ").toLowerCase();
+          return fv.includes(s) || l.name.toLowerCase().includes(s) || (l.email || "").toLowerCase().includes(s) || (l.phone || "").toLowerCase().includes(s) || (l.company || "").toLowerCase().includes(s);
+        })
       : src;
     const byStatus = statusFilter === "all" ? byText : byText.filter((l) => l.status === statusFilter);
     return byStatus;
@@ -210,6 +232,7 @@ export default function Index() {
               </div>
             </div>
             <LeadsTable
+              columns={columns}
               leads={filteredLeads}
               team={teamQ.data?.items || []}
               onUpdate={(id, patch) => updateLead.mutate({ id, patch })}
@@ -327,7 +350,8 @@ function SheetControls({ defaultUrl, onSync, syncing, lastSyncAt }: { defaultUrl
 
 function NewLead({ onCreate }: { onCreate: (payload: Partial<Lead>) => void }) {
   const [open, setOpen] = useState(false);
-  const [form, setForm] = useState<Partial<Lead>>({ name: "", email: "", phone: "", company: "", source: "", status: "new" });
+  const [form, setForm] = useState<Record<string, string | undefined>>({ Name: "", Email: "", Phone: "", Company: "", Source: "", Notes: "" });
+
   return (
     <>
       <button onClick={() => setOpen(true)} className="rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm font-medium shadow hover:bg-neutral-50 dark:border-neutral-700 dark:bg-neutral-800">
@@ -338,16 +362,16 @@ function NewLead({ onCreate }: { onCreate: (payload: Partial<Lead>) => void }) {
           <div className="w-full max-w-lg rounded-2xl border border-neutral-200 bg-white p-5 shadow-xl dark:border-neutral-700 dark:bg-neutral-900" onClick={(e) => e.stopPropagation()}>
             <div className="text-lg font-semibold">Create Lead</div>
             <div className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2">
-              <Input label="Name" value={form.name || ""} onChange={(v) => setForm({ ...form, name: v })} />
-              <Input label="Email" value={form.email || ""} onChange={(v) => setForm({ ...form, email: v })} />
-              <Input label="Phone" value={form.phone || ""} onChange={(v) => setForm({ ...form, phone: v })} />
-              <Input label="Company" value={form.company || ""} onChange={(v) => setForm({ ...form, company: v })} />
-              <Input label="Source" value={form.source || ""} onChange={(v) => setForm({ ...form, source: v })} />
+              <Input label="Name" value={form.Name || ""} onChange={(v) => setForm({ ...form, Name: v })} />
+              <Input label="Email" value={form.Email || ""} onChange={(v) => setForm({ ...form, Email: v })} />
+              <Input label="Phone" value={form.Phone || ""} onChange={(v) => setForm({ ...form, Phone: v })} />
+              <Input label="Company" value={form.Company || ""} onChange={(v) => setForm({ ...form, Company: v })} />
+              <Input label="Source" value={form.Source || ""} onChange={(v) => setForm({ ...form, Source: v })} />
               <div>
                 <label className="text-xs text-neutral-600 dark:text-neutral-400">Status</label>
                 <select
-                  value={form.status || "new"}
-                  onChange={(e) => setForm({ ...form, status: e.target.value as LeadStatus })}
+                  value={(form["Status"] as string) || "new"}
+                  onChange={(e) => setForm({ ...form, Status: e.target.value })}
                   className="mt-1 w-full rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm dark:border-neutral-700 dark:bg-neutral-800"
                 >
                   {statusOptions.map((s) => (
@@ -360,8 +384,8 @@ function NewLead({ onCreate }: { onCreate: (payload: Partial<Lead>) => void }) {
               <div className="md:col-span-2">
                 <label className="text-xs text-neutral-600 dark:text-neutral-400">Notes</label>
                 <textarea
-                  value={form.notes || ""}
-                  onChange={(e) => setForm({ ...form, notes: e.target.value })}
+                  value={form.Notes || ""}
+                  onChange={(e) => setForm({ ...form, Notes: e.target.value })}
                   rows={3}
                   className="mt-1 w-full rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm dark:border-neutral-700 dark:bg-neutral-800"
                 />
@@ -373,9 +397,19 @@ function NewLead({ onCreate }: { onCreate: (payload: Partial<Lead>) => void }) {
               </button>
               <button
                 onClick={() => {
-                  onCreate(form);
+                  const payload: Partial<Lead> = {
+                    fields: form,
+                    name: (form.Name as string) || "",
+                    email: form.Email,
+                    phone: form.Phone,
+                    company: form.Company,
+                    source: form.Source,
+                    notes: form.Notes,
+                    status: (form.Status as LeadStatus) || "new",
+                  };
+                  onCreate(payload);
                   setOpen(false);
-                  setForm({ name: "", email: "", phone: "", company: "", source: "", status: "new" });
+                  setForm({ Name: "", Email: "", Phone: "", Company: "", Source: "", Notes: "" });
                 }}
                 className="rounded-lg bg-brand-600 px-3 py-2 text-sm font-semibold text-white hover:bg-brand-700 active:bg-brand-800"
               >
@@ -389,43 +423,29 @@ function NewLead({ onCreate }: { onCreate: (payload: Partial<Lead>) => void }) {
   );
 }
 
-function LeadsTable({ leads, team, onUpdate, onDelete }: { leads: Lead[]; team: Salesperson[]; onUpdate: (id: string, patch: Partial<Lead>) => void; onDelete: (id: string) => void }) {
+function LeadsTable({ columns, leads, team, onUpdate, onDelete }: { columns: string[]; leads: Lead[]; team: Salesperson[]; onUpdate: (id: string, patch: Partial<Lead>) => void; onDelete: (id: string) => void }) {
   return (
     <div className="mt-4 overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
       <table className="min-w-full divide-y divide-neutral-200 dark:divide-neutral-800">
         <thead className="bg-neutral-50/60 dark:bg-neutral-800/40">
           <tr>
-            <Th>Name</Th>
-            <Th>Email</Th>
-            <Th>Phone</Th>
-            <Th>Company</Th>
-            <Th>Owner</Th>
+            {columns.map((c) => (
+              <Th key={c}>{c}</Th>
+            ))}
             <Th>Status</Th>
-            <Th>Notes</Th>
+            <Th>Owner</Th>
             <Th className="text-right">Actions</Th>
           </tr>
         </thead>
         <tbody className="divide-y divide-neutral-200 dark:divide-neutral-800">
           {leads.map((l) => (
             <tr key={l.id} className="hover:bg-neutral-50/50 dark:hover:bg-neutral-800/40">
-              <Td className="font-medium">{l.name}</Td>
-              <Td>{l.email || "—"}</Td>
-              <Td>{l.phone || "—"}</Td>
-              <Td>{l.company || "—"}</Td>
-              <Td>
-                <select
-                  value={l.ownerId || ""}
-                  onChange={(e) => onUpdate(l.id, { ownerId: e.target.value || null })}
-                  className="w-44 rounded-md border border-neutral-200 bg-white px-2 py-1 text-sm dark:border-neutral-700 dark:bg-neutral-800"
-                >
-                  <option value="">Unassigned</option>
-                  {team.map((p) => (
-                    <option key={p.id} value={p.id}>
-                      {p.name}
-                    </option>
-                  ))}
-                </select>
-              </Td>
+              {columns.map((c) => (
+                <Td key={c}>
+                  <CellField lead={l} fieldKey={c} onChange={(next) => onUpdate(l.id, { fields: { ...(l.fields || {}), [c]: next } })} />
+                </Td>
+              ))}
+
               <Td>
                 <select
                   value={l.status}
@@ -440,12 +460,18 @@ function LeadsTable({ leads, team, onUpdate, onDelete }: { leads: Lead[]; team: 
                 </select>
               </Td>
               <Td>
-                <input
-                  value={l.notes || ""}
-                  onChange={(e) => onUpdate(l.id, { notes: e.target.value })}
-                  placeholder="Add note"
-                  className="w-64 rounded-md border border-neutral-200 bg-white px-2 py-1 text-sm dark:border-neutral-700 dark:bg-neutral-800"
-                />
+                <select
+                  value={l.ownerId || ""}
+                  onChange={(e) => onUpdate(l.id, { ownerId: e.target.value || null })}
+                  className="w-44 rounded-md border border-neutral-200 bg-white px-2 py-1 text-sm dark:border-neutral-700 dark:bg-neutral-800"
+                >
+                  <option value="">Unassigned</option>
+                  {team.map((p) => (
+                    <option key={p.id} value={p.id}>
+                      {p.name}
+                    </option>
+                  ))}
+                </select>
               </Td>
               <Td className="text-right">
                 <button onClick={() => onDelete(l.id)} className="rounded-md border border-red-200 bg-red-50 px-2 py-1 text-xs text-red-700 hover:bg-red-100 dark:border-red-900/50 dark:bg-red-950/40 dark:text-red-300">
@@ -456,7 +482,7 @@ function LeadsTable({ leads, team, onUpdate, onDelete }: { leads: Lead[]; team: 
           ))}
           {leads.length === 0 && (
             <tr>
-              <Td colSpan={8} className="py-8 text-center text-neutral-500">
+              <Td colSpan={columns.length + 3} className="py-8 text-center text-neutral-500">
                 No leads yet. Sync from Google Sheets or create one.
               </Td>
             </tr>
@@ -464,6 +490,19 @@ function LeadsTable({ leads, team, onUpdate, onDelete }: { leads: Lead[]; team: 
         </tbody>
       </table>
     </div>
+  );
+}
+
+function CellField({ lead, fieldKey, onChange }: { lead: Lead; fieldKey: string; onChange: (next: string) => void }) {
+  const [value, setValue] = useState<string>((lead.fields && (lead.fields[fieldKey] || "")) || "");
+  useEffect(() => setValue((lead.fields && (lead.fields[fieldKey] || "")) || ""), [lead.id, fieldKey, lead.fields]);
+  return (
+    <input
+      value={value}
+      onChange={(e) => setValue(e.target.value)}
+      onBlur={() => onChange(value)}
+      className="w-full rounded-md border border-neutral-200 bg-white px-2 py-1 text-sm dark:border-neutral-700 dark:bg-neutral-800"
+    />
   );
 }
 

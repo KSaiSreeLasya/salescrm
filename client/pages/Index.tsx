@@ -17,9 +17,6 @@ const statusOptions: { value: LeadStatus; label: string }[] = [
   { value: "advance payment", label: "Advance payment" },
   { value: "lead finished", label: "Lead finished" },
   { value: "contacted", label: "Contacted" },
-  { value: "qualified", label: "Qualified" },
-  { value: "won", label: "Won" },
-  { value: "lost", label: "Lost" },
 ];
 
 // Make headers human readable e.g. 'full_name' -> 'Full Name'
@@ -85,27 +82,21 @@ export default function Index() {
           })();
 
     // detect date-like header name
-    const nameMatch = headers.find((h) =>
-      /date|created|timestamp|time/i.test(h),
-    );
+    const nameMatch = headers.find((h) => /date|created|timestamp|time/i.test(h));
 
     // if no header name match, detect by scanning values for date-like pattern
     const dateLike = (v: string) => {
       if (!v) return false;
       const t = v.trim();
-      // common formats: 04-11-2025, 2025-11-04, 04/11/2025, Nov 4 2025
       return (
         /^(\d{1,4}[-\/]\d{1,2}[-\/]\d{1,4})$/.test(t) ||
         /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\b/i.test(t) ||
-        /^\d{1,2}[- ]?(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(
-          t,
-        )
+        /^\d{1,2}[- ]?(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(t)
       );
     };
 
     let valueMatch: string | undefined;
     if (!nameMatch && items.length > 0) {
-      // check first 10 rows for which column has many date-like values
       const counts: Record<string, number> = {};
       for (let i = 0; i < Math.min(10, items.length); i++) {
         const row = items[i].fields || {};
@@ -114,7 +105,6 @@ export default function Index() {
           if (dateLike(v)) counts[h] = (counts[h] || 0) + 1;
         }
       }
-      // choose header with highest count > 0
       const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
       if (sorted.length > 0 && sorted[0][1] > 0) valueMatch = sorted[0][0];
     }
@@ -128,7 +118,17 @@ export default function Index() {
       }
     }
 
-    return headers;
+    // Map headers to column objects with display labels. Empty headers become Note 1/2.
+    let noteCount = 1;
+    const cols = headers.map((h) => {
+      let label = beautifyHeader(h);
+      if (!h || h.trim() === "") {
+        label = `Note ${noteCount++}`;
+      }
+      return { key: h, label };
+    });
+
+    return cols;
   }, [configQ.data?.headers, leadsQ.data?.items]);
 
   const filteredLeads = useMemo(() => {
@@ -156,7 +156,7 @@ export default function Index() {
         : byText.filter((l) => l.status === statusFilter);
 
     // Remove rows that are empty or contain only the detected date column
-    const dateKey = columns && columns.length ? columns[0] : undefined;
+    const dateKey = columns && columns.length ? columns[0]?.key : undefined;
     const cleaned = byStatus.filter((l) => {
       const fields = l.fields || {};
       const nonEmptyKeys = Object.keys(fields).filter((k) => {
@@ -658,7 +658,7 @@ function LeadsTable({
   onUpdate,
   onDelete,
 }: {
-  columns: string[];
+  columns: { key: string; label: string }[];
   leads: Lead[];
   team: Salesperson[];
   onUpdate: (id: string, patch: Partial<Lead>) => void;
@@ -670,11 +670,13 @@ function LeadsTable({
         <thead className="bg-neutral-50/60 dark:bg-neutral-800/40">
           <tr>
             {columns.map((c, idx) => (
-              <Th key={`${c}-${idx}`} title={c}>
-                {beautifyHeader(c)}
+              <Th key={`${c.key}-${idx}`} title={c.key}>
+                {c.label}
               </Th>
             ))}
             <Th>Status</Th>
+            <Th>Note 1</Th>
+            <Th>Note 2</Th>
             <Th>Owner</Th>
             <Th className="text-right">Actions</Th>
           </tr>
@@ -686,17 +688,17 @@ function LeadsTable({
               className="hover:bg-neutral-50/50 dark:hover:bg-neutral-800/40"
             >
               {columns.map((c, idx) => {
-                const raw = (l.fields && (l.fields[c] || "")) || "";
-                const keyNorm = (c || "").toLowerCase();
+                const raw = (l.fields && (l.fields[c.key] || "")) || "";
+                const keyNorm = (c.key || "").toLowerCase();
                 const isEditableField =
-                  keyNorm.includes("note") ||
+                  keyNorm.includes("note") || c.label.toLowerCase().startsWith("note ") ||
                   (keyNorm.includes("lead") && keyNorm.includes("status"));
                 return (
-                  <Td key={`${l.id}-${c}-${idx}`}>
+                  <Td key={`${l.id}-${c.key}-${idx}`}>
                     {isEditableField ? (
                       <EditableCell
                         leadValue={raw}
-                        onSave={(next) => onUpdate(l.id, { fields: { [c]: next } })}
+                        onSave={(next) => onUpdate(l.id, { fields: { [c.key]: next } })}
                       />
                     ) : (
                       <div className="truncate whitespace-nowrap">{raw || "."}</div>
@@ -720,6 +722,21 @@ function LeadsTable({
                   ))}
                 </select>
               </Td>
+
+              <Td>
+                <EditableCell
+                  leadValue={l.fields && (l.fields["note1"] || "")}
+                  onSave={(next) => onUpdate(l.id, { fields: { ["note1"]: next } })}
+                />
+              </Td>
+
+              <Td>
+                <EditableCell
+                  leadValue={l.fields && (l.fields["note2"] || "")}
+                  onSave={(next) => onUpdate(l.id, { fields: { ["note2"]: next } })}
+                />
+              </Td>
+
               <Td>
                 <select
                   value={l.ownerId || ""}
@@ -749,7 +766,7 @@ function LeadsTable({
           {leads.length === 0 && (
             <tr>
               <Td
-                colSpan={columns.length + 3}
+                colSpan={columns.length + 5}
                 className="py-8 text-center text-neutral-500"
               >
                 No leads yet. Sync from Google Sheets or create one.

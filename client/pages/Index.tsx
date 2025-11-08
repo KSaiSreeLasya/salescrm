@@ -183,7 +183,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-brand-50 to-white dark:from-neutral-950 dark:to-neutral-900 text-neutral-900 dark:text-neutral-100">
       <Header onImport={() => importSheet.mutate()} syncing={importSheet.isPending} lastSyncAt={configQ.data?.lastSyncAt} />
-      <main className="mx-auto max-w-7xl px-6 py-8">
+      <main className="mx-auto max-w-[1800px] px-6 py-8">
         <Kpis {...kpis} />
 
         <div className="mt-8 flex items-center justify-between">

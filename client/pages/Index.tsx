@@ -264,7 +264,7 @@ export default function Index() {
         )}
       </main>
       <footer className="mt-10 border-t border-neutral-200/60 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800">
-        Sales CRM • Auto-sync from Google Sheets • Built for efficiency
+        Sales CRM �� Auto-sync from Google Sheets • Built for efficiency
       </footer>
     </div>
   );
@@ -439,7 +439,7 @@ function NewLead({ onCreate }: { onCreate: (payload: Partial<Lead>) => void }) {
 function LeadsTable({ columns, leads, team, onUpdate, onDelete }: { columns: string[]; leads: Lead[]; team: Salesperson[]; onUpdate: (id: string, patch: Partial<Lead>) => void; onDelete: (id: string) => void }) {
   return (
     <div className="mt-4 overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
-      <table className="min-w-full table-auto divide-y divide-neutral-200 dark:divide-neutral-800 text-xs leading-tight">
+      <table className="min-w-full table-fixed divide-y divide-neutral-200 dark:divide-neutral-800 text-xs leading-tight">
         <thead className="bg-neutral-50/60 dark:bg-neutral-800/40">
           <tr>
             {columns.map((c, idx) => (
@@ -553,7 +553,7 @@ function TeamSection({ team, onCreate, onUpdate, onDelete }: { team: Salesperson
         </div>
       </div>
       <div className="mt-4 overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
-        <table className="min-w-full table-auto divide-y divide-neutral-200 dark:divide-neutral-800 text-xs leading-tight">
+        <table className="min-w-full table-fixed divide-y divide-neutral-200 dark:divide-neutral-800 text-xs leading-tight">
           <thead className="bg-neutral-50/60 dark:bg-neutral-800/40">
             <tr>
               <Th>Name</Th>

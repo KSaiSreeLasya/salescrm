@@ -35,11 +35,13 @@ export const importSheet: RequestHandler = async (req, res) => {
   if (!sheetUrl) return res.status(400).json({ error: "sheetUrl not configured" });
   try {
     const csv = await fetchCsvText(sheetUrl);
-    const rows = parseCSV(csv);
-    const { imported, updated, assigned } = await importFromCsvRows(rows);
+    const parsed = parseCSV(csv);
+    const rows = parsed.rows;
+    const headers = parsed.headers;
+    const { imported, updated, assigned } = await importFromCsvRows(rows, headers);
     const now = new Date().toISOString();
-    await saveConfig({ ...state.config, sheetUrl, lastSyncAt: now });
-    res.json({ imported, updated, assigned, lastSyncAt: now });
+    await saveConfig({ ...state.config, sheetUrl, lastSyncAt: now, headers });
+    res.json({ imported, updated, assigned, lastSyncAt: now, headers });
   } catch (e: any) {
     res.status(500).json({ error: e?.message || String(e) });
   }

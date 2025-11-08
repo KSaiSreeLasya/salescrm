@@ -529,7 +529,7 @@ function TeamSection({ team, onCreate, onUpdate, onDelete }: { team: Salesperson
         </div>
       </div>
       <div className="mt-4 overflow-x-auto rounded-2xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
-        <table className="min-w-full divide-y divide-neutral-200 dark:divide-neutral-800">
+        <table className="min-w-full table-auto divide-y divide-neutral-200 dark:divide-neutral-800">
           <thead className="bg-neutral-50/60 dark:bg-neutral-800/40">
             <tr>
               <Th>Name</Th>

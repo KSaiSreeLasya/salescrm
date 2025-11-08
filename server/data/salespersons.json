@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
+    "name": "Satya vani",
+    "email": "satyavani@axisogreen.in",
+    "active": true,
+    "createdAt": "2025-11-08T05:26:49.083Z"
+  },
+  {
+    "id": "19f86927-59f9-4067-a761-1196e6143f43",
+    "name": "Lakshmi",
+    "email": "lakshmi@axisogreen.in",
+    "active": true,
+    "createdAt": "2025-11-08T05:27:05.240Z"
+  }
+]

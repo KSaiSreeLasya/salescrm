@@ -600,7 +600,7 @@ function Th({ children, className = "" }: { children: React.ReactNode; className
 }
 function Td({ children, className = "", colSpan }: { children: React.ReactNode; className?: string; colSpan?: number }) {
   return (
-    <td colSpan={colSpan} className={`px-2 py-2 align-top text-xs whitespace-normal break-words max-w-[220px] border border-neutral-200 dark:border-neutral-700 ${className}`}>
+    <td colSpan={colSpan} className={`px-2 py-2 align-top text-xs whitespace-nowrap overflow-hidden text-ellipsis max-w-[160px] border border-neutral-200 dark:border-neutral-700 ${className}`}>
       {children}
     </td>
   );

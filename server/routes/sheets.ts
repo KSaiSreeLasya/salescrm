@@ -1,5 +1,11 @@
 import { RequestHandler } from "express";
-import { getState, importFromCsvRows, parseCSV, saveConfig, assignUnassignedLeads } from "../services/crm";
+import {
+  getState,
+  importFromCsvRows,
+  parseCSV,
+  saveConfig,
+  assignUnassignedLeads,
+} from "../services/crm";
 import type { UpdateConfigRequest, ImportSheetRequest } from "@shared/api";
 
 async function fetchCsvText(url: string): Promise<string> {
@@ -32,13 +38,17 @@ export const importSheet: RequestHandler = async (req, res) => {
   const body = req.body as ImportSheetRequest;
   const state = await getState();
   const sheetUrl = toCsvExportUrl(body.sheetUrl || state.config.sheetUrl || "");
-  if (!sheetUrl) return res.status(400).json({ error: "sheetUrl not configured" });
+  if (!sheetUrl)
+    return res.status(400).json({ error: "sheetUrl not configured" });
   try {
     const csv = await fetchCsvText(sheetUrl);
     const parsed = parseCSV(csv);
     const rows = parsed.rows;
     const headers = parsed.headers;
-    const { imported, updated, assigned } = await importFromCsvRows(rows, headers);
+    const { imported, updated, assigned } = await importFromCsvRows(
+      rows,
+      headers,
+    );
     const now = new Date().toISOString();
     await saveConfig({ ...state.config, sheetUrl, lastSyncAt: now, headers });
     res.json({ imported, updated, assigned, lastSyncAt: now, headers });

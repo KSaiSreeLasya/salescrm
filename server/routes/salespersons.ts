@@ -1,5 +1,10 @@
 import { RequestHandler } from "express";
-import { createSalesperson, deleteSalesperson, listSalespersons, updateSalesperson } from "../services/crm";
+import {
+  createSalesperson,
+  deleteSalesperson,
+  listSalespersons,
+  updateSalesperson,
+} from "../services/crm";
 import type { Salesperson } from "@shared/api";
 
 export const getSalespersons: RequestHandler = async (_req, res) => {
@@ -10,7 +15,10 @@ export const getSalespersons: RequestHandler = async (_req, res) => {
 export const postSalesperson: RequestHandler = async (req, res) => {
   const body = req.body as Partial<Salesperson>;
   if (!body.name) return res.status(400).json({ error: "name is required" });
-  const created = await createSalesperson({ name: body.name!, email: body.email });
+  const created = await createSalesperson({
+    name: body.name!,
+    email: body.email,
+  });
   res.status(201).json(created);
 };
 

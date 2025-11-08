@@ -46,14 +46,20 @@ export async function saveConfig(config: ConfigState) {
 export async function listLeads(): Promise<Lead[]> {
   const { leads } = await getState();
   const filtered = leads.filter((l) => {
-    const vals = Object.values(l.fields || {}).map((v) => (v || "").toString().trim());
+    const vals = Object.values(l.fields || {}).map((v) =>
+      (v || "").toString().trim(),
+    );
     const nonEmpty = vals.filter((v) => v !== "");
     if (nonEmpty.length === 0) return false;
     if (nonEmpty.length === 1) {
       const v = nonEmpty[0];
-      const dateLike = /^\d{1,2}[\-/]\d{1,2}[\-/]\d{2,4}$/.test(v) || /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(v);
+      const dateLike =
+        /^\d{1,2}[\-/]\d{1,2}[\-/]\d{2,4}$/.test(v) ||
+        /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(v);
       const totalLike = /^sum|^total|^subtotal/i.test(v);
-      const numericOnly = /^[-+]?\d{1,3}(?:[\,\d]*)(?:\.\d+)?$/.test(v.replace(/\s+/g, ""));
+      const numericOnly = /^[-+]?\d{1,3}(?:[\,\d]*)(?:\.\d+)?$/.test(
+        v.replace(/\s+/g, ""),
+      );
       if (dateLike || totalLike || numericOnly) return false;
     }
     return true;
@@ -66,7 +72,9 @@ export async function listSalespersons(): Promise<Salesperson[]> {
   return salespersons.sort((a, b) => a.name.localeCompare(b.name));
 }
 
-export async function createSalesperson(input: Pick<Salesperson, "name" | "email">) {
+export async function createSalesperson(
+  input: Pick<Salesperson, "name" | "email">,
+) {
   const state = await getState();
   const person: Salesperson = {
     id: randomUUID(),
@@ -79,7 +87,10 @@ export async function createSalesperson(input: Pick<Salesperson, "name" | "email
   return person;
 }
 
-export async function updateSalesperson(id: string, patch: Partial<Salesperson>) {
+export async function updateSalesperson(
+  id: string,
+  patch: Partial<Salesperson>,
+) {
   const state = await getState();
   const idx = state.salespersons.findIndex((s) => s.id === id);
   if (idx === -1) return null;
@@ -94,7 +105,9 @@ export async function deleteSalesperson(id: string) {
   const next = state.salespersons.filter((s) => s.id !== id);
   await saveSalespersons(next);
   // Unassign leads owned by this salesperson
-  const leads = state.leads.map((l) => (l.ownerId === id ? { ...l, ownerId: null } : l));
+  const leads = state.leads.map((l) =>
+    l.ownerId === id ? { ...l, ownerId: null } : l,
+  );
   await saveLeads(leads);
   return true;
 }
@@ -141,7 +154,8 @@ export async function updateLead(id: string, patch: Partial<Lead>) {
     name: (patch.name as string) || mergedFields["Name"] || current.name,
     email: (patch.email as string) || mergedFields["Email"] || current.email,
     phone: (patch.phone as string) || mergedFields["Phone"] || current.phone,
-    company: (patch.company as string) || mergedFields["Company"] || current.company,
+    company:
+      (patch.company as string) || mergedFields["Company"] || current.company,
     notes: (patch.notes as string) || mergedFields["Notes"] || current.notes,
     updatedAt: new Date().toISOString(),
   };
@@ -164,7 +178,9 @@ export async function assignUnassignedLeads() {
   // Calculate current load per salesperson
   const load = new Map<string, number>();
   for (const s of active) load.set(s.id, 0);
-  for (const l of state.leads) if (l.ownerId && load.has(l.ownerId)) load.set(l.ownerId, (load.get(l.ownerId) || 0) + 1);
+  for (const l of state.leads)
+    if (l.ownerId && load.has(l.ownerId))
+      load.set(l.ownerId, (load.get(l.ownerId) || 0) + 1);
 
   let assigned = 0;
   const leads = state.leads.map((l) => {
@@ -173,7 +189,11 @@ export async function assignUnassignedLeads() {
       if (target) {
         assigned++;
         load.set(target, (load.get(target) || 0) + 1);
-        return { ...l, ownerId: target, updatedAt: new Date().toISOString() } as Lead;
+        return {
+          ...l,
+          ownerId: target,
+          updatedAt: new Date().toISOString(),
+        } as Lead;
       }
     }
     return l;
@@ -194,10 +214,21 @@ function findLeastLoaded(load: Map<string, number>): string | null {
   return minKey;
 }
 
-export async function importFromCsvRows(rows: Record<string, string>[], headers?: string[]) {
+export async function importFromCsvRows(
+  rows: Record<string, string>[],
+  headers?: string[],
+) {
   const state = await getState();
-  const byEmail = new Map(state.leads.filter((l) => l.email).map((l) => [l.email!.toLowerCase(), l] as const));
-  const byPhone = new Map(state.leads.filter((l) => l.phone).map((l) => [normalizePhone(l.phone!), l] as const));
+  const byEmail = new Map(
+    state.leads
+      .filter((l) => l.email)
+      .map((l) => [l.email!.toLowerCase(), l] as const),
+  );
+  const byPhone = new Map(
+    state.leads
+      .filter((l) => l.phone)
+      .map((l) => [normalizePhone(l.phone!), l] as const),
+  );
 
   let imported = 0;
   let updated = 0;
@@ -213,15 +244,34 @@ export async function importFromCsvRows(rows: Record<string, string>[], headers?
     // heuristics: skip rows with a single non-empty cell that looks like a date, month label, total, or numeric sum
     if (nonEmpty.length === 1) {
       const v = nonEmpty[0];
-      const dateLike = /^\d{1,2}[\-/] \d{1,2}[\-/] \d{2,4}$/.test(v) || /^\d{1,2}[\-/]\d{1,2}[\-/]\d{2,4}$/.test(v) || /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(v);
+      const dateLike =
+        /^\d{1,2}[\-/] \d{1,2}[\-/] \d{2,4}$/.test(v) ||
+        /^\d{1,2}[\-/]\d{1,2}[\-/]\d{2,4}$/.test(v) ||
+        /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(v);
       const totalLike = /^sum|^total|^subtotal/i.test(v);
-      const numericOnly = /^[-+]?\d{1,3}(?:[\,\d]*)(?:\.\d+)?$/.test(v.replace(/\s+/g, ""));
+      const numericOnly = /^[-+]?\d{1,3}(?:[\,\d]*)(?:\.\d+)?$/.test(
+        v.replace(/\s+/g, ""),
+      );
       if (dateLike || totalLike || numericOnly) continue;
     }
 
-    const name = r["name"] || r["Name"] || r["full_name"] || r["Full Name"] || r["lead_name"] || "";
-    const email = (r["email"] || r["Email"] || r["e-mail"] || r["E-mail"] || "").trim() || undefined;
-    const phoneRaw = (r["phone"] || r["Phone"] || r["mobile"] || r["Mobile"] || "").trim();
+    const name =
+      r["name"] ||
+      r["Name"] ||
+      r["full_name"] ||
+      r["Full Name"] ||
+      r["lead_name"] ||
+      "";
+    const email =
+      (r["email"] || r["Email"] || r["e-mail"] || r["E-mail"] || "").trim() ||
+      undefined;
+    const phoneRaw = (
+      r["phone"] ||
+      r["Phone"] ||
+      r["mobile"] ||
+      r["Mobile"] ||
+      ""
+    ).trim();
     const phone = phoneRaw ? normalizePhone(phoneRaw) : undefined;
     const company = r["company"] || r["Company"] || undefined;
     const source = r["source"] || r["Source"] || r["utm_source"] || undefined;
@@ -249,7 +299,9 @@ export async function importFromCsvRows(rows: Record<string, string>[], headers?
         fields: { ...existing.fields, ...fields },
         updatedAt: now,
       };
-      state.leads = state.leads.map((l) => (l.id === existing!.id ? merged : l));
+      state.leads = state.leads.map((l) =>
+        l.id === existing!.id ? merged : l,
+      );
       updated++;
     } else {
       const newLead: Lead = {
@@ -280,7 +332,10 @@ export function normalizePhone(p: string) {
   return p.replace(/[^\d+]/g, "");
 }
 
-export function parseCSV(text: string): { headers: string[]; rows: Record<string, string>[] } {
+export function parseCSV(text: string): {
+  headers: string[];
+  rows: Record<string, string>[];
+} {
   const rows: string[][] = [];
   let cur = "";
   let inQuotes = false;
@@ -304,13 +359,13 @@ export function parseCSV(text: string): { headers: string[]; rows: Record<string
     } else {
       if (ch === '"') {
         inQuotes = true;
-      } else if (ch === ',') {
+      } else if (ch === ",") {
         pushCell();
-      } else if (ch === '\n') {
+      } else if (ch === "\n") {
         pushCell();
         rows.push([...arr]);
         arr.length = 0;
-      } else if (ch === '\r') {
+      } else if (ch === "\r") {
         // ignore
       } else {
         cur += ch;

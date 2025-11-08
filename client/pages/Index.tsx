@@ -1,6 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import type { Lead, LeadStatus, Salesperson, ImportSheetResponse, ConfigState } from "@shared/api";
+import type {
+  Lead,
+  LeadStatus,
+  Salesperson,
+  ImportSheetResponse,
+  ConfigState,
+} from "@shared/api";
 
 const statusOptions: { value: LeadStatus; label: string }[] = [
   { value: "new", label: "New" },
@@ -43,8 +49,14 @@ function useApi<T>(key: string[], url: string) {
 export default function Index() {
   const qc = useQueryClient();
 
-  const leadsQ = useApi<{ items: Lead[]; total: number }>(["leads"], "/api/leads");
-  const teamQ = useApi<{ items: Salesperson[]; total: number }>(["salespersons"], "/api/salespersons");
+  const leadsQ = useApi<{ items: Lead[]; total: number }>(
+    ["leads"],
+    "/api/leads",
+  );
+  const teamQ = useApi<{ items: Salesperson[]; total: number }>(
+    ["salespersons"],
+    "/api/salespersons",
+  );
   const configQ = useApi<ConfigState>(["config"], "/api/config");
 
   const [activeTab, setActiveTab] = useState<"leads" | "team">("leads");
@@ -54,32 +66,41 @@ export default function Index() {
   const columns = useMemo(() => {
     const cfgHeaders = configQ.data?.headers;
     const items = leadsQ.data?.items || [];
-    const headers: string[] = cfgHeaders && cfgHeaders.length
-      ? [...cfgHeaders]
-      : (() => {
-          const seen = new Set<string>();
-          const cols: string[] = [];
-          for (const l of items) {
-            const keys = Object.keys(l.fields || {});
-            for (const k of keys) {
-              if (!seen.has(k)) {
-                seen.add(k);
-                cols.push(k);
+    const headers: string[] =
+      cfgHeaders && cfgHeaders.length
+        ? [...cfgHeaders]
+        : (() => {
+            const seen = new Set<string>();
+            const cols: string[] = [];
+            for (const l of items) {
+              const keys = Object.keys(l.fields || {});
+              for (const k of keys) {
+                if (!seen.has(k)) {
+                  seen.add(k);
+                  cols.push(k);
+                }
               }
             }
-          }
-          return cols;
-        })();
+            return cols;
+          })();
 
     // detect date-like header name
-    const nameMatch = headers.find((h) => /date|created|timestamp|time/i.test(h));
+    const nameMatch = headers.find((h) =>
+      /date|created|timestamp|time/i.test(h),
+    );
 
     // if no header name match, detect by scanning values for date-like pattern
     const dateLike = (v: string) => {
       if (!v) return false;
       const t = v.trim();
       // common formats: 04-11-2025, 2025-11-04, 04/11/2025, Nov 4 2025
-      return /^(\d{1,4}[-\/]\d{1,2}[-\/]\d{1,4})$/.test(t) || /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\b/i.test(t) || /^\d{1,2}[- ]?(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(t);
+      return (
+        /^(\d{1,4}[-\/]\d{1,2}[-\/]\d{1,4})$/.test(t) ||
+        /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\b/i.test(t) ||
+        /^\d{1,2}[- ]?(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(
+          t,
+        )
+      );
     };
 
     let valueMatch: string | undefined;
@@ -116,11 +137,22 @@ export default function Index() {
     const byText = s
       ? src.filter((l) => {
           // search across fields
-          const fv = Object.values(l.fields || {}).join(" ").toLowerCase();
-          return fv.includes(s) || l.name.toLowerCase().includes(s) || (l.email || "").toLowerCase().includes(s) || (l.phone || "").toLowerCase().includes(s) || (l.company || "").toLowerCase().includes(s);
+          const fv = Object.values(l.fields || {})
+            .join(" ")
+            .toLowerCase();
+          return (
+            fv.includes(s) ||
+            l.name.toLowerCase().includes(s) ||
+            (l.email || "").toLowerCase().includes(s) ||
+            (l.phone || "").toLowerCase().includes(s) ||
+            (l.company || "").toLowerCase().includes(s)
+          );
         })
       : src;
-    const byStatus = statusFilter === "all" ? byText : byText.filter((l) => l.status === statusFilter);
+    const byStatus =
+      statusFilter === "all"
+        ? byText
+        : byText.filter((l) => l.status === statusFilter);
     return byStatus;
   }, [leadsQ.data?.items, search, statusFilter]);
 
@@ -135,7 +167,11 @@ export default function Index() {
 
   const createLead = useMutation({
     mutationFn: async (payload: Partial<Lead>) => {
-      const r = await fetch(`/api/leads`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
+      const r = await fetch(`/api/leads`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
       if (!r.ok) throw new Error(await r.text());
       return (await r.json()) as Lead;
     },
@@ -144,7 +180,11 @@ export default function Index() {
 
   const updateLead = useMutation({
     mutationFn: async ({ id, patch }: { id: string; patch: Partial<Lead> }) => {
-      const r = await fetch(`/api/leads/${id}`, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(patch) });
+      const r = await fetch(`/api/leads/${id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(patch),
+      });
       if (!r.ok) throw new Error(await r.text());
       return (await r.json()) as Lead;
     },
@@ -162,7 +202,11 @@ export default function Index() {
 
   const createSalesperson = useMutation({
     mutationFn: async (payload: Partial<Salesperson>) => {
-      const r = await fetch(`/api/salespersons`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
+      const r = await fetch(`/api/salespersons`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
       if (!r.ok) throw new Error(await r.text());
       return (await r.json()) as Salesperson;
     },
@@ -170,8 +214,18 @@ export default function Index() {
   });
 
   const updateSalesperson = useMutation({
-    mutationFn: async ({ id, patch }: { id: string; patch: Partial<Salesperson> }) => {
-      const r = await fetch(`/api/salespersons/${id}`, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(patch) });
+    mutationFn: async ({
+      id,
+      patch,
+    }: {
+      id: string;
+      patch: Partial<Salesperson>;
+    }) => {
+      const r = await fetch(`/api/salespersons/${id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(patch),
+      });
       if (!r.ok) throw new Error(await r.text());
       return (await r.json()) as Salesperson;
     },
@@ -195,7 +249,11 @@ export default function Index() {
 
   const importSheet = useMutation({
     mutationFn: async (sheetUrl?: string) => {
-      const r = await fetch(`/api/import-sheet`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ sheetUrl }) });
+      const r = await fetch(`/api/import-sheet`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sheetUrl }),
+      });
       if (!r.ok) throw new Error(await r.text());
       return (await r.json()) as ImportSheetResponse;
     },
@@ -223,7 +281,11 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-brand-50 to-white dark:from-neutral-950 dark:to-neutral-900 text-neutral-900 dark:text-neutral-100">
-      <Header onImport={() => importSheet.mutate()} syncing={importSheet.isPending} lastSyncAt={configQ.data?.lastSyncAt} />
+      <Header
+        onImport={() => importSheet.mutate()}
+        syncing={importSheet.isPending}
+        lastSyncAt={configQ.data?.lastSyncAt}
+      />
       <main className="mx-auto max-w-[1800px] px-6 py-8">
         <Kpis {...kpis} />
 
@@ -311,7 +373,15 @@ export default function Index() {
   );
 }
 
-function Header({ onImport, syncing, lastSyncAt }: { onImport: () => void; syncing: boolean; lastSyncAt?: string }) {
+function Header({
+  onImport,
+  syncing,
+  lastSyncAt,
+}: {
+  onImport: () => void;
+  syncing: boolean;
+  lastSyncAt?: string;
+}) {
   return (
     <header className="bg-[radial-gradient(1200px_600px_at_90%_-10%,theme(colors.brand.200)/70,transparent_60%),linear-gradient(to_bottom_right,theme(colors.brand.50),white)] dark:bg-[radial-gradient(1200px_600px_at_90%_-10%,theme(colors.brand.900)/40,transparent_60%),linear-gradient(to_bottom_right,theme(colors.neutral.900),theme(colors.neutral.950))]">
       <div className="mx-auto max-w-7xl px-6 py-10">
@@ -319,8 +389,12 @@ function Header({ onImport, syncing, lastSyncAt }: { onImport: () => void; synci
           <div className="flex items-center gap-3">
             <div className="h-9 w-9 rounded-xl bg-brand-600 shadow-inner ring-4 ring-brand-200/50 dark:ring-brand-900/50" />
             <div>
-              <h1 className="text-xl font-extrabold tracking-tight">LeadFlow</h1>
-              <p className="text-xs text-neutral-600 dark:text-neutral-400">Convert faster with smart routing</p>
+              <h1 className="text-xl font-extrabold tracking-tight">
+                LeadFlow
+              </h1>
+              <p className="text-xs text-neutral-600 dark:text-neutral-400">
+                Convert faster with smart routing
+              </p>
             </div>
           </div>
           <div className="hidden md:flex items-center gap-3">
@@ -335,14 +409,18 @@ function Header({ onImport, syncing, lastSyncAt }: { onImport: () => void; synci
         </div>
         <div className="mt-6 max-w-2xl">
           <h2 className="text-3xl font-black leading-tight tracking-tight">
-            Sales website for capturing and managing leads with automatic assignment
+            Sales website for capturing and managing leads with automatic
+            assignment
           </h2>
           <p className="mt-3 text-neutral-700 dark:text-neutral-300">
-            Connect your Google Sheet, auto-import leads in real-time, and let the system assign them to your sales team. Track
-            updates, statuses, and outcomes effortlessly.
+            Connect your Google Sheet, auto-import leads in real-time, and let
+            the system assign them to your sales team. Track updates, statuses,
+            and outcomes effortlessly.
           </p>
           <div className="mt-4 text-xs text-neutral-600 dark:text-neutral-400">
-            {lastSyncAt ? `Last sync: ${new Date(lastSyncAt).toLocaleString()}` : "No sync performed yet"}
+            {lastSyncAt
+              ? `Last sync: ${new Date(lastSyncAt).toLocaleString()}`
+              : "No sync performed yet"}
           </div>
           <div className="mt-6 flex gap-3 md:hidden">
             <button
@@ -359,7 +437,17 @@ function Header({ onImport, syncing, lastSyncAt }: { onImport: () => void; synci
   );
 }
 
-function Kpis({ total, assigned, unassigned, won }: { total: number; assigned: number; unassigned: number; won: number }) {
+function Kpis({
+  total,
+  assigned,
+  unassigned,
+  won,
+}: {
+  total: number;
+  assigned: number;
+  unassigned: number;
+  won: number;
+}) {
   const items = [
     { label: "Total Leads", value: total },
     { label: "Assigned", value: assigned },
@@ -369,8 +457,13 @@ function Kpis({ total, assigned, unassigned, won }: { total: number; assigned: n
   return (
     <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
       {items.map((k) => (
-        <div key={k.label} className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm backdrop-blur dark:border-neutral-800 dark:bg-neutral-800/60">
-          <div className="text-xs text-neutral-600 dark:text-neutral-400">{k.label}</div>
+        <div
+          key={k.label}
+          className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm backdrop-blur dark:border-neutral-800 dark:bg-neutral-800/60"
+        >
+          <div className="text-xs text-neutral-600 dark:text-neutral-400">
+            {k.label}
+          </div>
           <div className="mt-1 text-2xl font-extrabold">{k.value}</div>
         </div>
       ))}
@@ -378,7 +471,17 @@ function Kpis({ total, assigned, unassigned, won }: { total: number; assigned: n
   );
 }
 
-function SheetControls({ defaultUrl, onSync, syncing, lastSyncAt }: { defaultUrl?: string; onSync: (url?: string) => void; syncing: boolean; lastSyncAt?: string }) {
+function SheetControls({
+  defaultUrl,
+  onSync,
+  syncing,
+  lastSyncAt,
+}: {
+  defaultUrl?: string;
+  onSync: (url?: string) => void;
+  syncing: boolean;
+  lastSyncAt?: string;
+}) {
   const [url, setUrl] = useState<string>(defaultUrl || "");
   useEffect(() => setUrl(defaultUrl || ""), [defaultUrl]);
   return (
@@ -404,25 +507,63 @@ function SheetControls({ defaultUrl, onSync, syncing, lastSyncAt }: { defaultUrl
 
 function NewLead({ onCreate }: { onCreate: (payload: Partial<Lead>) => void }) {
   const [open, setOpen] = useState(false);
-  const [form, setForm] = useState<Record<string, string | undefined>>({ Name: "", Email: "", Phone: "", Company: "", Source: "", Notes: "" });
+  const [form, setForm] = useState<Record<string, string | undefined>>({
+    Name: "",
+    Email: "",
+    Phone: "",
+    Company: "",
+    Source: "",
+    Notes: "",
+  });
 
   return (
     <>
-      <button onClick={() => setOpen(true)} className="rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm font-medium shadow hover:bg-neutral-50 dark:border-neutral-700 dark:bg-neutral-800">
+      <button
+        onClick={() => setOpen(true)}
+        className="rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm font-medium shadow hover:bg-neutral-50 dark:border-neutral-700 dark:bg-neutral-800"
+      >
         + New Lead
       </button>
       {open && (
-        <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/50 p-4" onClick={() => setOpen(false)}>
-          <div className="w-full max-w-lg rounded-2xl border border-neutral-200 bg-white p-5 shadow-xl dark:border-neutral-700 dark:bg-neutral-900" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="fixed inset-0 z-40 flex items-center justify-center bg-black/50 p-4"
+          onClick={() => setOpen(false)}
+        >
+          <div
+            className="w-full max-w-lg rounded-2xl border border-neutral-200 bg-white p-5 shadow-xl dark:border-neutral-700 dark:bg-neutral-900"
+            onClick={(e) => e.stopPropagation()}
+          >
             <div className="text-lg font-semibold">Create Lead</div>
             <div className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2">
-              <Input label="Name" value={form.Name || ""} onChange={(v) => setForm({ ...form, Name: v })} />
-              <Input label="Email" value={form.Email || ""} onChange={(v) => setForm({ ...form, Email: v })} />
-              <Input label="Phone" value={form.Phone || ""} onChange={(v) => setForm({ ...form, Phone: v })} />
-              <Input label="Company" value={form.Company || ""} onChange={(v) => setForm({ ...form, Company: v })} />
-              <Input label="Source" value={form.Source || ""} onChange={(v) => setForm({ ...form, Source: v })} />
+              <Input
+                label="Name"
+                value={form.Name || ""}
+                onChange={(v) => setForm({ ...form, Name: v })}
+              />
+              <Input
+                label="Email"
+                value={form.Email || ""}
+                onChange={(v) => setForm({ ...form, Email: v })}
+              />
+              <Input
+                label="Phone"
+                value={form.Phone || ""}
+                onChange={(v) => setForm({ ...form, Phone: v })}
+              />
+              <Input
+                label="Company"
+                value={form.Company || ""}
+                onChange={(v) => setForm({ ...form, Company: v })}
+              />
+              <Input
+                label="Source"
+                value={form.Source || ""}
+                onChange={(v) => setForm({ ...form, Source: v })}
+              />
               <div>
-                <label className="text-xs text-neutral-600 dark:text-neutral-400">Status</label>
+                <label className="text-xs text-neutral-600 dark:text-neutral-400">
+                  Status
+                </label>
                 <select
                   value={(form["Status"] as string) || "new"}
                   onChange={(e) => setForm({ ...form, Status: e.target.value })}
@@ -436,7 +577,9 @@ function NewLead({ onCreate }: { onCreate: (payload: Partial<Lead>) => void }) {
                 </select>
               </div>
               <div className="md:col-span-2">
-                <label className="text-xs text-neutral-600 dark:text-neutral-400">Notes</label>
+                <label className="text-xs text-neutral-600 dark:text-neutral-400">
+                  Notes
+                </label>
                 <textarea
                   value={form.Notes || ""}
                   onChange={(e) => setForm({ ...form, Notes: e.target.value })}
@@ -446,7 +589,10 @@ function NewLead({ onCreate }: { onCreate: (payload: Partial<Lead>) => void }) {
               </div>
             </div>
             <div className="mt-5 flex justify-end gap-2">
-              <button onClick={() => setOpen(false)} className="rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm font-medium dark:border-neutral-700 dark:bg-neutral-800">
+              <button
+                onClick={() => setOpen(false)}
+                className="rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm font-medium dark:border-neutral-700 dark:bg-neutral-800"
+              >
                 Cancel
               </button>
               <button
@@ -463,7 +609,14 @@ function NewLead({ onCreate }: { onCreate: (payload: Partial<Lead>) => void }) {
                   };
                   onCreate(payload);
                   setOpen(false);
-                  setForm({ Name: "", Email: "", Phone: "", Company: "", Source: "", Notes: "" });
+                  setForm({
+                    Name: "",
+                    Email: "",
+                    Phone: "",
+                    Company: "",
+                    Source: "",
+                    Notes: "",
+                  });
                 }}
                 className="rounded-lg bg-brand-600 px-3 py-2 text-sm font-semibold text-white hover:bg-brand-700 active:bg-brand-800"
               >
@@ -477,14 +630,28 @@ function NewLead({ onCreate }: { onCreate: (payload: Partial<Lead>) => void }) {
   );
 }
 
-function LeadsTable({ columns, leads, team, onUpdate, onDelete }: { columns: string[]; leads: Lead[]; team: Salesperson[]; onUpdate: (id: string, patch: Partial<Lead>) => void; onDelete: (id: string) => void }) {
+function LeadsTable({
+  columns,
+  leads,
+  team,
+  onUpdate,
+  onDelete,
+}: {
+  columns: string[];
+  leads: Lead[];
+  team: Salesperson[];
+  onUpdate: (id: string, patch: Partial<Lead>) => void;
+  onDelete: (id: string) => void;
+}) {
   return (
     <div className="mt-4 overflow-visible rounded-2xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
       <table className="min-w-full table-fixed divide-y divide-neutral-200 dark:divide-neutral-800 text-xs leading-tight">
         <thead className="bg-neutral-50/60 dark:bg-neutral-800/40">
           <tr>
             {columns.map((c, idx) => (
-              <Th key={`${c}-${idx}`} title={c}>{beautifyHeader(c)}</Th>
+              <Th key={`${c}-${idx}`} title={c}>
+                {beautifyHeader(c)}
+              </Th>
             ))}
             <Th>Status</Th>
             <Th>Owner</Th>
@@ -493,17 +660,24 @@ function LeadsTable({ columns, leads, team, onUpdate, onDelete }: { columns: str
         </thead>
         <tbody className="divide-y divide-neutral-200 dark:divide-neutral-800">
           {leads.map((l) => (
-            <tr key={l.id} className="hover:bg-neutral-50/50 dark:hover:bg-neutral-800/40">
+            <tr
+              key={l.id}
+              className="hover:bg-neutral-50/50 dark:hover:bg-neutral-800/40"
+            >
               {columns.map((c, idx) => (
                 <Td key={`${l.id}-${c}-${idx}`}>
-                  <div className="truncate whitespace-nowrap">{(l.fields && l.fields[c]) ? l.fields[c] : "."}</div>
+                  <div className="truncate whitespace-nowrap">
+                    {l.fields && l.fields[c] ? l.fields[c] : "."}
+                  </div>
                 </Td>
               ))}
 
               <Td>
                 <select
                   value={l.status}
-                  onChange={(e) => onUpdate(l.id, { status: e.target.value as LeadStatus })}
+                  onChange={(e) =>
+                    onUpdate(l.id, { status: e.target.value as LeadStatus })
+                  }
                   className="rounded-md border border-neutral-200 bg-white px-2 py-1 text-sm dark:border-neutral-700 dark:bg-neutral-800"
                 >
                   {statusOptions.map((s) => (
@@ -516,7 +690,9 @@ function LeadsTable({ columns, leads, team, onUpdate, onDelete }: { columns: str
               <Td>
                 <select
                   value={l.ownerId || ""}
-                  onChange={(e) => onUpdate(l.id, { ownerId: e.target.value || null })}
+                  onChange={(e) =>
+                    onUpdate(l.id, { ownerId: e.target.value || null })
+                  }
                   className="w-36 rounded-md border border-neutral-200 bg-white px-2 py-1 text-xs dark:border-neutral-700 dark:bg-neutral-800"
                 >
                   <option value="">Unassigned</option>
@@ -528,7 +704,10 @@ function LeadsTable({ columns, leads, team, onUpdate, onDelete }: { columns: str
                 </select>
               </Td>
               <Td className="text-right">
-                <button onClick={() => onDelete(l.id)} className="rounded-md border border-red-200 bg-red-50 px-2 py-1 text-xs text-red-700 hover:bg-red-100 dark:border-red-900/50 dark:bg-red-950/40 dark:text-red-300">
+                <button
+                  onClick={() => onDelete(l.id)}
+                  className="rounded-md border border-red-200 bg-red-50 px-2 py-1 text-xs text-red-700 hover:bg-red-100 dark:border-red-900/50 dark:bg-red-950/40 dark:text-red-300"
+                >
                   Delete
                 </button>
               </Td>
@@ -536,7 +715,10 @@ function LeadsTable({ columns, leads, team, onUpdate, onDelete }: { columns: str
           ))}
           {leads.length === 0 && (
             <tr>
-              <Td colSpan={columns.length + 3} className="py-8 text-center text-neutral-500">
+              <Td
+                colSpan={columns.length + 3}
+                className="py-8 text-center text-neutral-500"
+              >
                 No leads yet. Sync from Google Sheets or create one.
               </Td>
             </tr>
@@ -547,23 +729,58 @@ function LeadsTable({ columns, leads, team, onUpdate, onDelete }: { columns: str
   );
 }
 
-function CellField({ lead, fieldKey, onChange }: { lead: Lead; fieldKey: string; onChange: (next: string) => void }) {
-  const [value, setValue] = useState<string>((lead.fields && (lead.fields[fieldKey] || "")) || "");
-  useEffect(() => setValue((lead.fields && (lead.fields[fieldKey] || "")) || ""), [lead.id, fieldKey, lead.fields]);
+function CellField({
+  lead,
+  fieldKey,
+  onChange,
+}: {
+  lead: Lead;
+  fieldKey: string;
+  onChange: (next: string) => void;
+}) {
+  const [value, setValue] = useState<string>(
+    (lead.fields && (lead.fields[fieldKey] || "")) || "",
+  );
+  useEffect(
+    () => setValue((lead.fields && (lead.fields[fieldKey] || "")) || ""),
+    [lead.id, fieldKey, lead.fields],
+  );
   return (
-    <div className="w-full px-2 py-1 text-xs text-neutral-800 dark:text-neutral-100 truncate">{value || "."}</div>
+    <div className="w-full px-2 py-1 text-xs text-neutral-800 dark:text-neutral-100 truncate">
+      {value || "."}
+    </div>
   );
 }
 
-function TeamSection({ team, onCreate, onUpdate, onDelete }: { team: Salesperson[]; onCreate: (p: Partial<Salesperson>) => void; onUpdate: (id: string, patch: Partial<Salesperson>) => void; onDelete: (id: string) => void }) {
+function TeamSection({
+  team,
+  onCreate,
+  onUpdate,
+  onDelete,
+}: {
+  team: Salesperson[];
+  onCreate: (p: Partial<Salesperson>) => void;
+  onUpdate: (id: string, patch: Partial<Salesperson>) => void;
+  onDelete: (id: string) => void;
+}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   return (
     <div>
       <div className="rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
         <div className="flex flex-col gap-3 md:flex-row md:items-end">
-          <Input label="Name" value={name} onChange={setName} className="md:w-64" />
-          <Input label="Email" value={email} onChange={setEmail} className="md:w-64" />
+          <Input
+            label="Name"
+            value={name}
+            onChange={setName}
+            className="md:w-64"
+          />
+          <Input
+            label="Email"
+            value={email}
+            onChange={setEmail}
+            className="md:w-64"
+          />
           <button
             onClick={() => {
               if (!name.trim()) return;
@@ -589,17 +806,29 @@ function TeamSection({ team, onCreate, onUpdate, onDelete }: { team: Salesperson
           </thead>
           <tbody className="divide-y divide-neutral-200 dark:divide-neutral-800">
             {team.map((p) => (
-              <tr key={p.id} className="hover:bg-neutral-50/50 dark:hover:bg-neutral-800/40">
+              <tr
+                key={p.id}
+                className="hover:bg-neutral-50/50 dark:hover:bg-neutral-800/40"
+              >
                 <Td className="font-medium">{p.name}</Td>
                 <Td>{p.email || "—"}</Td>
                 <Td>
                   <label className="inline-flex items-center gap-2 text-xs">
-                    <input type="checkbox" checked={p.active} onChange={(e) => onUpdate(p.id, { active: e.target.checked })} />
+                    <input
+                      type="checkbox"
+                      checked={p.active}
+                      onChange={(e) =>
+                        onUpdate(p.id, { active: e.target.checked })
+                      }
+                    />
                     Active
                   </label>
                 </Td>
                 <Td className="text-right">
-                  <button onClick={() => onDelete(p.id)} className="rounded-md border border-red-200 bg-red-50 px-2 py-1 text-xs text-red-700 hover:bg-red-100 dark:border-red-900/50 dark:bg-red-950/40 dark:text-red-300">
+                  <button
+                    onClick={() => onDelete(p.id)}
+                    className="rounded-md border border-red-200 bg-red-50 px-2 py-1 text-xs text-red-700 hover:bg-red-100 dark:border-red-900/50 dark:bg-red-950/40 dark:text-red-300"
+                  >
                     Remove
                   </button>
                 </Td>
@@ -619,10 +848,22 @@ function TeamSection({ team, onCreate, onUpdate, onDelete }: { team: Salesperson
   );
 }
 
-function Input({ label, value, onChange, className }: { label: string; value: string; onChange: (v: string) => void; className?: string }) {
+function Input({
+  label,
+  value,
+  onChange,
+  className,
+}: {
+  label: string;
+  value: string;
+  onChange: (v: string) => void;
+  className?: string;
+}) {
   return (
     <div className={className}>
-      <label className="text-xs text-neutral-600 dark:text-neutral-400">{label}</label>
+      <label className="text-xs text-neutral-600 dark:text-neutral-400">
+        {label}
+      </label>
       <input
         value={value}
         onChange={(e) => onChange(e.target.value)}
@@ -632,16 +873,35 @@ function Input({ label, value, onChange, className }: { label: string; value: st
   );
 }
 
-function Th({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+function Th({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
   return (
-    <th className={`px-2 py-2 align-top text-left text-xs font-semibold uppercase tracking-wider text-neutral-600 dark:text-neutral-400 max-w-[160px] border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900 ${className}`}>
+    <th
+      className={`px-2 py-2 align-top text-left text-xs font-semibold uppercase tracking-wider text-neutral-600 dark:text-neutral-400 max-w-[160px] border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900 ${className}`}
+    >
       <div className="whitespace-normal break-words">{children}</div>
     </th>
   );
 }
-function Td({ children, className = "", colSpan }: { children: React.ReactNode; className?: string; colSpan?: number }) {
+function Td({
+  children,
+  className = "",
+  colSpan,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  colSpan?: number;
+}) {
   return (
-    <td colSpan={colSpan} className={`px-2 py-2 align-top text-xs truncate max-w-[160px] border border-neutral-200 dark:border-neutral-700 ${className}`}>
+    <td
+      colSpan={colSpan}
+      className={`px-2 py-2 align-top text-xs truncate max-w-[160px] border border-neutral-200 dark:border-neutral-700 ${className}`}
+    >
       {children}
     </td>
   );

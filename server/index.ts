@@ -3,8 +3,18 @@ import express from "express";
 import cors from "cors";
 import { handleDemo } from "./routes/demo";
 import { getLeads, postLead, putLead, deleteLeadHandler } from "./routes/leads";
-import { getSalespersons, postSalesperson, putSalesperson, deleteSalespersonHandler } from "./routes/salespersons";
-import { getConfig, updateConfig, importSheet, assignLeads } from "./routes/sheets";
+import {
+  getSalespersons,
+  postSalesperson,
+  putSalesperson,
+  deleteSalespersonHandler,
+} from "./routes/salespersons";
+import {
+  getConfig,
+  updateConfig,
+  importSheet,
+  assignLeads,
+} from "./routes/sheets";
 
 import { startSheetSync } from "./scheduler";
 

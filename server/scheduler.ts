@@ -1,4 +1,9 @@
-import { getState, parseCSV, importFromCsvRows, saveConfig } from "./services/crm";
+import {
+  getState,
+  parseCSV,
+  importFromCsvRows,
+  saveConfig,
+} from "./services/crm";
 
 async function runOnce() {
   try {
@@ -13,7 +18,12 @@ async function runOnce() {
     const headers = parsed.headers;
     const changed = await importFromCsvRows(rows, headers);
     if (changed.imported > 0 || changed.updated > 0 || changed.assigned > 0) {
-      await saveConfig({ ...state.config, lastSyncAt: new Date().toISOString(), sheetUrl, headers });
+      await saveConfig({
+        ...state.config,
+        lastSyncAt: new Date().toISOString(),
+        sheetUrl,
+        headers,
+      });
     }
   } catch {
     // ignore background errors

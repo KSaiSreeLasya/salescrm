@@ -8,10 +8,12 @@ async function runOnce() {
     const res = await fetch(sheetUrl);
     if (!res.ok) return;
     const csv = await res.text();
-    const rows = parseCSV(csv);
-    const changed = await importFromCsvRows(rows);
+    const parsed = parseCSV(csv);
+    const rows = parsed.rows;
+    const headers = parsed.headers;
+    const changed = await importFromCsvRows(rows, headers);
     if (changed.imported > 0 || changed.updated > 0 || changed.assigned > 0) {
-      await saveConfig({ ...state.config, lastSyncAt: new Date().toISOString(), sheetUrl });
+      await saveConfig({ ...state.config, lastSyncAt: new Date().toISOString(), sheetUrl, headers });
     }
   } catch {
     // ignore background errors

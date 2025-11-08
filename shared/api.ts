@@ -13,6 +13,8 @@ export type LeadStatus =
   | "advance payment"
   | "lead finished"
   | "contacted"
+  | "not connected"
+  | "voice mail"
   | "qualified"
   | "won"
   | "lost";

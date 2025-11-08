@@ -115,28 +115,74 @@ export async function getState(): Promise<CRMState> {
   return { leads, salespersons, config };
 }
 
+function getFieldValue(fields: Record<string, string | undefined>, candidates: string[]) {
+  for (const c of candidates) {
+    if (!c) continue;
+    if (fields[c] !== undefined && fields[c] !== null && String(fields[c]).trim() !== "") return String(fields[c]);
+  }
+  return undefined;
+}
+
+function sanitizeKey(k?: string) {
+  if (!k) return '';
+  return k.replace(/[^a-z0-9]+/gi, '_').replace(/^_+|_+$/g, '').toLowerCase();
+}
+
 async function saveLeads(leads: Lead[]) {
   if (hasSupabase()) {
     try {
       // Upsert each lead individually (simple and robust)
       for (const l of leads) {
-        const body = {
+        const fields = l.fields || {};
+        // candidates mapping - check common header variations
+        const whatType = getFieldValue(fields, [
+          'what_type_of_property_do_you_want_to_install_solar_on?',
+          'what_type_of_property',
+          'what type of property do you want to install solar on?',
+          'property_type',
+        ]);
+        const avgBill = getFieldValue(fields, [
+          'what_is_your_average_monthly_electricity_bill?',
+          'average_monthly_bill',
+          'what is your average monthly electricity bill?',
+        ]);
+        const fullName = getFieldValue(fields, ['full name', 'Full Name', 'name', 'Name']);
+        const phoneField = getFieldValue(fields, ['phone', 'Phone', 'mobile', 'Mobile']);
+        const emailField = getFieldValue(fields, ['email', 'Email', 'e-mail', 'E-mail']);
+        const street = getFieldValue(fields, ['street address', 'street_address', 'Street Address']);
+        const postCode = getFieldValue(fields, ['post_code', 'post code', 'Post Code']);
+        const leadStatusField = getFieldValue(fields, ['lead_status', 'Lead Status', 'lead status', 'status']);
+        const note1 = getFieldValue(fields, ['note1', 'note 1', '']);
+        const note2 = getFieldValue(fields, ['note2', 'note 2', '']);
+
+        const body: any = {
           id: l.id,
-          fields: l.fields || {},
-          name: l.name,
-          email: l.email || null,
-          phone: l.phone || null,
+          fields: fields || {},
+          name: l.name || fullName || null,
+          email: l.email || emailField || null,
+          phone: l.phone || phoneField || null,
           company: l.company || null,
           source: l.source || null,
-          status: l.status,
+          status: l.status || (leadStatusField as LeadStatus) || 'new',
           ownerId: l.ownerId || null,
           notes: l.notes || null,
           createdAt: l.createdAt,
           updatedAt: l.updatedAt,
         };
+
+        // add top-level sheet columns if available (these columns should exist in DB schema)
+        if (whatType) body.what_type_of_property = whatType;
+        if (avgBill) body.average_monthly_bill = avgBill;
+        if (fullName) body.full_name = fullName;
+        if (street) body.street_address = street;
+        if (postCode) body.post_code = postCode;
+        if (note1) body.note1 = note1;
+        if (note2) body.note2 = note2;
+        if (leadStatusField) body.lead_status = leadStatusField;
+
         // upsert via POST with on_conflict requires query param ?on_conflict=id
-        await supabaseFetch("leads?on_conflict=id", {
-          method: "POST",
+        await supabaseFetch('leads?on_conflict=id', {
+          method: 'POST',
           body: JSON.stringify(body),
         });
       }

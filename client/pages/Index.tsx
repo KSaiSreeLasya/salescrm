@@ -53,20 +53,61 @@ export default function Index() {
 
   const columns = useMemo(() => {
     const cfgHeaders = configQ.data?.headers;
-    if (cfgHeaders && cfgHeaders.length) return cfgHeaders;
     const items = leadsQ.data?.items || [];
-    const seen = new Set<string>();
-    const cols: string[] = [];
-    for (const l of items) {
-      const keys = Object.keys(l.fields || {});
-      for (const k of keys) {
-        if (!seen.has(k)) {
-          seen.add(k);
-          cols.push(k);
+    const headers: string[] = cfgHeaders && cfgHeaders.length
+      ? [...cfgHeaders]
+      : (() => {
+          const seen = new Set<string>();
+          const cols: string[] = [];
+          for (const l of items) {
+            const keys = Object.keys(l.fields || {});
+            for (const k of keys) {
+              if (!seen.has(k)) {
+                seen.add(k);
+                cols.push(k);
+              }
+            }
+          }
+          return cols;
+        })();
+
+    // detect date-like header name
+    const nameMatch = headers.find((h) => /date|created|timestamp|time/i.test(h));
+
+    // if no header name match, detect by scanning values for date-like pattern
+    const dateLike = (v: string) => {
+      if (!v) return false;
+      const t = v.trim();
+      // common formats: 04-11-2025, 2025-11-04, 04/11/2025, Nov 4 2025
+      return /^(\d{1,4}[-\/]\d{1,2}[-\/]\d{1,4})$/.test(t) || /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\b/i.test(t) || /^\d{1,2}[- ]?(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(t);
+    };
+
+    let valueMatch: string | undefined;
+    if (!nameMatch && items.length > 0) {
+      // check first 10 rows for which column has many date-like values
+      const counts: Record<string, number> = {};
+      for (let i = 0; i < Math.min(10, items.length); i++) {
+        const row = items[i].fields || {};
+        for (const h of headers) {
+          const v = (row[h] || "").toString();
+          if (dateLike(v)) counts[h] = (counts[h] || 0) + 1;
         }
       }
+      // choose header with highest count > 0
+      const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+      if (sorted.length > 0 && sorted[0][1] > 0) valueMatch = sorted[0][0];
     }
-    return cols;
+
+    const dateHeader = nameMatch || valueMatch;
+    if (dateHeader) {
+      const idx = headers.findIndex((h) => h === dateHeader);
+      if (idx > -1) {
+        headers.splice(idx, 1);
+        headers.unshift(dateHeader);
+      }
+    }
+
+    return headers;
   }, [configQ.data?.headers, leadsQ.data?.items]);
 
   const filteredLeads = useMemo(() => {

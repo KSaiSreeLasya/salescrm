@@ -192,6 +192,20 @@ export async function importFromCsvRows(rows: Record<string, string>[], headers?
   const now = new Date().toISOString();
 
   for (const r of rows) {
+    // Skip rows that are empty or look like date separators / totals
+    const values = Object.values(r).map((v) => (v ?? "").toString().trim());
+    const nonEmpty = values.filter((v) => v !== "");
+    if (nonEmpty.length === 0) continue;
+
+    // heuristics: skip rows with a single non-empty cell that looks like a date, month label, total, or numeric sum
+    if (nonEmpty.length === 1) {
+      const v = nonEmpty[0];
+      const dateLike = /^\d{1,2}[\-/] \d{1,2}[\-/] \d{2,4}$/.test(v) || /^\d{1,2}[\-/]\d{1,2}[\-/]\d{2,4}$/.test(v) || /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(v);
+      const totalLike = /^sum|^total|^subtotal/i.test(v);
+      const numericOnly = /^[-+]?\d{1,3}(?:[\,\d]*)(?:\.\d+)?$/.test(v.replace(/\s+/g, ""));
+      if (dateLike || totalLike || numericOnly) continue;
+    }
+
     const name = r["name"] || r["Name"] || r["full_name"] || r["Full Name"] || r["lead_name"] || "";
     const email = (r["email"] || r["Email"] || r["e-mail"] || r["E-mail"] || "").trim() || undefined;
     const phoneRaw = (r["phone"] || r["Phone"] || r["mobile"] || r["Mobile"] || "").trim();

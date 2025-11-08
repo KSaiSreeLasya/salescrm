@@ -592,7 +592,7 @@ function Th({ children, className = "" }: { children: React.ReactNode; className
 }
 function Td({ children, className = "", colSpan }: { children: React.ReactNode; className?: string; colSpan?: number }) {
   return (
-    <td colSpan={colSpan} className={`px-4 py-3 text-sm ${className}`}>
+    <td colSpan={colSpan} className={`px-4 py-3 align-top text-sm whitespace-normal break-words ${className}`}>
       {children}
     </td>
   );

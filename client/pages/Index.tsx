@@ -584,7 +584,11 @@ function Input({ label, value, onChange, className }: { label: string; value: st
 }
 
 function Th({ children, className = "" }: { children: React.ReactNode; className?: string }) {
-  return <th className={`px-4 py-3 text-left text-xs font-semibold uppercase tracking-wider text-neutral-600 dark:text-neutral-400 ${className}`}>{children}</th>;
+  return (
+    <th className={`px-4 py-3 align-top text-left text-xs font-semibold uppercase tracking-wider text-neutral-600 dark:text-neutral-400 ${className}`}>
+      <div className="whitespace-normal break-words">{children}</div>
+    </th>
+  );
 }
 function Td({ children, className = "", colSpan }: { children: React.ReactNode; className?: string; colSpan?: number }) {
   return (

@@ -685,13 +685,25 @@ function LeadsTable({
               key={l.id}
               className="hover:bg-neutral-50/50 dark:hover:bg-neutral-800/40"
             >
-              {columns.map((c, idx) => (
-                <Td key={`${l.id}-${c}-${idx}`}>
-                  <div className="truncate whitespace-nowrap">
-                    {l.fields && l.fields[c] ? l.fields[c] : "."}
-                  </div>
-                </Td>
-              ))}
+              {columns.map((c, idx) => {
+                const raw = (l.fields && (l.fields[c] || "")) || "";
+                const keyNorm = (c || "").toLowerCase();
+                const isEditableField =
+                  keyNorm.includes("note") ||
+                  (keyNorm.includes("lead") && keyNorm.includes("status"));
+                return (
+                  <Td key={`${l.id}-${c}-${idx}`}>
+                    {isEditableField ? (
+                      <EditableCell
+                        leadValue={raw}
+                        onSave={(next) => onUpdate(l.id, { fields: { [c]: next } })}
+                      />
+                    ) : (
+                      <div className="truncate whitespace-nowrap">{raw || "."}</div>
+                    )}
+                  </Td>
+                );
+              })}
 
               <Td>
                 <select
@@ -747,6 +759,28 @@ function LeadsTable({
         </tbody>
       </table>
     </div>
+  );
+}
+
+function EditableCell({
+  leadValue,
+  onSave,
+}: {
+  leadValue?: string;
+  onSave: (next: string) => void;
+}) {
+  const [value, setValue] = useState<string>(leadValue || "");
+  useEffect(() => setValue(leadValue || ""), [leadValue]);
+  return (
+    <input
+      value={value}
+      onChange={(e) => setValue(e.target.value)}
+      onBlur={() => onSave(value)}
+      onKeyDown={(e) => {
+        if (e.key === "Enter") (e.target as HTMLElement).blur();
+      }}
+      className="w-full truncate rounded-md border border-neutral-200 bg-white px-2 py-1 text-xs dark:border-neutral-700 dark:bg-neutral-800"
+    />
   );
 }
 

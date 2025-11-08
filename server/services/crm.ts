@@ -88,16 +88,25 @@ export async function deleteSalesperson(id: string) {
 
 export async function createLead(input: Partial<Lead>) {
   const now = new Date().toISOString();
+  const fields = input.fields || {
+    Name: input.name || "",
+    Email: input.email,
+    Phone: input.phone,
+    Company: input.company,
+    Source: input.source,
+    Notes: input.notes,
+  };
   const lead: Lead = {
     id: randomUUID(),
-    name: input.name || "",
-    email: input.email,
-    phone: input.phone,
-    company: input.company,
-    source: input.source,
+    name: input.name || (fields["Name"] || "")!,
+    email: input.email || (fields["Email"] as string | undefined),
+    phone: input.phone || (fields["Phone"] as string | undefined),
+    company: input.company || (fields["Company"] as string | undefined),
+    source: input.source || (fields["Source"] as string | undefined),
     status: (input.status as LeadStatus) || "new",
     ownerId: input.ownerId || null,
-    notes: input.notes,
+    notes: input.notes || (fields["Notes"] as string | undefined),
+    fields: fields,
     createdAt: now,
     updatedAt: now,
   };
@@ -110,9 +119,17 @@ export async function updateLead(id: string, patch: Partial<Lead>) {
   const state = await getState();
   const idx = state.leads.findIndex((l) => l.id === id);
   if (idx === -1) return null;
+  const current = state.leads[idx];
+  const mergedFields = { ...current.fields, ...(patch.fields || {}) };
   const updated: Lead = {
-    ...state.leads[idx],
+    ...current,
     ...patch,
+    fields: mergedFields,
+    name: (patch.name as string) || mergedFields["Name"] || current.name,
+    email: (patch.email as string) || mergedFields["Email"] || current.email,
+    phone: (patch.phone as string) || mergedFields["Phone"] || current.phone,
+    company: (patch.company as string) || mergedFields["Company"] || current.company,
+    notes: (patch.notes as string) || mergedFields["Notes"] || current.notes,
     updatedAt: new Date().toISOString(),
   };
   state.leads[idx] = updated;

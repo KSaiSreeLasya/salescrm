@@ -510,7 +510,7 @@ function CellField({ lead, fieldKey, onChange }: { lead: Lead; fieldKey: string;
   const [value, setValue] = useState<string>((lead.fields && (lead.fields[fieldKey] || "")) || "");
   useEffect(() => setValue((lead.fields && (lead.fields[fieldKey] || "")) || ""), [lead.id, fieldKey, lead.fields]);
   return (
-    <div className="w-full px-2 py-1 text-xs text-neutral-800 dark:text-neutral-100 whitespace-nowrap overflow-hidden text-ellipsis">{value || "."}</div>
+    <div className="w-full px-2 py-1 text-xs text-neutral-800 dark:text-neutral-100 truncate">{value || "."}</div>
   );
 }
 

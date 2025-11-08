@@ -149,12 +149,32 @@ export default function Index() {
           );
         })
       : src;
+
     const byStatus =
       statusFilter === "all"
         ? byText
         : byText.filter((l) => l.status === statusFilter);
-    return byStatus;
-  }, [leadsQ.data?.items, search, statusFilter]);
+
+    // Remove rows that are empty or contain only the detected date column
+    const dateKey = columns && columns.length ? columns[0] : undefined;
+    const cleaned = byStatus.filter((l) => {
+      const fields = l.fields || {};
+      const nonEmptyKeys = Object.keys(fields).filter((k) => {
+        const v = fields[k];
+        return v !== undefined && v !== null && String(v).trim() !== "";
+      });
+
+      // skip fully empty rows
+      if (nonEmptyKeys.length === 0) return false;
+
+      // skip rows where the only non-empty cell is the date column
+      if (dateKey && nonEmptyKeys.length === 1 && nonEmptyKeys[0] === dateKey) return false;
+
+      return true;
+    });
+
+    return cleaned;
+  }, [leadsQ.data?.items, search, statusFilter, columns]);
 
   const kpis = useMemo(() => {
     const items = leadsQ.data?.items || [];

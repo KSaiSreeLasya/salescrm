@@ -501,7 +501,7 @@ function CellField({ lead, fieldKey, onChange }: { lead: Lead; fieldKey: string;
       value={value}
       onChange={(e) => setValue(e.target.value)}
       onBlur={() => onChange(value)}
-      className="w-full rounded-md border border-neutral-200 bg-white px-2 py-1 text-sm dark:border-neutral-700 dark:bg-neutral-800"
+      className="w-full rounded-md border border-neutral-200 bg-white px-2 py-1 text-sm dark:border-neutral-700 dark:bg-neutral-800 whitespace-normal break-words"
     />
   );
 }

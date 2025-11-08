@@ -6,6 +6,8 @@ import { getLeads, postLead, putLead, deleteLeadHandler } from "./routes/leads";
 import { getSalespersons, postSalesperson, putSalesperson, deleteSalespersonHandler } from "./routes/salespersons";
 import { getConfig, updateConfig, importSheet, assignLeads } from "./routes/sheets";
 
+import { startSheetSync } from "./scheduler";
+
 export function createServer() {
   const app = express();
 
@@ -37,6 +39,9 @@ export function createServer() {
   app.put("/api/config", updateConfig);
   app.post("/api/import-sheet", importSheet);
   app.post("/api/assign-leads", assignLeads);
+
+  // Background sync
+  startSheetSync();
 
   return app;
 }

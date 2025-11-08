@@ -928,10 +928,12 @@
       "street address": "Uddamarri",
       "post_code": "500078",
       "lead_status": "power bill 2000",
-      "": ""
+      "": "",
+      "note1": "",
+      "note2": ""
     },
     "createdAt": "2025-11-08T05:58:29.249Z",
-    "updatedAt": "2025-11-08T06:32:35.673Z"
+    "updatedAt": "2025-11-08T06:34:07.907Z"
   },
   {
     "id": "4c48ee86-031a-4140-b550-fdd81a6634b6",

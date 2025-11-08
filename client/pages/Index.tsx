@@ -664,6 +664,7 @@ function LeadsTable({
   onUpdate: (id: string, patch: Partial<Lead>) => void;
   onDelete: (id: string) => void;
 }) {
+  const extraNotes = columns.some((c) => c.label.toLowerCase().startsWith("note ")) ? 0 : 2;
   return (
     <div className="mt-4 overflow-visible rounded-2xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
       <table className="min-w-full table-fixed divide-y divide-neutral-200 dark:divide-neutral-800 text-xs leading-tight">
@@ -675,8 +676,12 @@ function LeadsTable({
               </Th>
             ))}
             <Th>Status</Th>
-            <Th>Note 1</Th>
-            <Th>Note 2</Th>
+            {extraNotes > 0 && (
+              <>
+                <Th>Note 1</Th>
+                <Th>Note 2</Th>
+              </>
+            )}
             <Th>Owner</Th>
             <Th className="text-right">Actions</Th>
           </tr>
@@ -723,19 +728,23 @@ function LeadsTable({
                 </select>
               </Td>
 
-              <Td>
-                <EditableCell
-                  leadValue={l.fields && (l.fields["note1"] || "")}
-                  onSave={(next) => onUpdate(l.id, { fields: { ["note1"]: next } })}
-                />
-              </Td>
+              {extraNotes > 0 ? (
+                <>
+                  <Td>
+                    <EditableCell
+                      leadValue={l.fields && (l.fields["note1"] || "")}
+                      onSave={(next) => onUpdate(l.id, { fields: { ["note1"]: next } })}
+                    />
+                  </Td>
 
-              <Td>
-                <EditableCell
-                  leadValue={l.fields && (l.fields["note2"] || "")}
-                  onSave={(next) => onUpdate(l.id, { fields: { ["note2"]: next } })}
-                />
-              </Td>
+                  <Td>
+                    <EditableCell
+                      leadValue={l.fields && (l.fields["note2"] || "")}
+                      onSave={(next) => onUpdate(l.id, { fields: { ["note2"]: next } })}
+                    />
+                  </Td>
+                </>
+              ) : null}
 
               <Td>
                 <select
@@ -766,7 +775,7 @@ function LeadsTable({
           {leads.length === 0 && (
             <tr>
               <Td
-                colSpan={columns.length + 5}
+                colSpan={columns.length + 3 + extraNotes}
                 className="py-8 text-center text-neutral-500"
               >
                 No leads yet. Sync from Google Sheets or create one.

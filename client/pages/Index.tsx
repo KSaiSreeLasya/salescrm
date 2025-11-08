@@ -19,6 +19,7 @@ const statusOptions: { value: LeadStatus; label: string }[] = [
 // Make headers human readable e.g. 'full_name' -> 'Full Name'
 function beautifyHeader(h?: string) {
   if (!h) return "";
+  if (h === "__contact__") return "Contact";
   return h
     .replace(/[_\-]+/g, " ")
     .replace(/\s+/g, " ")

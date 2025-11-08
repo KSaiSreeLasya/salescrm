@@ -436,7 +436,7 @@ function NewLead({ onCreate }: { onCreate: (payload: Partial<Lead>) => void }) {
   );
 }
 
-function LeadsTable({ columns, contactKeys, leads, team, onUpdate, onDelete }: { columns: string[]; contactKeys?: { nameKey?: string; phoneKey?: string; postKey?: string }; leads: Lead[]; team: Salesperson[]; onUpdate: (id: string, patch: Partial<Lead>) => void; onDelete: (id: string) => void }) {
+function LeadsTable({ columns, leads, team, onUpdate, onDelete }: { columns: string[]; leads: Lead[]; team: Salesperson[]; onUpdate: (id: string, patch: Partial<Lead>) => void; onDelete: (id: string) => void }) {
   return (
     <div className="mt-4 overflow-x-auto rounded-2xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
       <table className="min-w-full table-auto divide-y divide-neutral-200 dark:divide-neutral-800 text-xs leading-tight">

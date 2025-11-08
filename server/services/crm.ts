@@ -45,7 +45,20 @@ export async function saveConfig(config: ConfigState) {
 
 export async function listLeads(): Promise<Lead[]> {
   const { leads } = await getState();
-  return leads.sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+  const filtered = leads.filter((l) => {
+    const vals = Object.values(l.fields || {}).map((v) => (v || "").toString().trim());
+    const nonEmpty = vals.filter((v) => v !== "");
+    if (nonEmpty.length === 0) return false;
+    if (nonEmpty.length === 1) {
+      const v = nonEmpty[0];
+      const dateLike = /^\d{1,2}[\-/]\d{1,2}[\-/]\d{2,4}$/.test(v) || /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(v);
+      const totalLike = /^sum|^total|^subtotal/i.test(v);
+      const numericOnly = /^[-+]?\d{1,3}(?:[\,\d]*)(?:\.\d+)?$/.test(v.replace(/\s+/g, ""));
+      if (dateLike || totalLike || numericOnly) return false;
+    }
+    return true;
+  });
+  return filtered.sort((a, b) => b.createdAt.localeCompare(a.createdAt));
 }
 
 export async function listSalespersons(): Promise<Salesperson[]> {

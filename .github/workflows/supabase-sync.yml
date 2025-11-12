@@ -16,6 +16,7 @@ jobs:
         env:
           SUPABASE_FUNCTION_URL: ${{ secrets.SUPABASE_FUNCTION_URL }}
           SHEET_CSV_URL: ${{ secrets.SHEET_CSV_URL }}
+          SYNC_TOKEN: ${{ secrets.SYNC_TOKEN }}
         run: |
           set -euo pipefail
           if [ -z "${SUPABASE_FUNCTION_URL:-}" ]; then
@@ -29,7 +30,7 @@ jobs:
           attempt=1
           while [ $attempt -le $max_retries ]; do
             echo "Attempt $attempt/$max_retries"
-            resp=$(curl -sS -w "HTTPSTATUS:%{http_code}" -X POST "$SUPABASE_FUNCTION_URL" -H 'Content-Type: application/json' -d "{\"sheet_url\": \"${SHEET_CSV_URL:-}\"}") || true
+            resp=$(curl -sS -w "HTTPSTATUS:%{http_code}" -X POST "$SUPABASE_FUNCTION_URL" -H 'Content-Type: application/json' -H "x-sync-token: ${SYNC_TOKEN:-}" -d "{\"sheet_url\": \"${SHEET_CSV_URL:-}\"}") || true
             body=$(echo "$resp" | sed -e 's/HTTPSTATUS:.*//g')
             status=$(echo "$resp" | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
 

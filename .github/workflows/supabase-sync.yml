@@ -1,22 +1,33 @@
 name: Sync Google Sheet to Supabase
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *' # every 5 minutes
-  workflow_dispatch: {}
+    - cron: '*/30 * * * *'
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run sync script
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Patch Supabase config (sheet URL, last sync, headers)
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-          SHEET_CSV_URL: ${{ secrets.SHEET_CSV_URL }}
+        run: node patch-config-to-supabase.js
+
+      - name: Trigger Supabase sync function
+        env:
+          FUNC_URL: ${{ secrets.SUPABASE_FUNCTION_URL }}
         run: |
-          sudo npm i -g node-fetch@2
-          node -e "(async()=>{const fetch=require('node-fetch');const SUPABASE_URL=process.env.SUPABASE_URL;const KEY=process.env.SUPABASE_SERVICE_ROLE_KEY;const SHEET=process.env.SHEET_CSV_URL; if(!SUPABASE_URL||!KEY||!SHEET){console.error('Missing env');process.exit(1);}const res=await fetch(SHEET);if(!res.ok){console.error('sheet fetch failed',res.status);process.exit(1);}const csv=await res.text();function parseCSV(text){const rows=text.split(/\r?\n/).filter(Boolean);const headers=rows[0].split(',').map(h=>h.trim());return rows.slice(1).map(l=>{const cols=l.split(',');const o={};for(let i=0;i<headers.length;i++){o[headers[i]]=cols[i]??'';}return o;});}const rows=parseCSV(csv);const chunk=(a,s)=>{const o=[];for(let i=0;i<a.length;i+=s)o.push(a.slice(i,i+s));return o;};for(const ch of chunk(rows,100)){const payload=ch.map(r=>{const id=r.id||(crypto.randomUUID?crypto.randomUUID():require('crypto').randomBytes(16).toString('hex'));const fields={...r};delete fields.id;return {id,fields,name:r['Full Name']||r['Name']||null,email:r['Email']||null,phone:r['Phone']||null,company:r['Company']||null,source:r['Source']||null,status:r['Lead Status']||r['Status']||'new',owner_id:null,notes:r['Notes']||null,created_at:new Date().toISOString(),updated_at:new Date().toISOString()};} );const url=`${SUPABASE_URL.replace(/\/+$/,'')}/rest/v1/leads?on_conflict=id`;const r=await fetch(url,{method:'POST',headers:{apikey:KEY,Authorization:`Bearer ${KEY}`,'Content-Type':'application/json',Prefer:'resolution=merge-duplicates'},body:JSON.stringify(payload)});if(!r.ok){console.error('upsert failed',await r.text());process.exit(1);} }console.log('sync completed');})();"
+          curl -sS -X POST "$FUNC_URL" -H 'Content-Type: application/json' -f -o /dev/null

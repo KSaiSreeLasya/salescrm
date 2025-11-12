@@ -18,8 +18,9 @@ export default async function handler(req: Request) {
   // allow override via POST body { sheet_url }
   let sheetUrl: string | undefined;
   try {
-    const body = await req.json().catch(() => ({}));
-    sheetUrl = body?.sheet_url || body?.sheetUrl || undefined;
+    const body = await req.json().catch(() => ({} as Record<string, unknown>));
+    // accept both camel and snake
+    sheetUrl = (body?.sheet_url as string) || (body?.sheetUrl as string) || undefined;
   } catch (e) {
     // ignore
   }
@@ -30,9 +31,9 @@ export default async function handler(req: Request) {
       headers: { apikey: KEY, Authorization: `Bearer ${KEY}` },
     });
     if (!cfgRes.ok) return new Response(`Failed to read config: ${cfgRes.status}`, { status: 502 });
-    const cfgArr = await cfgRes.json();
+    const cfgArr = await cfgRes.json().catch(() => []);
     const cfg = (cfgArr && cfgArr[0]) || {};
-    sheetUrl = cfg.sheet_url || cfg.sheetUrl || undefined;
+    sheetUrl = (cfg as any).sheet_url || (cfg as any).sheetUrl || undefined;
   }
 
   if (!sheetUrl) return new Response('No sheet_url configured', { status: 400 });
@@ -97,8 +98,8 @@ export default async function handler(req: Request) {
   function ensureId(r: Record<string, string>) {
     // Use crypto.randomUUID if available, fallback to random bytes
     // @ts-ignore
-    if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') return crypto.randomUUID();
-    // Deno/Web API fallback
+    if (typeof crypto !== 'undefined' && typeof (crypto as any).randomUUID === 'function') return (crypto as any).randomUUID();
+    // Web Crypto fallback
     const a = new Uint8Array(16);
     crypto.getRandomValues(a);
     return Array.from(a).map((b) => b.toString(16).padStart(2, '0')).join('');
@@ -110,7 +111,7 @@ export default async function handler(req: Request) {
 
   if (!rows.length) {
     // update last_sync_at anyway
-    await fetch(`${SUPABASE_URL.replace(/\/+$, '')}/rest/v1/config?id=eq.1`, {
+    await fetch(`${SUPABASE_URL.replace(/\/+$/, '')}/rest/v1/config?id=eq.1`, {
       method: 'PATCH',
       headers: { apikey: KEY, Authorization: `Bearer ${KEY}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({ last_sync_at: new Date().toISOString(), headers }),
@@ -127,20 +128,20 @@ export default async function handler(req: Request) {
       return {
         id,
         fields,
-        name: r['Full Name'] || r['Name'] || null,
-        email: r['Email'] || null,
-        phone: r['Phone'] || r['phone'] || null,
-        company: r['Company'] || null,
-        source: r['Source'] || null,
-        status: r['Lead Status'] || r['Status'] || 'new',
+        name: (r as any)['Full Name'] || (r as any)['Name'] || null,
+        email: (r as any)['Email'] || null,
+        phone: (r as any)['Phone'] || (r as any)['phone'] || null,
+        company: (r as any)['Company'] || null,
+        source: (r as any)['Source'] || null,
+        status: (r as any)['Lead Status'] || (r as any)['Status'] || 'new',
         owner_id: null,
-        notes: r['Notes'] || null,
+        notes: (r as any)['Notes'] || null,
         created_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
       };
     });
 
-    const upsertRes = await fetch(`${SUPABASE_URL.replace(/\/+$, '')}/rest/v1/leads?on_conflict=id`, {
+    const upsertRes = await fetch(`${SUPABASE_URL.replace(/\/+$/, '')}/rest/v1/leads?on_conflict=id`, {
       method: 'POST',
       headers: {
         apikey: KEY,
@@ -158,7 +159,7 @@ export default async function handler(req: Request) {
   }
 
   // update config last_sync_at and headers
-  await fetch(`${SUPABASE_URL.replace(/\/+$, '')}/rest/v1/config?id=eq.1`, {
+  await fetch(`${SUPABASE_URL.replace(/\/+$/, '')}/rest/v1/config?id=eq.1`, {
     method: 'PATCH',
     headers: { apikey: KEY, Authorization: `Bearer ${KEY}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({ last_sync_at: new Date().toISOString(), headers }),

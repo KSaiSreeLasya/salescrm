@@ -37,11 +37,27 @@ function beautifyHeader(h?: string) {
 function useApi<T>(key: string[], url: string) {
   return useQuery<T>({
     queryKey: key,
+    // Make the query function robust: catch network errors and provide sensible defaults
     queryFn: async () => {
-      const r = await fetch(url);
-      if (!r.ok) throw new Error(await r.text());
-      return (await r.json()) as T;
+      try {
+        const r = await fetch(url);
+        if (!r.ok) throw new Error(await r.text());
+        return (await r.json()) as T;
+      } catch (err) {
+        // Log for debugging
+        // eslint-disable-next-line no-console
+        console.error('API fetch failed', url, err);
+        // Provide safe defaults for known endpoints to avoid breaking the UI
+        if (url.endsWith('/api/leads')) return ({ items: [], total: 0 } as unknown) as T;
+        if (url.endsWith('/api/salespersons')) return ({ items: [], total: 0 } as unknown) as T;
+        if (url.endsWith('/api/config')) return ({} as unknown) as T;
+        // rethrow otherwise so unexpected endpoints surface errors
+        throw err;
+      }
     },
+    // don't aggressively retry network failures from the browser
+    retry: false,
+    staleTime: 1000 * 30,
   });
 }
 

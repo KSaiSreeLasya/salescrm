@@ -3,7 +3,7 @@ name: Sync Google Sheet to Supabase
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   sync:
@@ -12,22 +12,38 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Patch Supabase config (sheet URL, last sync, headers)
+      - name: Trigger Supabase Edge Function (with retries and logging)
         env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        run: node patch-config-to-supabase.js
-
-      - name: Trigger Supabase sync function
-        env:
-          FUNC_URL: ${{ secrets.SUPABASE_FUNCTION_URL }}
+          SUPABASE_FUNCTION_URL: ${{ secrets.SUPABASE_FUNCTION_URL }}
+          SHEET_CSV_URL: ${{ secrets.SHEET_CSV_URL }}
         run: |
-          curl -sS -X POST "$FUNC_URL" -H 'Content-Type: application/json' -f -o /dev/null
+          set -euo pipefail
+          if [ -z "${SUPABASE_FUNCTION_URL:-}" ]; then
+            echo "Missing SUPABASE_FUNCTION_URL secret"
+            exit 1
+          fi
+
+          echo "Calling Supabase function: $SUPABASE_FUNCTION_URL"
+
+          max_retries=3
+          attempt=1
+          while [ $attempt -le $max_retries ]; do
+            echo "Attempt $attempt/$max_retries"
+            resp=$(curl -sS -w "HTTPSTATUS:%{http_code}" -X POST "$SUPABASE_FUNCTION_URL" -H 'Content-Type: application/json' -d "{\"sheet_url\": \"${SHEET_CSV_URL:-}\"}") || true
+            body=$(echo "$resp" | sed -e 's/HTTPSTATUS:.*//g')
+            status=$(echo "$resp" | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
+
+            echo "Status: $status"
+            echo "Response body: $body"
+
+            if [ "$status" -ge 200 ] && [ "$status" -lt 300 ]; then
+              echo "Sync completed successfully"
+              exit 0
+            fi
+
+            attempt=$((attempt + 1))
+            sleep 2
+          done
+
+          echo "All attempts failed"
+          exit 1

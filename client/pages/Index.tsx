@@ -37,11 +37,53 @@ function beautifyHeader(h?: string) {
 function useApi<T>(key: string[], url: string) {
   return useQuery<T>({
     queryKey: key,
+    // Make the query function robust: catch network errors and provide sensible defaults
     queryFn: async () => {
-      const r = await fetch(url);
-      if (!r.ok) throw new Error(await r.text());
-      return (await r.json()) as T;
+      try {
+        const r = await fetch(url);
+        // try to parse JSON safely even if some instrumentation (FullStory) has read the body
+        try {
+          if (!r.ok) {
+            // attempt to read text for error details
+            let errTxt = "";
+            try {
+              errTxt = await (r.clone ? r.clone().text() : r.text());
+            } catch (e) {
+              errTxt = "<body unavailable>";
+            }
+            throw new Error(errTxt || `HTTP ${r.status}`);
+          }
+          try {
+            return (await r.json()) as T;
+          } catch (e) {
+            // body might have been read by instrumentation; fall back to reading text and parsing
+            try {
+              const txt = await (r.clone ? r.clone().text() : r.text());
+              return JSON.parse(txt) as T;
+            } catch (e2) {
+              throw e; // rethrow original json parse error
+            }
+          }
+        } catch (innerErr) {
+          throw innerErr;
+        }
+      } catch (err) {
+        // Log for debugging
+        // eslint-disable-next-line no-console
+        console.error("API fetch failed", url, err);
+        // Provide safe defaults for known endpoints to avoid breaking the UI
+        if (url.endsWith("/api/leads"))
+          return { items: [], total: 0 } as unknown as T;
+        if (url.endsWith("/api/salespersons"))
+          return { items: [], total: 0 } as unknown as T;
+        if (url.endsWith("/api/config")) return {} as unknown as T;
+        // rethrow otherwise so unexpected endpoints surface errors
+        throw err;
+      }
     },
+    // don't aggressively retry network failures from the browser
+    retry: false,
+    staleTime: 1000 * 30,
   });
 }
 
@@ -84,7 +126,9 @@ export default function Index() {
           })();
 
     // detect date-like header name
-    const nameMatch = headers.find((h) => /date|created|timestamp|time/i.test(h));
+    const nameMatch = headers.find((h) =>
+      /date|created|timestamp|time/i.test(h),
+    );
 
     // if no header name match, detect by scanning values for date-like pattern
     const dateLike = (v: string) => {
@@ -93,7 +137,9 @@ export default function Index() {
       return (
         /^(\d{1,4}[-\/]\d{1,2}[-\/]\d{1,4})$/.test(t) ||
         /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\b/i.test(t) ||
-        /^\d{1,2}[- ]?(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(t)
+        /^\d{1,2}[- ]?(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(
+          t,
+        )
       );
     };
 
@@ -665,7 +711,11 @@ function LeadsTable({
   onUpdate: (id: string, patch: Partial<Lead>) => void;
   onDelete: (id: string) => void;
 }) {
-  const extraNotes = columns.some((c) => c.label.toLowerCase().startsWith("note ")) ? 0 : 2;
+  const extraNotes = columns.some((c) =>
+    c.label.toLowerCase().startsWith("note "),
+  )
+    ? 0
+    : 2;
   return (
     <div className="mt-4 overflow-visible rounded-2xl border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
       <table className="min-w-full table-fixed divide-y divide-neutral-200 dark:divide-neutral-800 text-xs leading-tight">
@@ -697,21 +747,27 @@ function LeadsTable({
                 const raw = (l.fields && (l.fields[c.key] || "")) || "";
                 const keyNorm = (c.key || "").toLowerCase();
                 const isEditableField =
-                  keyNorm.includes("note") || c.label.toLowerCase().startsWith("note ") ||
+                  keyNorm.includes("note") ||
+                  c.label.toLowerCase().startsWith("note ") ||
                   (keyNorm.includes("lead") && keyNorm.includes("status"));
                 return (
                   <Td key={`${l.id}-${c.key}-${idx}`}>
                     {isEditableField ? (
                       <EditableCell
                         leadValue={raw}
-                        onSave={(next) => onUpdate(l.id, { fields: { [c.key]: next } })}
+                        onSave={(next) =>
+                          onUpdate(l.id, { fields: { [c.key]: next } })
+                        }
                       />
                     ) : (
                       (() => {
-                        const low = (c.label || c.key || '').toLowerCase();
-                        const isWrapField = /email|street|address|post|phone|full name/.test(low);
+                        const low = (c.label || c.key || "").toLowerCase();
+                        const isWrapField =
+                          /email|street|address|post|phone|full name/.test(low);
                         return (
-                          <div className={`${isWrapField ? 'whitespace-normal break-words' : 'truncate whitespace-nowrap'}`}>
+                          <div
+                            className={`${isWrapField ? "whitespace-normal break-words" : "truncate whitespace-nowrap"}`}
+                          >
                             {raw || "."}
                           </div>
                         );
@@ -742,14 +798,18 @@ function LeadsTable({
                   <Td>
                     <EditableCell
                       leadValue={l.fields && (l.fields["note1"] || "")}
-                      onSave={(next) => onUpdate(l.id, { fields: { ["note1"]: next } })}
+                      onSave={(next) =>
+                        onUpdate(l.id, { fields: { ["note1"]: next } })
+                      }
                     />
                   </Td>
 
                   <Td>
                     <EditableCell
                       leadValue={l.fields && (l.fields["note2"] || "")}
-                      onSave={(next) => onUpdate(l.id, { fields: { ["note2"]: next } })}
+                      onSave={(next) =>
+                        onUpdate(l.id, { fields: { ["note2"]: next } })
+                      }
                     />
                   </Td>
                 </>

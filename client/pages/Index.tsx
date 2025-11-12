@@ -41,8 +41,28 @@ function useApi<T>(key: string[], url: string) {
     queryFn: async () => {
       try {
         const r = await fetch(url);
-        if (!r.ok) throw new Error(await r.text());
-        return (await r.json()) as T;
+        // try to parse JSON safely even if some instrumentation (FullStory) has read the body
+        try {
+          if (!r.ok) {
+            // attempt to read text for error details
+            let errTxt = '';
+            try { errTxt = await (r.clone ? r.clone().text() : r.text()); } catch (e) { errTxt = '<body unavailable>'; }
+            throw new Error(errTxt || `HTTP ${r.status}`);
+          }
+          try {
+            return (await r.json()) as T;
+          } catch (e) {
+            // body might have been read by instrumentation; fall back to reading text and parsing
+            try {
+              const txt = await (r.clone ? r.clone().text() : r.text());
+              return (JSON.parse(txt) as T);
+            } catch (e2) {
+              throw e; // rethrow original json parse error
+            }
+          }
+        } catch (innerErr) {
+          throw innerErr;
+        }
       } catch (err) {
         // Log for debugging
         // eslint-disable-next-line no-console

@@ -18,8 +18,11 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Supabase CLI
-        run: npm install -g supabase
+      - name: Install Supabase CLI (local)
+        run: |
+          # prefer local install to avoid global permission issues
+          npm ci --silent || true
+          npm i @supabase/cli --no-audit --no-fund --silent
 
       - name: Login to Supabase CLI
         env:
@@ -29,7 +32,7 @@ jobs:
             echo "Missing SUPABASE_ACCESS_TOKEN secret"
             exit 1
           fi
-          supabase login --access-token "$SUPABASE_ACCESS_TOKEN"
+          npx supabase login --access-token "$SUPABASE_ACCESS_TOKEN"
 
       - name: Link project
         env:
@@ -39,8 +42,8 @@ jobs:
             echo "Missing SUPABASE_PROJECT_REF secret"
             exit 1
           fi
-          supabase link --project-ref "$SUPABASE_PROJECT_REF"
+          npx supabase link --project-ref "$SUPABASE_PROJECT_REF"
 
       - name: Deploy sync-sheet function
         run: |
-          supabase functions deploy sync-sheet --project-ref "${{ secrets.SUPABASE_PROJECT_REF }}"
+          npx supabase functions deploy sync-sheet --project-ref "${{ secrets.SUPABASE_PROJECT_REF }}"

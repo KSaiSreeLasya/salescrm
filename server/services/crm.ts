@@ -194,7 +194,7 @@ export async function saveLeads(leads: Lead[]) {
   await writeJSON(FILE_LEADS, leads);
 }
 
-async function saveSalespersons(salespersons: Salesperson[]) {
+export async function saveSalespersons(salespersons: Salesperson[]) {
   if (hasSupabase()) {
     try {
       for (const s of salespersons) {

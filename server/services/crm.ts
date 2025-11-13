@@ -203,7 +203,7 @@ async function saveSalespersons(salespersons: Salesperson[]) {
           name: s.name,
           email: s.email || null,
           active: s.active,
-          createdAt: s.createdAt,
+          created_at: s.createdAt,
         };
         await supabaseFetch("salespersons?on_conflict=id", {
           method: "POST",

@@ -107,72 +107,52 @@ export default function Index() {
   const columns = useMemo(() => {
     const cfgHeaders = configQ.data?.headers;
     const items = leadsQ.data?.items || [];
-    const headers: string[] =
-      cfgHeaders && cfgHeaders.length
-        ? [...cfgHeaders]
-        : (() => {
-            const seen = new Set<string>();
-            const cols: string[] = [];
-            for (const l of items) {
-              const keys = Object.keys(l.fields || {});
-              for (const k of keys) {
-                if (!seen.has(k)) {
-                  seen.add(k);
-                  cols.push(k);
-                }
-              }
-            }
-            return cols;
-          })();
 
-    // detect date-like header name
-    const nameMatch = headers.find((h) =>
-      /date|created|timestamp|time/i.test(h),
-    );
+    let headers: string[] = cfgHeaders && cfgHeaders.length ? [...cfgHeaders] : [];
 
-    // if no header name match, detect by scanning values for date-like pattern
-    const dateLike = (v: string) => {
-      if (!v) return false;
-      const t = v.trim();
-      return (
-        /^(\d{1,4}[-\/]\d{1,2}[-\/]\d{1,4})$/.test(t) ||
-        /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\b/i.test(t) ||
-        /^\d{1,2}[- ]?(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(
-          t,
-        )
-      );
-    };
-
-    let valueMatch: string | undefined;
-    if (!nameMatch && items.length > 0) {
-      const counts: Record<string, number> = {};
-      for (let i = 0; i < Math.min(10, items.length); i++) {
-        const row = items[i].fields || {};
-        for (const h of headers) {
-          const v = (row[h] || "").toString();
-          if (dateLike(v)) counts[h] = (counts[h] || 0) + 1;
+    if (!headers.length) {
+      const seen = new Set<string>();
+      const cols: string[] = [];
+      for (const l of items) {
+        const keys = Object.keys(l.fields || {});
+        for (const k of keys) {
+          if (!seen.has(k) && k && k.trim()) {
+            seen.add(k);
+            cols.push(k);
+          }
         }
       }
-      const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
-      if (sorted.length > 0 && sorted[0][1] > 0) valueMatch = sorted[0][0];
+      headers = cols;
     }
 
-    const dateHeader = nameMatch || valueMatch;
-    if (dateHeader) {
-      const idx = headers.findIndex((h) => h === dateHeader);
-      if (idx > -1) {
-        headers.splice(idx, 1);
-        headers.unshift(dateHeader);
-      }
-    }
+    // Filter out empty column headers
+    headers = headers.filter((h) => h && h.trim());
 
-    // Map headers to column objects with display labels. Empty headers become Note 1/2.
-    let noteCount = 1;
-    const cols = headers.map((h) => {
-      let label = beautifyHeader(h);
-      if (!h || h.trim() === "") {
-        label = `Note ${noteCount++}`;
-      }
+    // Define the preferred column order
+    const preferredOrder = [
+      "full name",
+      "phone",
+      "email",
+      "street address",
+      "post_code",
+      "lead_status",
+      "what_is_your_average_monthly_electricity_bill?",
+      "what_type_of_property_do_you_want_to_install_solar_on?",
+    ];
+
+    // Sort headers by preferred order, then alphabetically for remaining
+    const ordered = headers.sort((a, b) => {
+      const aIdx = preferredOrder.indexOf(a.toLowerCase());
+      const bIdx = preferredOrder.indexOf(b.toLowerCase());
+      if (aIdx !== -1 && bIdx !== -1) return aIdx - bIdx;
+      if (aIdx !== -1) return -1;
+      if (bIdx !== -1) return 1;
+      return a.localeCompare(b);
+    });
+
+    // Map headers to column objects with display labels
+    const cols = ordered.map((h) => {
+      const label = beautifyHeader(h);
       return { key: h, label };
     });
 

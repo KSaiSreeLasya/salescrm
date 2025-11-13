@@ -128,7 +128,7 @@ function sanitizeKey(k?: string) {
   return k.replace(/[^a-z0-9]+/gi, '_').replace(/^_+|_+$/g, '').toLowerCase();
 }
 
-async function saveLeads(leads: Lead[]) {
+export async function saveLeads(leads: Lead[]) {
   if (hasSupabase()) {
     try {
       // Upsert each lead individually (simple and robust)

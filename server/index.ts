@@ -53,6 +53,7 @@ export function createServer() {
 
   // Admin-only on-demand import (requires ADMIN_TOKEN in env and header x-admin-token or Authorization: Bearer <token>)
   app.post("/api/admin/import-sheet", adminImportSheet);
+  app.post("/api/admin/migrate-to-supabase", adminMigrateToSupabase);
 
   // Background sync
   startSheetSync();

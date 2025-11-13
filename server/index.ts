@@ -15,7 +15,7 @@ import {
   importSheet,
   assignLeads,
 } from "./routes/sheets";
-import { adminImportSheet } from "./routes/admin";
+import { adminImportSheet, adminMigrateToSupabase } from "./routes/admin";
 
 import { startSheetSync } from "./scheduler";
 

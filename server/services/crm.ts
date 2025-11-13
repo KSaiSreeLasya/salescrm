@@ -47,7 +47,7 @@ async function supabaseFetch(path: string, opts: RequestInit = {}) {
 }
 
 async function supabaseListLeads(): Promise<Lead[]> {
-  const res = await supabaseFetch("leads?select=*&order=createdAt.desc");
+  const res = await supabaseFetch("leads?select=*&order=created_at.desc");
   const data = await res.json();
   // ensure types
   return (data || []).map((d: any) => ({
@@ -59,10 +59,10 @@ async function supabaseListLeads(): Promise<Lead[]> {
     company: d.company || undefined,
     source: d.source || undefined,
     status: d.status || "new",
-    ownerId: d.ownerId || null,
+    ownerId: d.owner_id || null,
     notes: d.notes || undefined,
-    createdAt: d.createdAt,
-    updatedAt: d.updatedAt,
+    createdAt: d.created_at,
+    updatedAt: d.updated_at,
   }));
 }
 

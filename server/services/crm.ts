@@ -574,25 +574,35 @@ export async function importFromCsvRows(
 
   let imported = 0;
   let updated = 0;
+  let skipped = 0;
 
   const now = new Date().toISOString();
+  const importedEmails = new Set<string>();
+  const importedPhones = new Set<string>();
 
   for (const r of rows) {
     const values = Object.values(r).map((v) => (v ?? "").toString().trim());
     const nonEmpty = values.filter((v) => v !== "");
-    if (nonEmpty.length === 0) continue;
+    if (nonEmpty.length === 0) {
+      skipped++;
+      continue;
+    }
 
     if (nonEmpty.length === 1) {
       const v = nonEmpty[0];
       const dateLike =
         /^\d{1,2}[\-/] \d{1,2}[\-/] \d{2,4}$/.test(v) ||
         /^\d{1,2}[\-/]\d{1,2}[\-/]\d{2,4}$/.test(v) ||
-        /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(v);
+        /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(v) ||
+        /^`\d{2}-\d{2}-\d{4}$/.test(v);
       const totalLike = /^sum|^total|^subtotal/i.test(v);
       const numericOnly = /^[-+]?\d{1,3}(?:[\,\d]*)(?:\.\d+)?$/.test(
         v.replace(/\s+/g, ""),
       );
-      if (dateLike || totalLike || numericOnly) continue;
+      if (dateLike || totalLike || numericOnly) {
+        skipped++;
+        continue;
+      }
     }
 
     const name =
@@ -620,11 +630,28 @@ export async function importFromCsvRows(
     const notes = r["notes"] || r["Notes"] || undefined;
 
     let existing: Lead | undefined;
-    if (email) existing = byEmail.get(email.toLowerCase());
-    if (!existing && phone) existing = byPhone.get(phone);
+    if (email && !importedEmails.has(email.toLowerCase()))
+      existing = byEmail.get(email.toLowerCase());
+    if (!existing && phone && !importedPhones.has(phone))
+      existing = byPhone.get(phone);
+
+    // Prevent duplicates within this import batch
+    if (email && importedEmails.has(email.toLowerCase())) {
+      skipped++;
+      continue;
+    }
+    if (phone && importedPhones.has(phone)) {
+      skipped++;
+      continue;
+    }
 
     const fields: Record<string, string | undefined> = {};
-    for (const k of Object.keys(r)) fields[k] = r[k] ?? undefined;
+    for (const k of Object.keys(r)) {
+      const val = r[k];
+      if (val !== null && val !== undefined && val.trim() !== "") {
+        fields[k] = val.trim();
+      }
+    }
 
     if (existing) {
       const merged: Lead = {
@@ -642,6 +669,8 @@ export async function importFromCsvRows(
       state.leads = state.leads.map((l) =>
         l.id === existing!.id ? merged : l,
       );
+      if (email) importedEmails.add(email.toLowerCase());
+      if (phone) importedPhones.add(phone);
       updated++;
     } else {
       const newLead: Lead = {
@@ -659,13 +688,15 @@ export async function importFromCsvRows(
         updatedAt: now,
       };
       state.leads.unshift(newLead);
+      if (email) importedEmails.add(email.toLowerCase());
+      if (phone) importedPhones.add(phone);
       imported++;
     }
   }
 
   await saveLeads(state.leads);
   const assigned = await assignUnassignedLeads();
-  return { imported, updated, assigned };
+  return { imported, updated, assigned, skipped };
 }
 
 export function normalizePhone(p: string) {

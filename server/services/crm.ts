@@ -84,8 +84,8 @@ async function supabaseGetConfig(): Promise<ConfigState> {
     const data = await res.json();
     const row = (data && data[0]) || {};
     return {
-      sheetUrl: row.sheetUrl || undefined,
-      lastSyncAt: row.lastSyncAt || undefined,
+      sheetUrl: row.sheet_url || undefined,
+      lastSyncAt: row.last_sync_at || undefined,
       headers: row.headers || undefined,
     };
   } catch (e) {

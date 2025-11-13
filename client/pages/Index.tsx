@@ -108,7 +108,8 @@ export default function Index() {
     const cfgHeaders = configQ.data?.headers;
     const items = leadsQ.data?.items || [];
 
-    let headers: string[] = cfgHeaders && cfgHeaders.length ? [...cfgHeaders] : [];
+    let headers: string[] =
+      cfgHeaders && cfgHeaders.length ? [...cfgHeaders] : [];
 
     if (!headers.length) {
       const seen = new Set<string>();

@@ -1,5 +1,290 @@
 [
   {
+    "id": "16d9823d-84d3-4009-85d1-87a29504dc32",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:28:10.173+00:00",
+    "updatedAt": "2025-11-13T06:28:10.173+00:00"
+  },
+  {
+    "id": "440b6698-10b9-4f6a-8cfc-0996fdf50a43",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:28:09.953+00:00",
+    "updatedAt": "2025-11-13T06:28:09.953+00:00"
+  },
+  {
+    "id": "9fc78a79-af9a-4256-8fe8-88ce44f4405e",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:27:30.152+00:00",
+    "updatedAt": "2025-11-13T06:27:30.152+00:00"
+  },
+  {
+    "id": "c1975e72-5f70-40f6-b2c5-8d97ba5c9a96",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:27:16.426+00:00",
+    "updatedAt": "2025-11-13T06:27:16.426+00:00"
+  },
+  {
+    "id": "d14ccad7-9e6e-475e-b95f-1999df8997db",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:26:02.751+00:00",
+    "updatedAt": "2025-11-13T06:26:02.751+00:00"
+  },
+  {
+    "id": "b0535a66-a518-43fe-8173-cf0eb051e445",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:23:10.208+00:00",
+    "updatedAt": "2025-11-13T06:23:10.208+00:00"
+  },
+  {
+    "id": "eb922b62-c006-44b3-8549-e9cf8922ff22",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:23:10.155+00:00",
+    "updatedAt": "2025-11-13T06:23:10.155+00:00"
+  },
+  {
+    "id": "e127c87e-191d-405f-ba01-a8b61ccdaf0a",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:22:30.165+00:00",
+    "updatedAt": "2025-11-13T06:22:30.165+00:00"
+  },
+  {
+    "id": "fab8c3a5-7b95-4fdb-81d1-3349652d2066",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:21:02.796+00:00",
+    "updatedAt": "2025-11-13T06:21:02.796+00:00"
+  },
+  {
+    "id": "436f090c-1979-47f1-88eb-26724bb941e6",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:18:15.255+00:00",
+    "updatedAt": "2025-11-13T06:18:15.255+00:00"
+  },
+  {
+    "id": "c4c8421b-735d-443a-bf38-f6a603d77201",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:18:15.021+00:00",
+    "updatedAt": "2025-11-13T06:18:15.021+00:00"
+  },
+  {
+    "id": "cf27d1e3-846d-4dcf-b8cf-d8d5940f418f",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:17:35.295+00:00",
+    "updatedAt": "2025-11-13T06:17:35.295+00:00"
+  },
+  {
+    "id": "4ef69d3b-b15b-4bf3-b96f-9472a048af6e",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:16:02.925+00:00",
+    "updatedAt": "2025-11-13T06:16:02.925+00:00"
+  },
+  {
+    "id": "935b84e6-2b9d-4ab1-bfeb-67758dcf2030",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:11:07.938+00:00",
+    "updatedAt": "2025-11-13T06:11:07.938+00:00"
+  },
+  {
+    "id": "07a387c5-6be9-4111-ba32-5e8b1a43631e",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:10:12.975+00:00",
+    "updatedAt": "2025-11-13T06:10:12.975+00:00"
+  },
+  {
     "id": "a2c79cc0-a372-42c0-9f9e-1b0dce77993c",
     "fields": {
       "": "",
@@ -15,6 +300,25 @@
     "name": "Satish",
     "email": "satish.143@yahoo.com",
     "phone": "919966776123",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:59.111+00:00",
+    "updatedAt": "2025-11-13T06:09:59.111+00:00"
+  },
+  {
+    "id": "8518d170-9470-4707-a7ea-d2df48fe70a5",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:59.111+00:00",
@@ -162,6 +466,25 @@
     "name": "Santosh Yadav",
     "email": "santoshyadav9989@yahoo.com",
     "phone": "918686316102",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:49.213+00:00",
+    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+  },
+  {
+    "id": "3025c2d5-0619-4183-9726-d6e1c79a07df",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:49.213+00:00",
@@ -755,6 +1078,27 @@
     "updatedAt": "2025-11-13T06:09:49.213+00:00"
   },
   {
+    "id": "b463a1ae-324e-4a47-aa90-e08d1c6b04ba",
+    "fields": {
+      "": "",
+      "email": "satish.143@yahoo.com",
+      "phone": "919966776123",
+      "full name": "Satish",
+      "post_code": "500017",
+      "lead_status": "COMMON AREA",
+      "street address": "tarnaka",
+      "what_is_your_average_monthly_electricity_bill?": "25000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Satish",
+    "email": "satish.143@yahoo.com",
+    "phone": "919966776123",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:49.213+00:00",
+    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+  },
+  {
     "id": "d304a222-0685-4e7d-a1fe-e80056ca4405",
     "fields": {
       "": "",
@@ -1154,6 +1498,69 @@
     "updatedAt": "2025-11-13T06:09:42.088+00:00"
   },
   {
+    "id": "60362245-6485-4b49-ad6d-5bd8e99eb3aa",
+    "fields": {
+      "": "",
+      "email": "santoshyadav9989@yahoo.com",
+      "phone": "918686316102",
+      "full name": "Santosh Yadav",
+      "post_code": "500047",
+      "lead_status": "power bill 30000",
+      "street address": "27/143, malkajgiri",
+      "what_is_your_average_monthly_electricity_bill?": "3000 to 4000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Santosh Yadav",
+    "email": "santoshyadav9989@yahoo.com",
+    "phone": "918686316102",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "23fed107-bc06-4bfc-a99d-05ab3505d8ba",
+    "fields": {
+      "": "",
+      "email": "geethika186@gmail.com",
+      "phone": "917032627330",
+      "full name": "Ananth krishna",
+      "post_code": "500018",
+      "lead_status": "call back",
+      "street address": "Jyoti Residency Plot No 86",
+      "what_is_your_average_monthly_electricity_bill?": "House",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Ananth krishna",
+    "email": "geethika186@gmail.com",
+    "phone": "917032627330",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "9e76577a-dfbd-41b5-a45b-f3344b4137f4",
+    "fields": {
+      "": "",
+      "email": "bvenkat6434@gmail.com",
+      "phone": "919666916947",
+      "full name": "Venkatesh Bejawada",
+      "post_code": "508201",
+      "lead_status": "just for enquiry",
+      "street address": "huzurnagar",
+      "what_is_your_average_monthly_electricity_bill?": "1300",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Venkatesh Bejawada",
+    "email": "bvenkat6434@gmail.com",
+    "phone": "919666916947",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
     "id": "b41aba56-7d7f-47f0-91bc-f75401eef5c1",
     "fields": {
       "": "",
@@ -1217,6 +1624,69 @@
     "updatedAt": "2025-11-13T06:09:42.088+00:00"
   },
   {
+    "id": "d1e27c8e-aecf-4a42-87e5-c544acc9c9dd",
+    "fields": {
+      "": "",
+      "email": "vssbkingdom@gmail.com",
+      "phone": "917386061616",
+      "full name": "Bharadwaj",
+      "post_code": "500013",
+      "lead_status": "he will call",
+      "street address": "Habsiguda",
+      "what_is_your_average_monthly_electricity_bill?": "6000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Bharadwaj",
+    "email": "vssbkingdom@gmail.com",
+    "phone": "917386061616",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "e1e05812-06a0-4fcb-9c29-45bccdf04875",
+    "fields": {
+      "": "",
+      "email": "ajayladdu78@gmail.com",
+      "phone": "917997661112",
+      "full name": "Ajay Laddu",
+      "post_code": "500036",
+      "lead_status": "he will call",
+      "street address": "Mycro Health Care",
+      "what_is_your_average_monthly_electricity_bill?": "3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ajay Laddu",
+    "email": "ajayladdu78@gmail.com",
+    "phone": "917997661112",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "0bc30e06-88b6-415a-a579-b72b250f79b7",
+    "fields": {
+      "": "",
+      "email": "suresh_lav2005@yahoo.com",
+      "phone": "917674882129",
+      "full name": "sureshkumar",
+      "post_code": "500045",
+      "lead_status": "call at lunch time",
+      "street address": "B-48",
+      "what_is_your_average_monthly_electricity_bill?": "3 kiloo",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "sureshkumar",
+    "email": "suresh_lav2005@yahoo.com",
+    "phone": "917674882129",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
     "id": "6711a795-a51c-45a7-b9f9-7eea02aa43a9",
     "fields": {
       "": "his cal back",
@@ -1232,6 +1702,151 @@
     "name": "reddy",
     "email": "kanapuram111@gmail.com",
     "phone": "919948222426",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "9d637df1-bd8b-4b50-a9bc-56a3bad6ecb5",
+    "fields": {
+      "": "",
+      "email": "mrcraobdl47086@gmail.com",
+      "phone": "919849015097",
+      "full name": "M .Ramachandra Rao.",
+      "post_code": "501203",
+      "lead_status": "not lifted",
+      "street address": "A, 556,BDL Town Ship, Bhanur, S. Reddy. 502 305.",
+      "what_is_your_average_monthly_electricity_bill?": "5 00 to 600",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "M .Ramachandra Rao.",
+    "email": "mrcraobdl47086@gmail.com",
+    "phone": "919849015097",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "5feae3f8-bd21-4bd0-9006-b6b771b6ffd5",
+    "fields": {
+      "": "",
+      "email": "pilot.rahul@gmail.com",
+      "phone": "919685568444",
+      "full name": "Rahul Rawat",
+      "post_code": "500055",
+      "lead_status": "busy",
+      "street address": "hyd",
+      "what_is_your_average_monthly_electricity_bill?": "30000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Rahul Rawat",
+    "email": "pilot.rahul@gmail.com",
+    "phone": "919685568444",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "a9833074-0318-41b7-9eab-fb0ff880b652",
+    "fields": {
+      "": "",
+      "email": "Kashirajuharish@gmail.com",
+      "phone": "918523061126",
+      "full name": "K Hari",
+      "post_code": "500058",
+      "lead_status": "bn reddy nagar/2/3 kwp send",
+      "street address": "Sri Hills Colony Phase 2 Madhura Nagar Almasguda",
+      "what_is_your_average_monthly_electricity_bill?": "300units",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "K Hari",
+    "email": "Kashirajuharish@gmail.com",
+    "phone": "918523061126",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "1ca2f6ef-7d2c-4d53-bb76-2f3dd40a0cdf",
+    "fields": {
+      "": "",
+      "email": "singaraveni135@gmail.com",
+      "phone": "919652757480",
+      "full name": "Čðhū Chinna",
+      "post_code": "505505",
+      "lead_status": "not reachable",
+      "street address": "H.no 3-107",
+      "what_is_your_average_monthly_electricity_bill?": "70000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Čðhū Chinna",
+    "email": "singaraveni135@gmail.com",
+    "phone": "919652757480",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "b2d85525-8632-4cae-a6d7-8162f3cd38fc",
+    "fields": {
+      "": "",
+      "email": "jabbarmohammd1995@gmail.com",
+      "phone": "919908528236",
+      "full name": "Jabber Qureshi",
+      "post_code": "506143",
+      "lead_status": "repeated",
+      "street address": "Near Bharth Bunk",
+      "what_is_your_average_monthly_electricity_bill?": "3500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Jabber Qureshi",
+    "email": "jabbarmohammd1995@gmail.com",
+    "phone": "919908528236",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "f5d54940-21bb-498d-9d2f-0b58d33db27e",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "bca79fc6-296e-4349-9a0c-f140cabf1c9d",
+    "fields": {
+      "": "",
+      "email": "laxman.laxman.a167@gmail.com",
+      "phone": "919396571413",
+      "full name": "Laxman Andhollu",
+      "post_code": "500070",
+      "lead_status": "cal back",
+      "street address": "panama godowns",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Laxman Andhollu",
+    "email": "laxman.laxman.a167@gmail.com",
+    "phone": "919396571413",
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:42.088+00:00",
@@ -1301,6 +1916,509 @@
     "updatedAt": "2025-11-13T06:09:42.088+00:00"
   },
   {
+    "id": "78550f29-c5c3-4b75-95b8-41621262b59e",
+    "fields": {
+      "": "",
+      "email": "smv_purush@yahoo.co.in",
+      "phone": "919291490492",
+      "full name": "Smv Purushotham",
+      "post_code": "500098",
+      "lead_status": "please send 3 and 4 kw quotations",
+      "street address": "Sri Sai Krishna colony,peerzadiguda",
+      "what_is_your_average_monthly_electricity_bill?": "3500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Smv Purushotham",
+    "email": "smv_purush@yahoo.co.in",
+    "phone": "919291490492",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "f9ee82c5-07c0-4c99-86bf-7260c519973a",
+    "fields": {
+      "": "",
+      "email": "kuthadisantoshkumar8026@gmail.com",
+      "phone": "917337368800",
+      "full name": "Kuthadi Santosh Kumar",
+      "post_code": "500087",
+      "lead_status": "not lifted",
+      "street address": "yapral near",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Kuthadi Santosh Kumar",
+    "email": "kuthadisantoshkumar8026@gmail.com",
+    "phone": "917337368800",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "b9c5e842-86f2-495f-96ca-5a70f2421f0f",
+    "fields": {
+      "": "",
+      "email": "anem.dileepkumar305@gmail.com",
+      "phone": "919291207481",
+      "full name": "AnemDileepkumar",
+      "post_code": "517503",
+      "lead_status": "not lifted",
+      "street address": "Tiruchanoore",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "AnemDileepkumar",
+    "email": "anem.dileepkumar305@gmail.com",
+    "phone": "919291207481",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "f8a88a3d-eca9-4e1e-b390-0039c7b18980",
+    "fields": {
+      "": "",
+      "email": "sasi10137@gmail.com",
+      "phone": "919491903739",
+      "full name": "Sasi Bhushana Rao",
+      "post_code": "530018",
+      "lead_status": "out off service",
+      "street address": "38-30-239.hissain nagar.visakhapatnam",
+      "what_is_your_average_monthly_electricity_bill?": "2000 below",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Sasi Bhushana Rao",
+    "email": "sasi10137@gmail.com",
+    "phone": "919491903739",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "a27484e4-71b6-4807-b667-a41476eed028",
+    "fields": {
+      "": "",
+      "email": "yadaugjaipal@gmail.com",
+      "phone": "919177345047",
+      "full name": "Jaipal Yadav",
+      "post_code": "515801",
+      "lead_status": "busy",
+      "street address": "Nagaradona.v.chippagiri.m.alur.t.kurnool.b",
+      "what_is_your_average_monthly_electricity_bill?": "S",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Jaipal Yadav",
+    "email": "yadaugjaipal@gmail.com",
+    "phone": "919177345047",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "8fd6273d-a8d6-4312-a3b3-92dcd73fd41d",
+    "fields": {
+      "": "",
+      "email": "dhanvin.g@gmail.com",
+      "phone": "919652601708",
+      "full name": "Ganta Ambedkar",
+      "post_code": "502032",
+      "lead_status": "not lifted",
+      "street address": "5 Bhel New Mig Phase 2",
+      "what_is_your_average_monthly_electricity_bill?": "3600",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ganta Ambedkar",
+    "email": "dhanvin.g@gmail.com",
+    "phone": "919652601708",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "4a921103-7078-45b2-ae35-1fb0efb8097f",
+    "fields": {
+      "": "",
+      "email": "ashusavi.daddy@gmail.com",
+      "phone": "918008531927",
+      "full name": "Ramesh Nayak Kanna",
+      "post_code": "500019",
+      "lead_status": "not lift",
+      "street address": "Shivaji nagar colony SERILINGAMPALLY",
+      "what_is_your_average_monthly_electricity_bill?": "How to install",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ramesh Nayak Kanna",
+    "email": "ashusavi.daddy@gmail.com",
+    "phone": "918008531927",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "46d3b885-f4d3-4af1-94e6-14fcb573a70f",
+    "fields": {
+      "": "",
+      "email": "haraharaengnirangworks@gmail.com",
+      "phone": "918341997322",
+      "full name": "goli sai krishna",
+      "post_code": "505453",
+      "lead_status": "not lift",
+      "street address": "koratla",
+      "what_is_your_average_monthly_electricity_bill?": "5000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building"
+    },
+    "name": "goli sai krishna",
+    "email": "haraharaengnirangworks@gmail.com",
+    "phone": "918341997322",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "485fc378-4c9c-4e26-9919-f287b6c35df2",
+    "fields": {
+      "": "",
+      "email": "kesh.mamidi@yahoo.com",
+      "phone": "919393930122",
+      "full name": "Mamidi Keshav",
+      "post_code": "500006",
+      "lead_status": "not lift",
+      "street address": "Subzimandi, jiyaguda",
+      "what_is_your_average_monthly_electricity_bill?": "500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Mamidi Keshav",
+    "email": "kesh.mamidi@yahoo.com",
+    "phone": "919393930122",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "98f79425-abb5-45bc-afae-f1af7f36c0b2",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "919000292864",
+      "full name": "N.Venkata Narayana",
+      "post_code": "506167",
+      "lead_status": "send 3 kwp non dcr",
+      "street address": "3-4-10,Nehru park road",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "N.Venkata Narayana",
+    "phone": "919000292864",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "4493175e-3228-432d-a189-849863ee5a43",
+    "fields": {
+      "": "",
+      "email": "kiranjcnncm@gmail.com",
+      "phone": "919618977014",
+      "full name": "T Kiran Kumaran",
+      "post_code": "524413",
+      "lead_status": "he will call",
+      "street address": "chendodu village, Vidyanagar Post, Kota mandal, Nellore district.",
+      "what_is_your_average_monthly_electricity_bill?": "7000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "T Kiran Kumaran",
+    "email": "kiranjcnncm@gmail.com",
+    "phone": "919618977014",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "e1d73ec6-5e2d-43de-a66d-916295143134",
+    "fields": {
+      "": "",
+      "email": "Vrpharma15@gmail.com",
+      "phone": "917799320895",
+      "full name": "Banoth Naik Prashanth",
+      "post_code": "506101",
+      "lead_status": "busy",
+      "street address": "jaya Hospitals mahabubabad",
+      "what_is_your_average_monthly_electricity_bill?": "20000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "school_/_college_/_hospital"
+    },
+    "name": "Banoth Naik Prashanth",
+    "email": "Vrpharma15@gmail.com",
+    "phone": "917799320895",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "746567fc-d7fe-406e-937e-9ca077a9df56",
+    "fields": {
+      "": "",
+      "email": "www.krishnan77@gmail.com",
+      "phone": "919705452474",
+      "full name": "ཌᶦˢMᵃʳᵗ۝ᵐᵘRᵃˡᶦད,",
+      "post_code": "530048",
+      "lead_status": "cal back",
+      "street address": "TULASI NAGAR WALKER'S CLUB PARK Pothinamallayya Palem",
+      "what_is_your_average_monthly_electricity_bill?": "5000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "ཌᶦˢMᵃʳᵗ۝ᵐᵘRᵃˡᶦད,",
+    "email": "www.krishnan77@gmail.com",
+    "phone": "919705452474",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "e74bef58-7537-4140-aaa1-4b93d510f78a",
+    "fields": {
+      "": "",
+      "email": "nani9985859199@gmail.com",
+      "phone": "919866159144",
+      "full name": "Gowthamkrishna",
+      "post_code": "523211",
+      "lead_status": "FOLLOW UP",
+      "street address": "3-76 Main Road Maddipadu",
+      "what_is_your_average_monthly_electricity_bill?": "2500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Gowthamkrishna",
+    "email": "nani9985859199@gmail.com",
+    "phone": "919866159144",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "048dbf63-97f2-4ef1-a4da-1de064a3a933",
+    "fields": {
+      "": "",
+      "email": "aveeavis1@gmail.com",
+      "phone": "919700444417",
+      "full name": "Mavuram Avinash Reddy",
+      "post_code": "500083",
+      "lead_status": "POWER BILL 1500",
+      "street address": "Plot No 1 Shimapuri",
+      "what_is_your_average_monthly_electricity_bill?": "1400",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Mavuram Avinash Reddy",
+    "email": "aveeavis1@gmail.com",
+    "phone": "919700444417",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "2f58ff7f-a4e4-4341-8771-eef10b039f4c",
+    "fields": {
+      "": "",
+      "email": "saivamsi8369@gmail.com",
+      "phone": "919398654489",
+      "full name": "Midde Venkata Subbaiah",
+      "post_code": "518501",
+      "lead_status": "not lifted",
+      "street address": "బాలజీ కాంప్లెక్శ్",
+      "what_is_your_average_monthly_electricity_bill?": "2000 or 3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Midde Venkata Subbaiah",
+    "email": "saivamsi8369@gmail.com",
+    "phone": "919398654489",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "4be6cdf7-9980-416b-93ff-177d3096541c",
+    "fields": {
+      "": "",
+      "email": "nagapradad.svnr@gmail.com",
+      "phone": "919440258533",
+      "full name": "Nagaprasad Bellapukonda",
+      "post_code": "500055",
+      "lead_status": "busy",
+      "street address": "10-24 poolavanddla street",
+      "what_is_your_average_monthly_electricity_bill?": "new house",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Nagaprasad Bellapukonda",
+    "email": "nagapradad.svnr@gmail.com",
+    "phone": "919440258533",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "0de9a3de-380e-4132-b9a7-cb0711ef6a24",
+    "fields": {
+      "": "",
+      "email": "rajulodelly@gmail.com",
+      "phone": "919948495976",
+      "full name": "LODELLY RAJENDER",
+      "post_code": "504296",
+      "lead_status": "busy",
+      "street address": "kachiguda",
+      "what_is_your_average_monthly_electricity_bill?": "4000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building"
+    },
+    "name": "LODELLY RAJENDER",
+    "email": "rajulodelly@gmail.com",
+    "phone": "919948495976",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "1bfee58e-4032-4053-b68b-4f99c00c1454",
+    "fields": {
+      "": "",
+      "email": "info@kpsuites.in",
+      "phone": "919505667554",
+      "full name": "KP Suites Private Limited",
+      "post_code": "500018",
+      "lead_status": "25 kwp need commercial",
+      "street address": "Hyderabad",
+      "what_is_your_average_monthly_electricity_bill?": "30000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building"
+    },
+    "name": "KP Suites Private Limited",
+    "email": "info@kpsuites.in",
+    "phone": "919505667554",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "d7f5f81f-265a-40d5-b2ad-9358cbcf9dc6",
+    "fields": {
+      "": "",
+      "email": "kethavathrajeshkumar@gmail.com",
+      "phone": "919951057160",
+      "full name": "Rajeshkumar Kethavath",
+      "post_code": "508116",
+      "lead_status": "he will call",
+      "street address": "BHONGIR",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Rajeshkumar Kethavath",
+    "email": "kethavathrajeshkumar@gmail.com",
+    "phone": "919951057160",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "03c3dfe3-f89e-4168-a221-7d3395a08ac2",
+    "fields": {
+      "": "",
+      "email": "palthineninaveenrao@gmail.com",
+      "phone": "919505096252",
+      "full name": "P Naveen Rao",
+      "post_code": "500072",
+      "lead_status": "KUKATPALLY",
+      "street address": "Plott No-103",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "P Naveen Rao",
+    "email": "palthineninaveenrao@gmail.com",
+    "phone": "919505096252",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "10187ef4-69af-44cf-9f65-8992b82c5085",
+    "fields": {
+      "": "",
+      "email": "ramillarvind@gmail.com",
+      "phone": "917799600076",
+      "full name": "Ramilla Arvind Kumar",
+      "post_code": "500010",
+      "lead_status": "POWER BILL 1500",
+      "street address": "Kowkoor, Alwal",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ramilla Arvind Kumar",
+    "email": "ramillarvind@gmail.com",
+    "phone": "917799600076",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "71c75b50-58e7-44f9-a4ee-676484f392b3",
+    "fields": {
+      "": "",
+      "email": "aneeladasari@gmail.com",
+      "phone": "919491114578",
+      "full name": "Ravi Dasari",
+      "post_code": "522647",
+      "lead_status": "",
+      "street address": "sethaiah nagar",
+      "what_is_your_average_monthly_electricity_bill?": "3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ravi Dasari",
+    "email": "aneeladasari@gmail.com",
+    "phone": "919491114578",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
+    "id": "f483952b-69c0-4483-9691-389ae08a5f55",
+    "fields": {
+      "": "",
+      "email": "satish.143@yahoo.com",
+      "phone": "919966776123",
+      "full name": "Satish",
+      "post_code": "500017",
+      "lead_status": "COMMON AREA",
+      "street address": "tarnaka",
+      "what_is_your_average_monthly_electricity_bill?": "25000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Satish",
+    "email": "satish.143@yahoo.com",
+    "phone": "919966776123",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:42.088+00:00",
+    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+  },
+  {
     "id": "370f80e0-8650-46bb-8a43-943bc8d8bc17",
     "fields": {
       "": "",
@@ -1337,6 +2455,132 @@
     "name": "satyanarayan bandu",
     "email": "satyam.bandu@gmail.com",
     "phone": "919871734404",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "bf9fa331-7a3b-4a89-ab10-f66fce8134ac",
+    "fields": {
+      "": "",
+      "email": "malleshyadav611@gmail.com",
+      "phone": "919391353485",
+      "full name": "జేనిగల మల్లేష్ యాదవ్",
+      "post_code": "501510",
+      "lead_status": "send 3 kwp",
+      "street address": "Yamjal",
+      "what_is_your_average_monthly_electricity_bill?": "My house",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "జేనిగల మల్లేష్ యాదవ్",
+    "email": "malleshyadav611@gmail.com",
+    "phone": "919391353485",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "c6872df2-8f51-44bf-b406-790af60b8874",
+    "fields": {
+      "": "",
+      "email": "harishpatnaik22@gmail.com",
+      "phone": "919959802777",
+      "full name": "Dabbiru Harish Kumar Patnaik",
+      "post_code": "500019",
+      "lead_status": "repeatd lead",
+      "street address": "20-1392 Papireddy Colony Chandanagar Serilingamaplly 500019",
+      "what_is_your_average_monthly_electricity_bill?": "3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Dabbiru Harish Kumar Patnaik",
+    "email": "harishpatnaik22@gmail.com",
+    "phone": "919959802777",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "07c48a86-613f-4a3b-a5a0-f7f36e8bc63f",
+    "fields": {
+      "": "",
+      "email": "kannappa.skating@gmail.com",
+      "phone": "919396212161",
+      "full name": "Skating Kannappa",
+      "post_code": "500055",
+      "lead_status": "send 3 kwp",
+      "street address": "quthbullapur",
+      "what_is_your_average_monthly_electricity_bill?": "1400",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Skating Kannappa",
+    "email": "kannappa.skating@gmail.com",
+    "phone": "919396212161",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "04a20c7e-2fda-40c2-bad4-b0702812379d",
+    "fields": {
+      "": "",
+      "email": "photographybylara5@gmail.com",
+      "phone": "918885914491",
+      "full name": "K Raju",
+      "post_code": "501510",
+      "lead_status": "follow up",
+      "street address": "nadergul Telangana",
+      "what_is_your_average_monthly_electricity_bill?": "1600",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "K Raju",
+    "email": "photographybylara5@gmail.com",
+    "phone": "918885914491",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "8d93ee86-f6a4-4fa5-b077-7b89be8a0716",
+    "fields": {
+      "": "",
+      "email": "raghuthetutor@gmail.com",
+      "phone": "919989925499",
+      "full name": "Raghavendar",
+      "post_code": "502032",
+      "lead_status": "3 kwp",
+      "street address": "Shiva sai nagar colony",
+      "what_is_your_average_monthly_electricity_bill?": "1500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Raghavendar",
+    "email": "raghuthetutor@gmail.com",
+    "phone": "919989925499",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "34e9df1c-d0a1-459b-ba6a-0d4218f5b223",
+    "fields": {
+      "": "",
+      "email": "kvgraoamruth@gmail.com",
+      "phone": "919000217174",
+      "full name": "Kandadi Venugopal Rao",
+      "post_code": "500053",
+      "lead_status": "power bill 1600",
+      "street address": "hyderabad, t g",
+      "what_is_your_average_monthly_electricity_bill?": "1500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Kandadi Venugopal Rao",
+    "email": "kvgraoamruth@gmail.com",
+    "phone": "919000217174",
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:38.054+00:00",
@@ -1406,6 +2650,69 @@
     "updatedAt": "2025-11-13T06:09:38.054+00:00"
   },
   {
+    "id": "1b110cc0-4b8a-4983-85d9-5ad687012379",
+    "fields": {
+      "": "",
+      "email": "namalaprakash7369@gmail.com",
+      "phone": "919949635761",
+      "full name": "Prakashh Namala",
+      "post_code": "503111",
+      "lead_status": "not lifted",
+      "street address": "kamareddy",
+      "what_is_your_average_monthly_electricity_bill?": "600",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Prakashh Namala",
+    "email": "namalaprakash7369@gmail.com",
+    "phone": "919949635761",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "21cc5095-ba86-4592-a6fe-dac587ee97c4",
+    "fields": {
+      "": "",
+      "email": "alekhyarajesh567@gmail.com",
+      "phone": "918143488803",
+      "full name": "Alekhya Tanksri",
+      "post_code": "504351",
+      "lead_status": "call back",
+      "street address": "bpl",
+      "what_is_your_average_monthly_electricity_bill?": "2500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Alekhya Tanksri",
+    "email": "alekhyarajesh567@gmail.com",
+    "phone": "918143488803",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "21b0206d-d1ec-4c39-85d3-f605a32073cb",
+    "fields": {
+      "": "",
+      "email": "Malothsuresh803@mail.com",
+      "phone": "918185807472",
+      "full name": "Surya Nayak",
+      "post_code": "501401",
+      "lead_status": "busy",
+      "street address": "Rajabollaram Thanda",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Surya Nayak",
+    "email": "Malothsuresh803@mail.com",
+    "phone": "918185807472",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
     "id": "f5e12fb7-910b-4be2-9d5d-d98d1fcad649",
     "fields": {
       "": "",
@@ -1469,6 +2776,27 @@
     "updatedAt": "2025-11-13T06:09:38.054+00:00"
   },
   {
+    "id": "bf097a8a-b94e-4e13-b6ee-da1bdc84ccd2",
+    "fields": {
+      "": "",
+      "email": "pinkulirout09@gmail.com",
+      "phone": "919959674025",
+      "full name": "pinku rout",
+      "post_code": "500075",
+      "lead_status": "cal back",
+      "street address": "Hyderabad",
+      "what_is_your_average_monthly_electricity_bill?": "Required for three months",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "pinku rout",
+    "email": "pinkulirout09@gmail.com",
+    "phone": "919959674025",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
     "id": "c2a6e81b-3f06-4e7f-8932-1ad6a183e6f0",
     "fields": {
       "": "",
@@ -1505,6 +2833,132 @@
     "name": "Akhilesh.V",
     "email": "akhilesh.vudutha@gmail.com",
     "phone": "919010400427",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "f4f925d8-f15e-43f1-93c8-a445ed2a0e35",
+    "fields": {
+      "": "",
+      "email": "nirajanpurru@gmail.com",
+      "phone": "919963223730",
+      "full name": "P Niranjan Puru",
+      "post_code": "509385",
+      "lead_status": "cal back",
+      "street address": "Nagar Kurnool (D) uppunanthala (m) upparipalli(v)",
+      "what_is_your_average_monthly_electricity_bill?": "సోలార్",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building"
+    },
+    "name": "P Niranjan Puru",
+    "email": "nirajanpurru@gmail.com",
+    "phone": "919963223730",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "e57997cf-d1ba-44e7-90ce-d04fd009705a",
+    "fields": {
+      "": "",
+      "email": "chintukrishna@gmail.com",
+      "phone": "919705318610",
+      "full name": "spartacus",
+      "post_code": "509321",
+      "lead_status": "call back",
+      "street address": "hyd",
+      "what_is_your_average_monthly_electricity_bill?": "300",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "spartacus",
+    "email": "chintukrishna@gmail.com",
+    "phone": "919705318610",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "8d0c9b6c-8ff6-4db9-9296-7c5842612f74",
+    "fields": {
+      "": "",
+      "email": "parnamlokesh333@gmail.com",
+      "phone": "919100842461",
+      "full name": "Lokesh Parnam",
+      "post_code": "521001",
+      "lead_status": "power bill 1000",
+      "street address": "machilipatnam, Krishna dust, ap",
+      "what_is_your_average_monthly_electricity_bill?": "600",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Lokesh Parnam",
+    "email": "parnamlokesh333@gmail.com",
+    "phone": "919100842461",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "62b8c883-0f47-4410-a71e-33efddb5db77",
+    "fields": {
+      "": "",
+      "email": "ganiganesh784@gmail.com",
+      "phone": "919966322266",
+      "full name": "Ganesh Prince",
+      "post_code": "509127",
+      "lead_status": "not lift",
+      "street address": "1-77, Ieeja - Gadwal Rd",
+      "what_is_your_average_monthly_electricity_bill?": "2500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ganesh Prince",
+    "email": "ganiganesh784@gmail.com",
+    "phone": "919966322266",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "c26eeefb-bc50-4b41-b2db-4a69f8df4cc7",
+    "fields": {
+      "": "",
+      "email": "ranadheerreddy.kaluvala@gmail.com",
+      "phone": "919618241491",
+      "full name": "Ranadheer Reddy",
+      "post_code": "500087",
+      "lead_status": "power bill 1400",
+      "street address": "Plot No 42b Godavari gardens Yapral",
+      "what_is_your_average_monthly_electricity_bill?": "350 units",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ranadheer Reddy",
+    "email": "ranadheerreddy.kaluvala@gmail.com",
+    "phone": "919618241491",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "1be068d4-0f1f-40ed-937f-4dff64a10913",
+    "fields": {
+      "": "",
+      "email": "diwakarlawyer72@gmail.com",
+      "phone": "7989592253",
+      "full name": "Diwakarmunuswamy Diwakar",
+      "post_code": "500095",
+      "lead_status": "call back",
+      "street address": "Koti Hyderabad",
+      "what_is_your_average_monthly_electricity_bill?": "2500 to 3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Diwakarmunuswamy Diwakar",
+    "email": "diwakarlawyer72@gmail.com",
+    "phone": "7989592253",
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:38.054+00:00",
@@ -1553,6 +3007,27 @@
     "updatedAt": "2025-11-13T06:09:38.054+00:00"
   },
   {
+    "id": "eb1cddb2-6830-4792-9896-0e757182b400",
+    "fields": {
+      "": "",
+      "email": "vamshimohan12@gmail.com",
+      "phone": "918367355747",
+      "full name": "Godhumala Vamshi",
+      "post_code": "500098",
+      "lead_status": "power bill 2000",
+      "street address": "Peerzadiguda",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Godhumala Vamshi",
+    "email": "vamshimohan12@gmail.com",
+    "phone": "918367355747",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
     "id": "27fc42fa-a3e7-44ad-8087-da679bd9dfd2",
     "fields": {
       "": "",
@@ -1595,6 +3070,969 @@
     "updatedAt": "2025-11-13T06:09:38.054+00:00"
   },
   {
+    "id": "ae319e9f-535b-46fa-a0ea-9bdece0d538f",
+    "fields": {
+      "": "",
+      "email": "harshadevaraya2612@gmail.com",
+      "phone": "917799442612",
+      "full name": "Harsha",
+      "post_code": "506381",
+      "lead_status": "call back",
+      "street address": "dornakal",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Harsha",
+    "email": "harshadevaraya2612@gmail.com",
+    "phone": "917799442612",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "bf9893ad-d4fa-4709-9c49-e95c838043a6",
+    "fields": {
+      "": "",
+      "email": "banoth.dilipnaik@gmail.com",
+      "phone": "917993450438",
+      "full name": "Dilip Naik",
+      "post_code": "506314",
+      "lead_status": "not lifted",
+      "street address": "Panisthanda",
+      "what_is_your_average_monthly_electricity_bill?": "1500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Dilip Naik",
+    "email": "banoth.dilipnaik@gmail.com",
+    "phone": "917993450438",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "d29c90e8-0ffc-4d9a-8911-0cab39ad6f28",
+    "fields": {
+      "": "",
+      "email": "kishanyadav9000@gmail.com",
+      "phone": "919000120559",
+      "full name": "Kishan Yadav",
+      "post_code": "508255",
+      "lead_status": "nalgonda",
+      "street address": "Ghatbasuli",
+      "what_is_your_average_monthly_electricity_bill?": "500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Kishan Yadav",
+    "email": "kishanyadav9000@gmail.com",
+    "phone": "919000120559",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "d4965083-cf47-43b1-b445-33c8214e137c",
+    "fields": {
+      "": "",
+      "email": "sugandhamramarao@gmail.com",
+      "phone": "919441248842",
+      "full name": "Rama Rao",
+      "post_code": "507166",
+      "lead_status": "not lift",
+      "street address": "chandrugonda",
+      "what_is_your_average_monthly_electricity_bill?": "1200",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Rama Rao",
+    "email": "sugandhamramarao@gmail.com",
+    "phone": "919441248842",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "92c915a2-6fe6-4c5d-a2f1-29e34ffd2b36",
+    "fields": {
+      "": "",
+      "email": "chpadmavathi36@gmail.com",
+      "phone": "919298609679",
+      "full name": "Challa Padmavathi Raj",
+      "post_code": "534275",
+      "lead_status": "no need",
+      "street address": "చల్లా అమ్మన రాజా పద్మావతి_ స్టేట్ హ్యూమన్ రైట్ వర్కింగ్ ప్రెసిడెంట్ అపోజిట్ మిస్సమ్మ హాస్పిటల్ థామోస్ బ్రిడ్జి రోడ్ కరెంట్ ట్రాన్సఫర్మ్ వెనుక డబల్ స్టైర్ వెయిట్ బిల్డింగ్ నరసాపురం-534275 వెస్ట్ గోదావరి జిల్లా 9298609679",
+      "what_is_your_average_monthly_electricity_bill?": "3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Challa Padmavathi Raj",
+    "email": "chpadmavathi36@gmail.com",
+    "phone": "919298609679",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "19b159b2-e489-485d-b05a-d591435711e2",
+    "fields": {
+      "": "",
+      "email": "pilot.rahul@gmail.com",
+      "phone": "919685568444",
+      "full name": "Rahul Rawat",
+      "post_code": "500055",
+      "lead_status": "busy",
+      "street address": "hyd",
+      "what_is_your_average_monthly_electricity_bill?": "30000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Rahul Rawat",
+    "email": "pilot.rahul@gmail.com",
+    "phone": "919685568444",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "74cf25ed-bec8-4730-8a76-84d633f94a07",
+    "fields": {
+      "": "",
+      "email": "Kashirajuharish@gmail.com",
+      "phone": "918523061126",
+      "full name": "K Hari",
+      "post_code": "500058",
+      "lead_status": "bn reddy nagar/2/3 kwp send",
+      "street address": "Sri Hills Colony Phase 2 Madhura Nagar Almasguda",
+      "what_is_your_average_monthly_electricity_bill?": "300units",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "K Hari",
+    "email": "Kashirajuharish@gmail.com",
+    "phone": "918523061126",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "1345546f-7731-47f2-a922-be42c4967d61",
+    "fields": {
+      "": "",
+      "email": "singaraveni135@gmail.com",
+      "phone": "919652757480",
+      "full name": "Čðhū Chinna",
+      "post_code": "505505",
+      "lead_status": "not reachable",
+      "street address": "H.no 3-107",
+      "what_is_your_average_monthly_electricity_bill?": "70000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Čðhū Chinna",
+    "email": "singaraveni135@gmail.com",
+    "phone": "919652757480",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "540fb00e-85c8-4249-bada-e0f319c42e88",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "c99cebcf-d5c6-4ffa-b716-acfb8567b5fb",
+    "fields": {
+      "": "his cal back",
+      "email": "kanapuram111@gmail.com",
+      "phone": "919948222426",
+      "full name": "reddy",
+      "post_code": "500032",
+      "lead_status": "ct meeter 15kw need 13feet hight",
+      "street address": "tellapur",
+      "what_is_your_average_monthly_electricity_bill?": "18000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building"
+    },
+    "name": "reddy",
+    "email": "kanapuram111@gmail.com",
+    "phone": "919948222426",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "1c923efb-bd90-4a29-8495-def0609bca6b",
+    "fields": {
+      "": "",
+      "email": "naribangaru07@gmail.com",
+      "phone": "919640501907",
+      "full name": "Boda Naresh",
+      "post_code": "500040",
+      "lead_status": "power bill 2000 mpulali",
+      "street address": "Ashok Nagar ,Mallapur, Uppal",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Boda Naresh",
+    "email": "naribangaru07@gmail.com",
+    "phone": "919640501907",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "e2f931dd-f2e9-4bfc-b416-e410961d6f56",
+    "fields": {
+      "": "",
+      "email": "mrcraobdl47086@gmail.com",
+      "phone": "919849015097",
+      "full name": "M .Ramachandra Rao.",
+      "post_code": "501203",
+      "lead_status": "not lifted",
+      "street address": "A, 556,BDL Town Ship, Bhanur, S. Reddy. 502 305.",
+      "what_is_your_average_monthly_electricity_bill?": "5 00 to 600",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "M .Ramachandra Rao.",
+    "email": "mrcraobdl47086@gmail.com",
+    "phone": "919849015097",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "6a05df92-cde1-4de4-8227-0b3fa99df9d0",
+    "fields": {
+      "": "",
+      "email": "smv_purush@yahoo.co.in",
+      "phone": "919291490492",
+      "full name": "Smv Purushotham",
+      "post_code": "500098",
+      "lead_status": "please send 3 and 4 kw quotations",
+      "street address": "Sri Sai Krishna colony,peerzadiguda",
+      "what_is_your_average_monthly_electricity_bill?": "3500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Smv Purushotham",
+    "email": "smv_purush@yahoo.co.in",
+    "phone": "919291490492",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "4b0452e0-1398-4696-bbd1-67e7b0240d69",
+    "fields": {
+      "": "",
+      "email": "sairam.chilukamari786@gmail.com",
+      "phone": "918074579271",
+      "full name": "Sairam Chilukamari",
+      "post_code": "505327",
+      "lead_status": "busy",
+      "street address": "Jagtial",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Sairam Chilukamari",
+    "email": "sairam.chilukamari786@gmail.com",
+    "phone": "918074579271",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "9ef4a380-45a8-477b-aa92-2cfbdb54a760",
+    "fields": {
+      "": "",
+      "email": "vssbkingdom@gmail.com",
+      "phone": "917386061616",
+      "full name": "Bharadwaj",
+      "post_code": "500013",
+      "lead_status": "he will call",
+      "street address": "Habsiguda",
+      "what_is_your_average_monthly_electricity_bill?": "6000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Bharadwaj",
+    "email": "vssbkingdom@gmail.com",
+    "phone": "917386061616",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "2d2e8462-0cda-4a5d-8e5f-628a30cff866",
+    "fields": {
+      "": "",
+      "email": "ajayladdu78@gmail.com",
+      "phone": "917997661112",
+      "full name": "Ajay Laddu",
+      "post_code": "500036",
+      "lead_status": "he will call",
+      "street address": "Mycro Health Care",
+      "what_is_your_average_monthly_electricity_bill?": "3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ajay Laddu",
+    "email": "ajayladdu78@gmail.com",
+    "phone": "917997661112",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "80f2e75b-f892-4c1e-895c-6718dae17dda",
+    "fields": {
+      "": "",
+      "email": "suresh_lav2005@yahoo.com",
+      "phone": "917674882129",
+      "full name": "sureshkumar",
+      "post_code": "500045",
+      "lead_status": "call at lunch time",
+      "street address": "B-48",
+      "what_is_your_average_monthly_electricity_bill?": "3 kiloo",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "sureshkumar",
+    "email": "suresh_lav2005@yahoo.com",
+    "phone": "917674882129",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "da571611-20c0-4823-88f0-9fe4a7a4d04b",
+    "fields": {
+      "": "",
+      "email": "sasi10137@gmail.com",
+      "phone": "919491903739",
+      "full name": "Sasi Bhushana Rao",
+      "post_code": "530018",
+      "lead_status": "out off service",
+      "street address": "38-30-239.hissain nagar.visakhapatnam",
+      "what_is_your_average_monthly_electricity_bill?": "2000 below",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Sasi Bhushana Rao",
+    "email": "sasi10137@gmail.com",
+    "phone": "919491903739",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "366ba223-8efd-4f2b-b65a-70385700ad9d",
+    "fields": {
+      "": "",
+      "email": "yadaugjaipal@gmail.com",
+      "phone": "919177345047",
+      "full name": "Jaipal Yadav",
+      "post_code": "515801",
+      "lead_status": "busy",
+      "street address": "Nagaradona.v.chippagiri.m.alur.t.kurnool.b",
+      "what_is_your_average_monthly_electricity_bill?": "S",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Jaipal Yadav",
+    "email": "yadaugjaipal@gmail.com",
+    "phone": "919177345047",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "dbab28ee-db08-4baa-a33b-8a2740921e5f",
+    "fields": {
+      "": "",
+      "email": "srikanthgoudssg9@gmail.com",
+      "phone": "919959481308",
+      "full name": "Srikanth Goud",
+      "post_code": "501508",
+      "lead_status": "ramoji film city",
+      "street address": "nerrapally",
+      "what_is_your_average_monthly_electricity_bill?": "600",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Srikanth Goud",
+    "email": "srikanthgoudssg9@gmail.com",
+    "phone": "919959481308",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "991066f8-b219-4491-98f6-a5cc302e5541",
+    "fields": {
+      "": "",
+      "email": "santoshyadav9989@yahoo.com",
+      "phone": "918686316102",
+      "full name": "Santosh Yadav",
+      "post_code": "500047",
+      "lead_status": "power bill 30000",
+      "street address": "27/143, malkajgiri",
+      "what_is_your_average_monthly_electricity_bill?": "3000 to 4000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Santosh Yadav",
+    "email": "santoshyadav9989@yahoo.com",
+    "phone": "918686316102",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "bb16ed90-5bf4-4e72-9d6a-28d052dff6f6",
+    "fields": {
+      "": "",
+      "email": "geethika186@gmail.com",
+      "phone": "917032627330",
+      "full name": "Ananth krishna",
+      "post_code": "500018",
+      "lead_status": "call back",
+      "street address": "Jyoti Residency Plot No 86",
+      "what_is_your_average_monthly_electricity_bill?": "House",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Ananth krishna",
+    "email": "geethika186@gmail.com",
+    "phone": "917032627330",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "1e71ef08-1133-46b8-ac46-8936c85c40d4",
+    "fields": {
+      "": "",
+      "email": "bvenkat6434@gmail.com",
+      "phone": "919666916947",
+      "full name": "Venkatesh Bejawada",
+      "post_code": "508201",
+      "lead_status": "just for enquiry",
+      "street address": "huzurnagar",
+      "what_is_your_average_monthly_electricity_bill?": "1300",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Venkatesh Bejawada",
+    "email": "bvenkat6434@gmail.com",
+    "phone": "919666916947",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "b23a1e33-053f-421c-8fba-bd264b419685",
+    "fields": {
+      "": "",
+      "email": "jabbarmohammd1995@gmail.com",
+      "phone": "919908528236",
+      "full name": "Jabber Qureshi",
+      "post_code": "506143",
+      "lead_status": "repeated",
+      "street address": "Near Bharth Bunk",
+      "what_is_your_average_monthly_electricity_bill?": "3500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Jabber Qureshi",
+    "email": "jabbarmohammd1995@gmail.com",
+    "phone": "919908528236",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "542fd2d7-0692-4d85-bbff-d62289744858",
+    "fields": {
+      "": "",
+      "email": "laxman.laxman.a167@gmail.com",
+      "phone": "919396571413",
+      "full name": "Laxman Andhollu",
+      "post_code": "500070",
+      "lead_status": "cal back",
+      "street address": "panama godowns",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Laxman Andhollu",
+    "email": "laxman.laxman.a167@gmail.com",
+    "phone": "919396571413",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "2154f3e8-5599-4e58-9220-3946abe1ce19",
+    "fields": {
+      "": "",
+      "email": "Vrpharma15@gmail.com",
+      "phone": "917799320895",
+      "full name": "Banoth Naik Prashanth",
+      "post_code": "506101",
+      "lead_status": "busy",
+      "street address": "jaya Hospitals mahabubabad",
+      "what_is_your_average_monthly_electricity_bill?": "20000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "school_/_college_/_hospital"
+    },
+    "name": "Banoth Naik Prashanth",
+    "email": "Vrpharma15@gmail.com",
+    "phone": "917799320895",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "352059af-f42f-478f-b9ce-63362bb0dc78",
+    "fields": {
+      "": "",
+      "email": "kethavathrajeshkumar@gmail.com",
+      "phone": "919951057160",
+      "full name": "Rajeshkumar Kethavath",
+      "post_code": "508116",
+      "lead_status": "he will call",
+      "street address": "BHONGIR",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Rajeshkumar Kethavath",
+    "email": "kethavathrajeshkumar@gmail.com",
+    "phone": "919951057160",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "e31e3f9c-99cb-4838-b72e-4df1b9107fba",
+    "fields": {
+      "": "",
+      "email": "kuthadisantoshkumar8026@gmail.com",
+      "phone": "917337368800",
+      "full name": "Kuthadi Santosh Kumar",
+      "post_code": "500087",
+      "lead_status": "not lifted",
+      "street address": "yapral near",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Kuthadi Santosh Kumar",
+    "email": "kuthadisantoshkumar8026@gmail.com",
+    "phone": "917337368800",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "2baddd5a-ed4c-4510-97ab-53d681f15782",
+    "fields": {
+      "": "",
+      "email": "anem.dileepkumar305@gmail.com",
+      "phone": "919291207481",
+      "full name": "AnemDileepkumar",
+      "post_code": "517503",
+      "lead_status": "not lifted",
+      "street address": "Tiruchanoore",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "AnemDileepkumar",
+    "email": "anem.dileepkumar305@gmail.com",
+    "phone": "919291207481",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "c150f4c4-3ced-41d1-ac22-4083dadc970b",
+    "fields": {
+      "": "",
+      "email": "saivamsi8369@gmail.com",
+      "phone": "919398654489",
+      "full name": "Midde Venkata Subbaiah",
+      "post_code": "518501",
+      "lead_status": "not lifted",
+      "street address": "బాలజీ కాంప్లెక్శ్",
+      "what_is_your_average_monthly_electricity_bill?": "2000 or 3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Midde Venkata Subbaiah",
+    "email": "saivamsi8369@gmail.com",
+    "phone": "919398654489",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "dd047c52-ecf1-436b-a97c-03f270c5d461",
+    "fields": {
+      "": "",
+      "email": "haraharaengnirangworks@gmail.com",
+      "phone": "918341997322",
+      "full name": "goli sai krishna",
+      "post_code": "505453",
+      "lead_status": "not lift",
+      "street address": "koratla",
+      "what_is_your_average_monthly_electricity_bill?": "5000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building"
+    },
+    "name": "goli sai krishna",
+    "email": "haraharaengnirangworks@gmail.com",
+    "phone": "918341997322",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "72e30139-89dd-465e-9b70-695d75f09b1e",
+    "fields": {
+      "": "",
+      "email": "www.krishnan77@gmail.com",
+      "phone": "919705452474",
+      "full name": "ཌᶦˢMᵃʳᵗ۝ᵐᵘRᵃˡᶦད,",
+      "post_code": "530048",
+      "lead_status": "cal back",
+      "street address": "TULASI NAGAR WALKER'S CLUB PARK Pothinamallayya Palem",
+      "what_is_your_average_monthly_electricity_bill?": "5000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "ཌᶦˢMᵃʳᵗ۝ᵐᵘRᵃˡᶦད,",
+    "email": "www.krishnan77@gmail.com",
+    "phone": "919705452474",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "f37ab475-ab5a-459a-abe3-bbd881bac42a",
+    "fields": {
+      "": "",
+      "email": "nagapradad.svnr@gmail.com",
+      "phone": "919440258533",
+      "full name": "Nagaprasad Bellapukonda",
+      "post_code": "500055",
+      "lead_status": "busy",
+      "street address": "10-24 poolavanddla street",
+      "what_is_your_average_monthly_electricity_bill?": "new house",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Nagaprasad Bellapukonda",
+    "email": "nagapradad.svnr@gmail.com",
+    "phone": "919440258533",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "e30504cb-8cc0-47a0-a5a3-a0e2876991bb",
+    "fields": {
+      "": "",
+      "email": "nani9985859199@gmail.com",
+      "phone": "919866159144",
+      "full name": "Gowthamkrishna",
+      "post_code": "523211",
+      "lead_status": "FOLLOW UP",
+      "street address": "3-76 Main Road Maddipadu",
+      "what_is_your_average_monthly_electricity_bill?": "2500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Gowthamkrishna",
+    "email": "nani9985859199@gmail.com",
+    "phone": "919866159144",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "821b3379-1ca6-46e6-aa71-7b0083a240d7",
+    "fields": {
+      "": "",
+      "email": "dhanvin.g@gmail.com",
+      "phone": "919652601708",
+      "full name": "Ganta Ambedkar",
+      "post_code": "502032",
+      "lead_status": "not lifted",
+      "street address": "5 Bhel New Mig Phase 2",
+      "what_is_your_average_monthly_electricity_bill?": "3600",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ganta Ambedkar",
+    "email": "dhanvin.g@gmail.com",
+    "phone": "919652601708",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "21517b32-cae5-4dd9-88b7-6d245b6b16a0",
+    "fields": {
+      "": "",
+      "email": "ashusavi.daddy@gmail.com",
+      "phone": "918008531927",
+      "full name": "Ramesh Nayak Kanna",
+      "post_code": "500019",
+      "lead_status": "not lift",
+      "street address": "Shivaji nagar colony SERILINGAMPALLY",
+      "what_is_your_average_monthly_electricity_bill?": "How to install",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ramesh Nayak Kanna",
+    "email": "ashusavi.daddy@gmail.com",
+    "phone": "918008531927",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "b3aad440-4198-48c1-8db3-cd46eca3d840",
+    "fields": {
+      "": "",
+      "email": "kiranjcnncm@gmail.com",
+      "phone": "919618977014",
+      "full name": "T Kiran Kumaran",
+      "post_code": "524413",
+      "lead_status": "he will call",
+      "street address": "chendodu village, Vidyanagar Post, Kota mandal, Nellore district.",
+      "what_is_your_average_monthly_electricity_bill?": "7000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "T Kiran Kumaran",
+    "email": "kiranjcnncm@gmail.com",
+    "phone": "919618977014",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "e7e48b2a-7130-4d31-8346-7facfe1bf857",
+    "fields": {
+      "": "",
+      "email": "kesh.mamidi@yahoo.com",
+      "phone": "919393930122",
+      "full name": "Mamidi Keshav",
+      "post_code": "500006",
+      "lead_status": "not lift",
+      "street address": "Subzimandi, jiyaguda",
+      "what_is_your_average_monthly_electricity_bill?": "500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Mamidi Keshav",
+    "email": "kesh.mamidi@yahoo.com",
+    "phone": "919393930122",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "88642cc9-67d9-4f25-af05-f95db79bad31",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "919000292864",
+      "full name": "N.Venkata Narayana",
+      "post_code": "506167",
+      "lead_status": "send 3 kwp non dcr",
+      "street address": "3-4-10,Nehru park road",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "N.Venkata Narayana",
+    "phone": "919000292864",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "37307397-a9b5-49b0-98fc-4e79413f2a57",
+    "fields": {
+      "": "",
+      "email": "palthineninaveenrao@gmail.com",
+      "phone": "919505096252",
+      "full name": "P Naveen Rao",
+      "post_code": "500072",
+      "lead_status": "KUKATPALLY",
+      "street address": "Plott No-103",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "P Naveen Rao",
+    "email": "palthineninaveenrao@gmail.com",
+    "phone": "919505096252",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "dfc76ee6-c4ed-48b8-a6f1-c9003c099f9a",
+    "fields": {
+      "": "",
+      "email": "rajulodelly@gmail.com",
+      "phone": "919948495976",
+      "full name": "LODELLY RAJENDER",
+      "post_code": "504296",
+      "lead_status": "busy",
+      "street address": "kachiguda",
+      "what_is_your_average_monthly_electricity_bill?": "4000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building"
+    },
+    "name": "LODELLY RAJENDER",
+    "email": "rajulodelly@gmail.com",
+    "phone": "919948495976",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "9b670c00-7dc0-4317-b5b4-152bdf71a831",
+    "fields": {
+      "": "",
+      "email": "info@kpsuites.in",
+      "phone": "919505667554",
+      "full name": "KP Suites Private Limited",
+      "post_code": "500018",
+      "lead_status": "25 kwp need commercial",
+      "street address": "Hyderabad",
+      "what_is_your_average_monthly_electricity_bill?": "30000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building"
+    },
+    "name": "KP Suites Private Limited",
+    "email": "info@kpsuites.in",
+    "phone": "919505667554",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "249994dd-4d57-4c17-bce1-8347a55896a3",
+    "fields": {
+      "": "",
+      "email": "aneeladasari@gmail.com",
+      "phone": "919491114578",
+      "full name": "Ravi Dasari",
+      "post_code": "522647",
+      "lead_status": "",
+      "street address": "sethaiah nagar",
+      "what_is_your_average_monthly_electricity_bill?": "3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ravi Dasari",
+    "email": "aneeladasari@gmail.com",
+    "phone": "919491114578",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "5517ba0b-d89d-4e4e-879d-9f8e70442766",
+    "fields": {
+      "": "",
+      "email": "aveeavis1@gmail.com",
+      "phone": "919700444417",
+      "full name": "Mavuram Avinash Reddy",
+      "post_code": "500083",
+      "lead_status": "POWER BILL 1500",
+      "street address": "Plot No 1 Shimapuri",
+      "what_is_your_average_monthly_electricity_bill?": "1400",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Mavuram Avinash Reddy",
+    "email": "aveeavis1@gmail.com",
+    "phone": "919700444417",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "bc369255-ebe8-40be-8d3a-437e99d7e645",
+    "fields": {
+      "": "",
+      "email": "satish.143@yahoo.com",
+      "phone": "919966776123",
+      "full name": "Satish",
+      "post_code": "500017",
+      "lead_status": "COMMON AREA",
+      "street address": "tarnaka",
+      "what_is_your_average_monthly_electricity_bill?": "25000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Satish",
+    "email": "satish.143@yahoo.com",
+    "phone": "919966776123",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
+    "id": "5ec8123a-d523-4310-9e98-7694f4b394c8",
+    "fields": {
+      "": "",
+      "email": "ramillarvind@gmail.com",
+      "phone": "917799600076",
+      "full name": "Ramilla Arvind Kumar",
+      "post_code": "500010",
+      "lead_status": "POWER BILL 1500",
+      "street address": "Kowkoor, Alwal",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ramilla Arvind Kumar",
+    "email": "ramillarvind@gmail.com",
+    "phone": "917799600076",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:38.054+00:00",
+    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+  },
+  {
     "id": "49256032-3961-47d9-8fc1-0d9747348425",
     "fields": {
       "": "",
@@ -1613,7 +4051,7 @@
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:27:16.426Z"
+    "updatedAt": "2025-11-13T06:30:03.038Z"
   },
   {
     "id": "8d677840-b8db-42a7-87a4-afbe5f68c0ff",
@@ -1634,7 +4072,7 @@
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:27:16.426Z"
+    "updatedAt": "2025-11-13T06:30:03.038Z"
   },
   {
     "id": "e981b259-73c5-4147-8b5c-d95a2d671c51",
@@ -1655,7 +4093,7 @@
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:27:16.426Z"
+    "updatedAt": "2025-11-13T06:30:03.038Z"
   },
   {
     "id": "3cb5f993-3e77-4b41-b5ce-13650a2127c3",
@@ -1676,7 +4114,7 @@
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:27:16.426Z"
+    "updatedAt": "2025-11-13T06:30:03.038Z"
   },
   {
     "id": "6ef0e5c7-309c-4952-b855-4546499368a2",
@@ -1697,7 +4135,7 @@
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:27:16.426Z"
+    "updatedAt": "2025-11-13T06:30:03.038Z"
   },
   {
     "id": "3dbaa3f5-f07f-444f-a049-5ddadede2875",
@@ -1718,7 +4156,7 @@
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:27:16.426Z"
+    "updatedAt": "2025-11-13T06:30:03.038Z"
   },
   {
     "id": "9ce255b1-7464-4960-905b-8095dadc88ca",
@@ -1738,7 +4176,7 @@
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:27:16.426Z"
+    "updatedAt": "2025-11-13T06:30:03.038Z"
   },
   {
     "id": "c7414120-ad30-4426-ab1f-329bad2803d1",
@@ -1759,7 +4197,7 @@
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:27:16.426Z"
+    "updatedAt": "2025-11-13T06:30:03.038Z"
   },
   {
     "id": "b8590dc4-fdbb-4a2e-8d0f-e06954163cc3",
@@ -1780,7 +4218,7 @@
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:27:16.426Z"
+    "updatedAt": "2025-11-13T06:30:03.038Z"
   },
   {
     "id": "74c3fa0e-6577-4ba6-aab5-af1e032f1c1e",
@@ -1801,7 +4239,7 @@
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:27:16.426Z"
+    "updatedAt": "2025-11-13T06:30:03.038Z"
   },
   {
     "id": "996c4bb0-739e-4a26-9820-9a062c01d9e3",
@@ -1822,7 +4260,7 @@
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:27:16.426Z"
+    "updatedAt": "2025-11-13T06:30:03.038Z"
   },
   {
     "id": "b425485f-3d8d-469b-ad5e-626c8345a7a9",
@@ -1843,7 +4281,7 @@
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:27:16.426Z"
+    "updatedAt": "2025-11-13T06:30:03.038Z"
   },
   {
     "id": "076d9830-b7a0-4b1c-8416-59bf17859150",
@@ -1864,7 +4302,7 @@
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:27:16.426Z"
+    "updatedAt": "2025-11-13T06:30:03.038Z"
   },
   {
     "id": "f3a60596-3302-4db4-989b-21fdb55dc011",
@@ -1885,6 +4323,1620 @@
     "status": "new",
     "ownerId": null,
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:27:16.426Z"
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "c0467dc5-b3fd-4104-bd0e-a8f6d78f9eb9",
+    "fields": {
+      "": "",
+      "email": "narendar.r0@gmail.com",
+      "phone": "919542407679",
+      "full name": "narendar",
+      "post_code": "509320",
+      "lead_status": "repeated lead",
+      "street address": "kadthal",
+      "what_is_your_average_monthly_electricity_bill?": "3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "narendar",
+    "email": "narendar.r0@gmail.com",
+    "phone": "919542407679",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "f23e6c95-90e3-47f9-9d91-1f9b56ee10c0",
+    "fields": {
+      "": "",
+      "email": "sairam30673@gmail.com",
+      "phone": "919951590091",
+      "full name": "tipirneni Guru Sai charan",
+      "post_code": "522601",
+      "lead_status": "palnadu",
+      "street address": "ramireddypet, Narsaoraopet",
+      "what_is_your_average_monthly_electricity_bill?": "1300",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "tipirneni Guru Sai charan",
+    "email": "sairam30673@gmail.com",
+    "phone": "919951590091",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "d722eed0-6c97-41d3-8c36-042c5c469df1",
+    "fields": {
+      "": "",
+      "email": "vijaybunty34@gmail.com",
+      "phone": "919949418687",
+      "full name": "Vijay Goud",
+      "post_code": "500055",
+      "lead_status": "voice mail",
+      "street address": "Block 3",
+      "what_is_your_average_monthly_electricity_bill?": "3500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Vijay Goud",
+    "email": "vijaybunty34@gmail.com",
+    "phone": "919949418687",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "31489592-3a4b-4cdb-bea8-1d0fecccae63",
+    "fields": {
+      "": "",
+      "email": "nirajanpurru@gmail.com",
+      "phone": "919963223730",
+      "full name": "P Niranjan Puru",
+      "post_code": "509385",
+      "lead_status": "cal back",
+      "street address": "Nagar Kurnool (D) uppunanthala (m) upparipalli(v)",
+      "what_is_your_average_monthly_electricity_bill?": "సోలార్",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building"
+    },
+    "name": "P Niranjan Puru",
+    "email": "nirajanpurru@gmail.com",
+    "phone": "919963223730",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "d5de9408-2fd1-4520-ae2a-0c5fc67c27d2",
+    "fields": {
+      "": "",
+      "email": "krishna81190@gmail.com",
+      "phone": "919959794348",
+      "full name": "Kesava Krishna Chelluboina",
+      "post_code": "533244",
+      "lead_status": "NOT LIFT",
+      "street address": "Main road gollapalam",
+      "what_is_your_average_monthly_electricity_bill?": "4000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Kesava Krishna Chelluboina",
+    "email": "krishna81190@gmail.com",
+    "phone": "919959794348",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "6fb9b59d-c485-405e-b318-ae3ed5dba824",
+    "fields": {
+      "": "",
+      "email": "satyam.bandu@gmail.com",
+      "phone": "919871734404",
+      "full name": "satyanarayan bandu",
+      "post_code": "500088",
+      "lead_status": "3KWP SEND",
+      "street address": "uppal",
+      "what_is_your_average_monthly_electricity_bill?": "3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "satyanarayan bandu",
+    "email": "satyam.bandu@gmail.com",
+    "phone": "919871734404",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "37e7fb4d-6488-449e-a346-f6bd381b550d",
+    "fields": {
+      "": "",
+      "email": "pinkulirout09@gmail.com",
+      "phone": "919959674025",
+      "full name": "pinku rout",
+      "post_code": "500075",
+      "lead_status": "cal back",
+      "street address": "Hyderabad",
+      "what_is_your_average_monthly_electricity_bill?": "Required for three months",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "pinku rout",
+    "email": "pinkulirout09@gmail.com",
+    "phone": "919959674025",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "c0fa4948-410a-4c61-8523-c6a4f2280dbc",
+    "fields": {
+      "": "",
+      "email": "harishpatnaik22@gmail.com",
+      "phone": "919959802777",
+      "full name": "Dabbiru Harish Kumar Patnaik",
+      "post_code": "500019",
+      "lead_status": "repeatd lead",
+      "street address": "20-1392 Papireddy Colony Chandanagar Serilingamaplly 500019",
+      "what_is_your_average_monthly_electricity_bill?": "3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Dabbiru Harish Kumar Patnaik",
+    "email": "harishpatnaik22@gmail.com",
+    "phone": "919959802777",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "9d255a30-47e0-44c2-9ec5-9489bb7d85a4",
+    "fields": {
+      "": "",
+      "email": "photographybylara5@gmail.com",
+      "phone": "918885914491",
+      "full name": "K Raju",
+      "post_code": "501510",
+      "lead_status": "follow up",
+      "street address": "nadergul Telangana",
+      "what_is_your_average_monthly_electricity_bill?": "1600",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "K Raju",
+    "email": "photographybylara5@gmail.com",
+    "phone": "918885914491",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "af984441-ad69-4087-8354-87a6e2529815",
+    "fields": {
+      "": "",
+      "email": "rteja305@gmail.com",
+      "phone": "919396145146",
+      "full name": "Vamshi",
+      "post_code": "500074",
+      "lead_status": "repeated lead",
+      "street address": "Lb nagar",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Vamshi",
+    "email": "rteja305@gmail.com",
+    "phone": "919396145146",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "6d23311f-8b6c-4b13-b8da-de94dd99f208",
+    "fields": {
+      "": "",
+      "email": "bsrpavan567@gmail.com",
+      "phone": "919440177949",
+      "full name": "b Veerabhadra Rao",
+      "post_code": "533306",
+      "lead_status": "HE WILL CALL/AP",
+      "street address": "Kotipalli",
+      "what_is_your_average_monthly_electricity_bill?": "3500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "b Veerabhadra Rao",
+    "email": "bsrpavan567@gmail.com",
+    "phone": "919440177949",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "a35d48a3-c907-49c5-bda3-ccf419d1dc6d",
+    "fields": {
+      "": "",
+      "email": "malleshyadav611@gmail.com",
+      "phone": "919391353485",
+      "full name": "జేనిగల మల్లేష్ యాదవ్",
+      "post_code": "501510",
+      "lead_status": "send 3 kwp",
+      "street address": "Yamjal",
+      "what_is_your_average_monthly_electricity_bill?": "My house",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "జేనిగల మల్లేష్ యాదవ్",
+    "email": "malleshyadav611@gmail.com",
+    "phone": "919391353485",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "be845871-6d9b-416c-afbc-bd24b9c245f3",
+    "fields": {
+      "": "",
+      "email": "parnamlokesh333@gmail.com",
+      "phone": "919100842461",
+      "full name": "Lokesh Parnam",
+      "post_code": "521001",
+      "lead_status": "power bill 1000",
+      "street address": "machilipatnam, Krishna dust, ap",
+      "what_is_your_average_monthly_electricity_bill?": "600",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Lokesh Parnam",
+    "email": "parnamlokesh333@gmail.com",
+    "phone": "919100842461",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "6eaf3a30-c80d-48d4-b5a8-ebb548c40ae9",
+    "fields": {
+      "": "",
+      "email": "ganiganesh784@gmail.com",
+      "phone": "919966322266",
+      "full name": "Ganesh Prince",
+      "post_code": "509127",
+      "lead_status": "not lift",
+      "street address": "1-77, Ieeja - Gadwal Rd",
+      "what_is_your_average_monthly_electricity_bill?": "2500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ganesh Prince",
+    "email": "ganiganesh784@gmail.com",
+    "phone": "919966322266",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "2c6fdbf9-0556-441d-bee1-4399c7d0cf07",
+    "fields": {
+      "": "",
+      "email": "Malothsuresh803@mail.com",
+      "phone": "918185807472",
+      "full name": "Surya Nayak",
+      "post_code": "501401",
+      "lead_status": "busy",
+      "street address": "Rajabollaram Thanda",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Surya Nayak",
+    "email": "Malothsuresh803@mail.com",
+    "phone": "918185807472",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "9aea8817-444d-40b9-9d20-957264091f78",
+    "fields": {
+      "": "",
+      "email": "Manitejagoud11@gmail.com",
+      "phone": "918712807264",
+      "full name": "Mani teja goud",
+      "post_code": "500070",
+      "lead_status": "power bill 3000",
+      "street address": "plot no. 75 huda Sai nagar colony",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Mani teja goud",
+    "email": "Manitejagoud11@gmail.com",
+    "phone": "918712807264",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "bda5491d-3758-467e-a09a-5faead61f627",
+    "fields": {
+      "": "",
+      "email": "Mohdriyan8055@gmail.com",
+      "phone": "919885330313",
+      "full name": "Riyan Habeeb",
+      "post_code": "500004",
+      "lead_status": "CALL NOT CONNECT",
+      "street address": "Hyderabad",
+      "what_is_your_average_monthly_electricity_bill?": "5 k to 10 k",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building"
+    },
+    "name": "Riyan Habeeb",
+    "email": "Mohdriyan8055@gmail.com",
+    "phone": "919885330313",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "a59ef40e-7c98-4b9f-91c2-6266fae054f9",
+    "fields": {
+      "": "",
+      "email": "enagic.kangenhyd@gmail.com",
+      "phone": "919666248880",
+      "full name": "ram",
+      "post_code": "500079",
+      "lead_status": "SEND 3 KWP",
+      "street address": "J-24 Nanadanavanam Colony",
+      "what_is_your_average_monthly_electricity_bill?": "1500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "ram",
+    "email": "enagic.kangenhyd@gmail.com",
+    "phone": "919666248880",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "2da237cd-b2d7-4dca-8c7d-2810f329c34e",
+    "fields": {
+      "": "",
+      "email": "kannappa.skating@gmail.com",
+      "phone": "919396212161",
+      "full name": "Skating Kannappa",
+      "post_code": "500055",
+      "lead_status": "send 3 kwp",
+      "street address": "quthbullapur",
+      "what_is_your_average_monthly_electricity_bill?": "1400",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Skating Kannappa",
+    "email": "kannappa.skating@gmail.com",
+    "phone": "919396212161",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "bb82cd3e-efd7-4512-b5d4-ccefb9b7c8a4",
+    "fields": {
+      "": "",
+      "email": "swetha.L1988@gmail.com",
+      "phone": "919290642035",
+      "full name": "Nagraj Raj",
+      "post_code": "500055",
+      "lead_status": "not connected",
+      "street address": "Gajularamaram",
+      "what_is_your_average_monthly_electricity_bill?": "1500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Nagraj Raj",
+    "email": "swetha.L1988@gmail.com",
+    "phone": "919290642035",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "f834ce62-fb9b-47e3-b4c3-6dac3fddc963",
+    "fields": {
+      "": "",
+      "email": "akhilesh.vudutha@gmail.com",
+      "phone": "919010400427",
+      "full name": "Akhilesh.V",
+      "post_code": "500078",
+      "lead_status": "power bill 2000",
+      "street address": "Uddamarri",
+      "what_is_your_average_monthly_electricity_bill?": "1800 to 2500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Akhilesh.V",
+    "email": "akhilesh.vudutha@gmail.com",
+    "phone": "919010400427",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "c1159bc9-4bbe-46a3-a6b4-07b6b4662fa5",
+    "fields": {
+      "": "",
+      "email": "banoth.dilipnaik@gmail.com",
+      "phone": "917993450438",
+      "full name": "Dilip Naik",
+      "post_code": "506314",
+      "lead_status": "not lifted",
+      "street address": "Panisthanda",
+      "what_is_your_average_monthly_electricity_bill?": "1500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Dilip Naik",
+    "email": "banoth.dilipnaik@gmail.com",
+    "phone": "917993450438",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "8b643fcd-4d0a-412e-bcd7-f5da993e2f97",
+    "fields": {
+      "": "",
+      "email": "raghuthetutor@gmail.com",
+      "phone": "919989925499",
+      "full name": "Raghavendar",
+      "post_code": "502032",
+      "lead_status": "3 kwp",
+      "street address": "Shiva sai nagar colony",
+      "what_is_your_average_monthly_electricity_bill?": "1500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Raghavendar",
+    "email": "raghuthetutor@gmail.com",
+    "phone": "919989925499",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "1928296e-a539-43eb-9709-62eba9a8e239",
+    "fields": {
+      "": "",
+      "email": "kvgraoamruth@gmail.com",
+      "phone": "919000217174",
+      "full name": "Kandadi Venugopal Rao",
+      "post_code": "500053",
+      "lead_status": "power bill 1600",
+      "street address": "hyderabad, t g",
+      "what_is_your_average_monthly_electricity_bill?": "1500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Kandadi Venugopal Rao",
+    "email": "kvgraoamruth@gmail.com",
+    "phone": "919000217174",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "4e102fe5-ac44-4865-959c-a7cf3d67a069",
+    "fields": {
+      "": "",
+      "email": "kishanyadav9000@gmail.com",
+      "phone": "919000120559",
+      "full name": "Kishan Yadav",
+      "post_code": "508255",
+      "lead_status": "nalgonda",
+      "street address": "Ghatbasuli",
+      "what_is_your_average_monthly_electricity_bill?": "500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Kishan Yadav",
+    "email": "kishanyadav9000@gmail.com",
+    "phone": "919000120559",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "2eb7f3d5-7fea-41b6-8131-2b2b0f4e2465",
+    "fields": {
+      "": "",
+      "email": "viki.walker@gmail.com",
+      "phone": "918885652360",
+      "full name": "Viki Donel",
+      "post_code": "534350",
+      "lead_status": "he will call /AP",
+      "street address": "Kovvur",
+      "what_is_your_average_monthly_electricity_bill?": "500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Viki Donel",
+    "email": "viki.walker@gmail.com",
+    "phone": "918885652360",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "c177ad65-ef85-4ac9-8541-b338ffd5cf28",
+    "fields": {
+      "": "",
+      "email": "vikyath.kumar8@gmail.com",
+      "phone": "919014938391",
+      "full name": "Vikyath Kumar",
+      "post_code": "500053",
+      "lead_status": "HE WILL CALL",
+      "street address": "18-3-524",
+      "what_is_your_average_monthly_electricity_bill?": "3,000/-",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Vikyath Kumar",
+    "email": "vikyath.kumar8@gmail.com",
+    "phone": "919014938391",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "2839cb04-447b-431d-bc59-e582d449403a",
+    "fields": {
+      "": "",
+      "email": "vamshimohan12@gmail.com",
+      "phone": "918367355747",
+      "full name": "Godhumala Vamshi",
+      "post_code": "500098",
+      "lead_status": "power bill 2000",
+      "street address": "Peerzadiguda",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Godhumala Vamshi",
+    "email": "vamshimohan12@gmail.com",
+    "phone": "918367355747",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "c4d16a25-af2e-4823-a568-36162470b6b3",
+    "fields": {
+      "": "",
+      "email": "namalaprakash7369@gmail.com",
+      "phone": "919949635761",
+      "full name": "Prakashh Namala",
+      "post_code": "503111",
+      "lead_status": "not lifted",
+      "street address": "kamareddy",
+      "what_is_your_average_monthly_electricity_bill?": "600",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Prakashh Namala",
+    "email": "namalaprakash7369@gmail.com",
+    "phone": "919949635761",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "38703fbd-fb29-4df4-87be-a5ec6b408b92",
+    "fields": {
+      "": "",
+      "email": "harshadevaraya2612@gmail.com",
+      "phone": "917799442612",
+      "full name": "Harsha",
+      "post_code": "506381",
+      "lead_status": "call back",
+      "street address": "dornakal",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Harsha",
+    "email": "harshadevaraya2612@gmail.com",
+    "phone": "917799442612",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "a1702e56-094a-430e-885a-cf0a6587831a",
+    "fields": {
+      "": "",
+      "email": "chintukrishna@gmail.com",
+      "phone": "919705318610",
+      "full name": "spartacus",
+      "post_code": "509321",
+      "lead_status": "call back",
+      "street address": "hyd",
+      "what_is_your_average_monthly_electricity_bill?": "300",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "spartacus",
+    "email": "chintukrishna@gmail.com",
+    "phone": "919705318610",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "1960c93b-5fac-434e-a131-b6fd1566f04d",
+    "fields": {
+      "": "",
+      "email": "alekhyarajesh567@gmail.com",
+      "phone": "918143488803",
+      "full name": "Alekhya Tanksri",
+      "post_code": "504351",
+      "lead_status": "call back",
+      "street address": "bpl",
+      "what_is_your_average_monthly_electricity_bill?": "2500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Alekhya Tanksri",
+    "email": "alekhyarajesh567@gmail.com",
+    "phone": "918143488803",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "a4a01bcc-4302-496a-a59e-346c088c65d7",
+    "fields": {
+      "": "",
+      "email": "ranadheerreddy.kaluvala@gmail.com",
+      "phone": "919618241491",
+      "full name": "Ranadheer Reddy",
+      "post_code": "500087",
+      "lead_status": "power bill 1400",
+      "street address": "Plot No 42b Godavari gardens Yapral",
+      "what_is_your_average_monthly_electricity_bill?": "350 units",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ranadheer Reddy",
+    "email": "ranadheerreddy.kaluvala@gmail.com",
+    "phone": "919618241491",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "9b680085-f866-4261-9bf7-494ccfc09c70",
+    "fields": {
+      "": "",
+      "email": "chpadmavathi36@gmail.com",
+      "phone": "919298609679",
+      "full name": "Challa Padmavathi Raj",
+      "post_code": "534275",
+      "lead_status": "no need",
+      "street address": "చల్లా అమ్మన రాజా పద్మావతి_ స్టేట్ హ్యూమన్ రైట్ వర్కింగ్ ప్రెసిడెంట్ అపోజిట్ మిస్సమ్మ హాస్పిటల్ థామోస్ బ్రిడ్జి రోడ్ కరెంట్ ట్రాన్సఫర్మ్ వెనుక డబల్ స్టైర్ వెయిట్ బిల్డింగ్ నరసాపురం-534275 వెస్ట్ గోదావరి జిల్లా 9298609679",
+      "what_is_your_average_monthly_electricity_bill?": "3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Challa Padmavathi Raj",
+    "email": "chpadmavathi36@gmail.com",
+    "phone": "919298609679",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "34fe7ca1-4ab7-490d-b64b-490f8d32e8ac",
+    "fields": {
+      "": "",
+      "email": "sugandhamramarao@gmail.com",
+      "phone": "919441248842",
+      "full name": "Rama Rao",
+      "post_code": "507166",
+      "lead_status": "not lift",
+      "street address": "chandrugonda",
+      "what_is_your_average_monthly_electricity_bill?": "1200",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Rama Rao",
+    "email": "sugandhamramarao@gmail.com",
+    "phone": "919441248842",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "12753260-2a5b-42a4-8745-245870ef8d77",
+    "fields": {
+      "": "",
+      "email": "sairam.chilukamari786@gmail.com",
+      "phone": "918074579271",
+      "full name": "Sairam Chilukamari",
+      "post_code": "505327",
+      "lead_status": "busy",
+      "street address": "Jagtial",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Sairam Chilukamari",
+    "email": "sairam.chilukamari786@gmail.com",
+    "phone": "918074579271",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "8fef0fff-4608-476b-9f82-0bbe00dc4364",
+    "fields": {
+      "": "",
+      "email": "srikanthgoudssg9@gmail.com",
+      "phone": "919959481308",
+      "full name": "Srikanth Goud",
+      "post_code": "501508",
+      "lead_status": "ramoji film city",
+      "street address": "nerrapally",
+      "what_is_your_average_monthly_electricity_bill?": "600",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Srikanth Goud",
+    "email": "srikanthgoudssg9@gmail.com",
+    "phone": "919959481308",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "7ab32250-2e5f-4b2a-9cc9-b266c543afbd",
+    "fields": {
+      "": "",
+      "email": "naribangaru07@gmail.com",
+      "phone": "919640501907",
+      "full name": "Boda Naresh",
+      "post_code": "500040",
+      "lead_status": "power bill 2000 mpulali",
+      "street address": "Ashok Nagar ,Mallapur, Uppal",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Boda Naresh",
+    "email": "naribangaru07@gmail.com",
+    "phone": "919640501907",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "d46a13e9-2ddc-417f-aef5-612fd1fc56d9",
+    "fields": {
+      "": "",
+      "email": "ajayladdu78@gmail.com",
+      "phone": "917997661112",
+      "full name": "Ajay Laddu",
+      "post_code": "500036",
+      "lead_status": "he will call",
+      "street address": "Mycro Health Care",
+      "what_is_your_average_monthly_electricity_bill?": "3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ajay Laddu",
+    "email": "ajayladdu78@gmail.com",
+    "phone": "917997661112",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "4f248f57-d396-4a0a-b7f2-46b4a59695cf",
+    "fields": {
+      "": "",
+      "email": "suresh_lav2005@yahoo.com",
+      "phone": "917674882129",
+      "full name": "sureshkumar",
+      "post_code": "500045",
+      "lead_status": "call at lunch time",
+      "street address": "B-48",
+      "what_is_your_average_monthly_electricity_bill?": "3 kiloo",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "sureshkumar",
+    "email": "suresh_lav2005@yahoo.com",
+    "phone": "917674882129",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "66eaecd5-db5a-4abe-9452-b59dde1a407c",
+    "fields": {
+      "": "his cal back",
+      "email": "kanapuram111@gmail.com",
+      "phone": "919948222426",
+      "full name": "reddy",
+      "post_code": "500032",
+      "lead_status": "ct meeter 15kw need 13feet hight",
+      "street address": "tellapur",
+      "what_is_your_average_monthly_electricity_bill?": "18000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building"
+    },
+    "name": "reddy",
+    "email": "kanapuram111@gmail.com",
+    "phone": "919948222426",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "f4a379df-1a80-4108-9559-a84c1c43c3d0",
+    "fields": {
+      "": "",
+      "email": "mrcraobdl47086@gmail.com",
+      "phone": "919849015097",
+      "full name": "M .Ramachandra Rao.",
+      "post_code": "501203",
+      "lead_status": "not lifted",
+      "street address": "A, 556,BDL Town Ship, Bhanur, S. Reddy. 502 305.",
+      "what_is_your_average_monthly_electricity_bill?": "5 00 to 600",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "M .Ramachandra Rao.",
+    "email": "mrcraobdl47086@gmail.com",
+    "phone": "919849015097",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "fd336844-1dd7-4f27-9225-7e42a8f45ef6",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "",
+      "full name": "",
+      "post_code": "",
+      "lead_status": "",
+      "street address": "",
+      "what_is_your_average_monthly_electricity_bill?": "",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "`04-11-2025"
+    },
+    "name": null,
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:09:34.179+00:00"
+  },
+  {
+    "id": "dd43660a-5edf-4db5-99de-8effeb2dabac",
+    "fields": {
+      "": "",
+      "email": "pilot.rahul@gmail.com",
+      "phone": "919685568444",
+      "full name": "Rahul Rawat",
+      "post_code": "500055",
+      "lead_status": "busy",
+      "street address": "hyd",
+      "what_is_your_average_monthly_electricity_bill?": "30000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Rahul Rawat",
+    "email": "pilot.rahul@gmail.com",
+    "phone": "919685568444",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "3dcc079e-2f12-4500-9f22-3438ae9797fd",
+    "fields": {
+      "": "",
+      "email": "Kashirajuharish@gmail.com",
+      "phone": "918523061126",
+      "full name": "K Hari",
+      "post_code": "500058",
+      "lead_status": "bn reddy nagar/2/3 kwp send",
+      "street address": "Sri Hills Colony Phase 2 Madhura Nagar Almasguda",
+      "what_is_your_average_monthly_electricity_bill?": "300units",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "K Hari",
+    "email": "Kashirajuharish@gmail.com",
+    "phone": "918523061126",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "fcc36e7d-090e-4492-b6f5-3a92c7fe9e0e",
+    "fields": {
+      "": "",
+      "email": "singaraveni135@gmail.com",
+      "phone": "919652757480",
+      "full name": "Čðhū Chinna",
+      "post_code": "505505",
+      "lead_status": "not reachable",
+      "street address": "H.no 3-107",
+      "what_is_your_average_monthly_electricity_bill?": "70000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Čðhū Chinna",
+    "email": "singaraveni135@gmail.com",
+    "phone": "919652757480",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "06fd77df-3220-43f4-b43d-b2d4e3a30739",
+    "fields": {
+      "": "",
+      "email": "diwakarlawyer72@gmail.com",
+      "phone": "7989592253",
+      "full name": "Diwakarmunuswamy Diwakar",
+      "post_code": "500095",
+      "lead_status": "call back",
+      "street address": "Koti Hyderabad",
+      "what_is_your_average_monthly_electricity_bill?": "2500 to 3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Diwakarmunuswamy Diwakar",
+    "email": "diwakarlawyer72@gmail.com",
+    "phone": "7989592253",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "a5f53758-8064-464b-96d3-f527ad0ac58e",
+    "fields": {
+      "": "",
+      "email": "geethika186@gmail.com",
+      "phone": "917032627330",
+      "full name": "Ananth krishna",
+      "post_code": "500018",
+      "lead_status": "call back",
+      "street address": "Jyoti Residency Plot No 86",
+      "what_is_your_average_monthly_electricity_bill?": "House",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Ananth krishna",
+    "email": "geethika186@gmail.com",
+    "phone": "917032627330",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "c1709bc0-8378-4f8f-a040-6bce407eb581",
+    "fields": {
+      "": "",
+      "email": "bvenkat6434@gmail.com",
+      "phone": "919666916947",
+      "full name": "Venkatesh Bejawada",
+      "post_code": "508201",
+      "lead_status": "just for enquiry",
+      "street address": "huzurnagar",
+      "what_is_your_average_monthly_electricity_bill?": "1300",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Venkatesh Bejawada",
+    "email": "bvenkat6434@gmail.com",
+    "phone": "919666916947",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "de11f147-1529-4031-bc67-449298937140",
+    "fields": {
+      "": "",
+      "email": "vssbkingdom@gmail.com",
+      "phone": "917386061616",
+      "full name": "Bharadwaj",
+      "post_code": "500013",
+      "lead_status": "he will call",
+      "street address": "Habsiguda",
+      "what_is_your_average_monthly_electricity_bill?": "6000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Bharadwaj",
+    "email": "vssbkingdom@gmail.com",
+    "phone": "917386061616",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "e2c3342d-07e0-47b0-871c-02157d3261ff",
+    "fields": {
+      "": "",
+      "email": "sasi10137@gmail.com",
+      "phone": "919491903739",
+      "full name": "Sasi Bhushana Rao",
+      "post_code": "530018",
+      "lead_status": "out off service",
+      "street address": "38-30-239.hissain nagar.visakhapatnam",
+      "what_is_your_average_monthly_electricity_bill?": "2000 below",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Sasi Bhushana Rao",
+    "email": "sasi10137@gmail.com",
+    "phone": "919491903739",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "c00a4f36-cc3e-474b-bb1c-465d1938eae9",
+    "fields": {
+      "": "",
+      "email": "yadaugjaipal@gmail.com",
+      "phone": "919177345047",
+      "full name": "Jaipal Yadav",
+      "post_code": "515801",
+      "lead_status": "busy",
+      "street address": "Nagaradona.v.chippagiri.m.alur.t.kurnool.b",
+      "what_is_your_average_monthly_electricity_bill?": "S",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Jaipal Yadav",
+    "email": "yadaugjaipal@gmail.com",
+    "phone": "919177345047",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "7b50c50c-a938-4aab-9331-bd0be3637eb2",
+    "fields": {
+      "": "",
+      "email": "santoshyadav9989@yahoo.com",
+      "phone": "918686316102",
+      "full name": "Santosh Yadav",
+      "post_code": "500047",
+      "lead_status": "power bill 30000",
+      "street address": "27/143, malkajgiri",
+      "what_is_your_average_monthly_electricity_bill?": "3000 to 4000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Santosh Yadav",
+    "email": "santoshyadav9989@yahoo.com",
+    "phone": "918686316102",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "00152322-c7e0-42c0-af8b-39d9f1cc7ebf",
+    "fields": {
+      "": "",
+      "email": "jabbarmohammd1995@gmail.com",
+      "phone": "919908528236",
+      "full name": "Jabber Qureshi",
+      "post_code": "506143",
+      "lead_status": "repeated",
+      "street address": "Near Bharth Bunk",
+      "what_is_your_average_monthly_electricity_bill?": "3500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Jabber Qureshi",
+    "email": "jabbarmohammd1995@gmail.com",
+    "phone": "919908528236",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "7e06ea76-cd67-4542-a824-734886623265",
+    "fields": {
+      "": "",
+      "email": "kiranjcnncm@gmail.com",
+      "phone": "919618977014",
+      "full name": "T Kiran Kumaran",
+      "post_code": "524413",
+      "lead_status": "he will call",
+      "street address": "chendodu village, Vidyanagar Post, Kota mandal, Nellore district.",
+      "what_is_your_average_monthly_electricity_bill?": "7000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "T Kiran Kumaran",
+    "email": "kiranjcnncm@gmail.com",
+    "phone": "919618977014",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "70204ec2-0e55-4c7f-adb7-81836170bf56",
+    "fields": {
+      "": "",
+      "email": "Vrpharma15@gmail.com",
+      "phone": "917799320895",
+      "full name": "Banoth Naik Prashanth",
+      "post_code": "506101",
+      "lead_status": "busy",
+      "street address": "jaya Hospitals mahabubabad",
+      "what_is_your_average_monthly_electricity_bill?": "20000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "school_/_college_/_hospital"
+    },
+    "name": "Banoth Naik Prashanth",
+    "email": "Vrpharma15@gmail.com",
+    "phone": "917799320895",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "d78a50ac-55e8-4a97-acd3-335671f9d88a",
+    "fields": {
+      "": "",
+      "email": "kethavathrajeshkumar@gmail.com",
+      "phone": "919951057160",
+      "full name": "Rajeshkumar Kethavath",
+      "post_code": "508116",
+      "lead_status": "he will call",
+      "street address": "BHONGIR",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Rajeshkumar Kethavath",
+    "email": "kethavathrajeshkumar@gmail.com",
+    "phone": "919951057160",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "21a87e29-e61b-42d7-98ff-dc22c50b079e",
+    "fields": {
+      "": "",
+      "email": "smv_purush@yahoo.co.in",
+      "phone": "919291490492",
+      "full name": "Smv Purushotham",
+      "post_code": "500098",
+      "lead_status": "please send 3 and 4 kw quotations",
+      "street address": "Sri Sai Krishna colony,peerzadiguda",
+      "what_is_your_average_monthly_electricity_bill?": "3500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Smv Purushotham",
+    "email": "smv_purush@yahoo.co.in",
+    "phone": "919291490492",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "9e01216a-dfaa-4809-9809-65b49f367735",
+    "fields": {
+      "": "",
+      "email": "kuthadisantoshkumar8026@gmail.com",
+      "phone": "917337368800",
+      "full name": "Kuthadi Santosh Kumar",
+      "post_code": "500087",
+      "lead_status": "not lifted",
+      "street address": "yapral near",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Kuthadi Santosh Kumar",
+    "email": "kuthadisantoshkumar8026@gmail.com",
+    "phone": "917337368800",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "c01f1153-74f8-4483-b778-e97b0bb2937f",
+    "fields": {
+      "": "",
+      "email": "anem.dileepkumar305@gmail.com",
+      "phone": "919291207481",
+      "full name": "AnemDileepkumar",
+      "post_code": "517503",
+      "lead_status": "not lifted",
+      "street address": "Tiruchanoore",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "AnemDileepkumar",
+    "email": "anem.dileepkumar305@gmail.com",
+    "phone": "919291207481",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "c1979b69-d2b0-46ba-af77-ce3c54eef70b",
+    "fields": {
+      "": "",
+      "email": "saivamsi8369@gmail.com",
+      "phone": "919398654489",
+      "full name": "Midde Venkata Subbaiah",
+      "post_code": "518501",
+      "lead_status": "not lifted",
+      "street address": "బాలజీ కాంప్లెక్శ్",
+      "what_is_your_average_monthly_electricity_bill?": "2000 or 3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Midde Venkata Subbaiah",
+    "email": "saivamsi8369@gmail.com",
+    "phone": "919398654489",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "874d0e47-0160-42d0-8ebc-5475c36206a1",
+    "fields": {
+      "": "",
+      "email": "laxman.laxman.a167@gmail.com",
+      "phone": "919396571413",
+      "full name": "Laxman Andhollu",
+      "post_code": "500070",
+      "lead_status": "cal back",
+      "street address": "panama godowns",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Laxman Andhollu",
+    "email": "laxman.laxman.a167@gmail.com",
+    "phone": "919396571413",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "e6740be8-08fc-4a05-959a-2c53cb4a9718",
+    "fields": {
+      "": "",
+      "email": "www.krishnan77@gmail.com",
+      "phone": "919705452474",
+      "full name": "ཌᶦˢMᵃʳᵗ۝ᵐᵘRᵃˡᶦད,",
+      "post_code": "530048",
+      "lead_status": "cal back",
+      "street address": "TULASI NAGAR WALKER'S CLUB PARK Pothinamallayya Palem",
+      "what_is_your_average_monthly_electricity_bill?": "5000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "ཌᶦˢMᵃʳᵗ۝ᵐᵘRᵃˡᶦད,",
+    "email": "www.krishnan77@gmail.com",
+    "phone": "919705452474",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "0e5a18fc-47c1-4365-ba04-65a87dd7f0a2",
+    "fields": {
+      "": "",
+      "email": "nagapradad.svnr@gmail.com",
+      "phone": "919440258533",
+      "full name": "Nagaprasad Bellapukonda",
+      "post_code": "500055",
+      "lead_status": "busy",
+      "street address": "10-24 poolavanddla street",
+      "what_is_your_average_monthly_electricity_bill?": "new house",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Nagaprasad Bellapukonda",
+    "email": "nagapradad.svnr@gmail.com",
+    "phone": "919440258533",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "c18dcaa4-9cd0-48ed-9d34-0e654f7d9af8",
+    "fields": {
+      "": "",
+      "email": "nani9985859199@gmail.com",
+      "phone": "919866159144",
+      "full name": "Gowthamkrishna",
+      "post_code": "523211",
+      "lead_status": "FOLLOW UP",
+      "street address": "3-76 Main Road Maddipadu",
+      "what_is_your_average_monthly_electricity_bill?": "2500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Gowthamkrishna",
+    "email": "nani9985859199@gmail.com",
+    "phone": "919866159144",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "de71fcdb-e8e1-4eec-940c-38125eb67cfa",
+    "fields": {
+      "": "",
+      "email": "dhanvin.g@gmail.com",
+      "phone": "919652601708",
+      "full name": "Ganta Ambedkar",
+      "post_code": "502032",
+      "lead_status": "not lifted",
+      "street address": "5 Bhel New Mig Phase 2",
+      "what_is_your_average_monthly_electricity_bill?": "3600",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ganta Ambedkar",
+    "email": "dhanvin.g@gmail.com",
+    "phone": "919652601708",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "b92f26d8-4f43-4276-bc05-caab4931e46f",
+    "fields": {
+      "": "",
+      "email": "ashusavi.daddy@gmail.com",
+      "phone": "918008531927",
+      "full name": "Ramesh Nayak Kanna",
+      "post_code": "500019",
+      "lead_status": "not lift",
+      "street address": "Shivaji nagar colony SERILINGAMPALLY",
+      "what_is_your_average_monthly_electricity_bill?": "How to install",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ramesh Nayak Kanna",
+    "email": "ashusavi.daddy@gmail.com",
+    "phone": "918008531927",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "53e9fe06-1c61-4934-8a33-f09935232829",
+    "fields": {
+      "": "",
+      "email": "haraharaengnirangworks@gmail.com",
+      "phone": "918341997322",
+      "full name": "goli sai krishna",
+      "post_code": "505453",
+      "lead_status": "not lift",
+      "street address": "koratla",
+      "what_is_your_average_monthly_electricity_bill?": "5000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building"
+    },
+    "name": "goli sai krishna",
+    "email": "haraharaengnirangworks@gmail.com",
+    "phone": "918341997322",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "6c83dde9-270d-4fa5-83b2-a094ce73ba3e",
+    "fields": {
+      "": "",
+      "email": "kesh.mamidi@yahoo.com",
+      "phone": "919393930122",
+      "full name": "Mamidi Keshav",
+      "post_code": "500006",
+      "lead_status": "not lift",
+      "street address": "Subzimandi, jiyaguda",
+      "what_is_your_average_monthly_electricity_bill?": "500",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Mamidi Keshav",
+    "email": "kesh.mamidi@yahoo.com",
+    "phone": "919393930122",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "e0fd5b90-11f8-4ddb-8a60-a218856977e5",
+    "fields": {
+      "": "",
+      "email": "",
+      "phone": "919000292864",
+      "full name": "N.Venkata Narayana",
+      "post_code": "506167",
+      "lead_status": "send 3 kwp non dcr",
+      "street address": "3-4-10,Nehru park road",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "N.Venkata Narayana",
+    "phone": "919000292864",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "6f479b7c-ea80-4829-8c7a-56cbfc4ce42b",
+    "fields": {
+      "": "",
+      "email": "palthineninaveenrao@gmail.com",
+      "phone": "919505096252",
+      "full name": "P Naveen Rao",
+      "post_code": "500072",
+      "lead_status": "KUKATPALLY",
+      "street address": "Plott No-103",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "P Naveen Rao",
+    "email": "palthineninaveenrao@gmail.com",
+    "phone": "919505096252",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "a162a882-7ec6-4cd8-a843-fb0dad8cc614",
+    "fields": {
+      "": "",
+      "email": "rajulodelly@gmail.com",
+      "phone": "919948495976",
+      "full name": "LODELLY RAJENDER",
+      "post_code": "504296",
+      "lead_status": "busy",
+      "street address": "kachiguda",
+      "what_is_your_average_monthly_electricity_bill?": "4000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building"
+    },
+    "name": "LODELLY RAJENDER",
+    "email": "rajulodelly@gmail.com",
+    "phone": "919948495976",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "09a8068e-278d-4e4d-bc64-106da3bf7f69",
+    "fields": {
+      "": "",
+      "email": "info@kpsuites.in",
+      "phone": "919505667554",
+      "full name": "KP Suites Private Limited",
+      "post_code": "500018",
+      "lead_status": "25 kwp need commercial",
+      "street address": "Hyderabad",
+      "what_is_your_average_monthly_electricity_bill?": "30000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "commercial_building"
+    },
+    "name": "KP Suites Private Limited",
+    "email": "info@kpsuites.in",
+    "phone": "919505667554",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "28b8151c-8c20-44ef-968d-007a442d2456",
+    "fields": {
+      "": "",
+      "email": "ramillarvind@gmail.com",
+      "phone": "917799600076",
+      "full name": "Ramilla Arvind Kumar",
+      "post_code": "500010",
+      "lead_status": "POWER BILL 1500",
+      "street address": "Kowkoor, Alwal",
+      "what_is_your_average_monthly_electricity_bill?": "2000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ramilla Arvind Kumar",
+    "email": "ramillarvind@gmail.com",
+    "phone": "917799600076",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "5698aba8-4fc8-4089-83d3-3c709051fda4",
+    "fields": {
+      "": "",
+      "email": "aneeladasari@gmail.com",
+      "phone": "919491114578",
+      "full name": "Ravi Dasari",
+      "post_code": "522647",
+      "lead_status": "",
+      "street address": "sethaiah nagar",
+      "what_is_your_average_monthly_electricity_bill?": "3000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Ravi Dasari",
+    "email": "aneeladasari@gmail.com",
+    "phone": "919491114578",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "35c843fd-9b8e-45ae-89cc-bf4579eab09c",
+    "fields": {
+      "": "",
+      "email": "aveeavis1@gmail.com",
+      "phone": "919700444417",
+      "full name": "Mavuram Avinash Reddy",
+      "post_code": "500083",
+      "lead_status": "POWER BILL 1500",
+      "street address": "Plot No 1 Shimapuri",
+      "what_is_your_average_monthly_electricity_bill?": "1400",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "individual_house"
+    },
+    "name": "Mavuram Avinash Reddy",
+    "email": "aveeavis1@gmail.com",
+    "phone": "919700444417",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
+  },
+  {
+    "id": "038e4179-68ce-4885-92f8-6d0f78475606",
+    "fields": {
+      "": "",
+      "email": "satish.143@yahoo.com",
+      "phone": "919966776123",
+      "full name": "Satish",
+      "post_code": "500017",
+      "lead_status": "COMMON AREA",
+      "street address": "tarnaka",
+      "what_is_your_average_monthly_electricity_bill?": "25000",
+      "what_type_of_property_do_you_want_to_install_solar_on?": "apartment_/_housing_society"
+    },
+    "name": "Satish",
+    "email": "satish.143@yahoo.com",
+    "phone": "919966776123",
+    "status": "new",
+    "ownerId": null,
+    "createdAt": "2025-11-13T06:09:34.179+00:00",
+    "updatedAt": "2025-11-13T06:30:03.038Z"
   }
 ]

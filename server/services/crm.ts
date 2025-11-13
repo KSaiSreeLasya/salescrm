@@ -164,10 +164,10 @@ async function saveLeads(leads: Lead[]) {
           company: l.company || null,
           source: l.source || null,
           status: l.status || (leadStatusField as LeadStatus) || 'new',
-          ownerId: l.ownerId || null,
+          owner_id: l.ownerId || null,
           notes: l.notes || null,
-          createdAt: l.createdAt,
-          updatedAt: l.updatedAt,
+          created_at: l.createdAt,
+          updated_at: l.updatedAt,
         };
 
         // add top-level sheet columns if available (these columns should exist in DB schema)

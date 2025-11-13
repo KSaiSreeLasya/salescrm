@@ -221,7 +221,7 @@ async function saveSalespersons(salespersons: Salesperson[]) {
 export async function saveConfig(config: ConfigState) {
   if (hasSupabase()) {
     try {
-      const body = { id: 1, sheetUrl: config.sheetUrl || null, lastSyncAt: config.lastSyncAt || null, headers: config.headers || null };
+      const body = { id: 1, sheet_url: config.sheetUrl || null, last_sync_at: config.lastSyncAt || null, headers: config.headers || null };
       await supabaseFetch("config?on_conflict=id", {
         method: "POST",
         body: JSON.stringify(body),

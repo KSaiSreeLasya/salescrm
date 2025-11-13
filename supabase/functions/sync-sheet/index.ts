@@ -1,6 +1,6 @@
 export default async function handler(req: Request) {
-  const SUPABASE_URL = Deno.env.get('SUPABASE_URL');
-  const KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
+  const SUPABASE_URL = Deno.env.get('SB_URL');
+  const KEY = Deno.env.get('SB_KEY');
   const SYNC_TOKEN = Deno.env.get('SYNC_TOKEN'); // optional secret to protect function
 
   if (!SUPABASE_URL || !KEY) return new Response('Missing env', { status: 500 });

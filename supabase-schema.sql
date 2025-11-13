@@ -65,9 +65,9 @@ CREATE TABLE IF NOT EXISTS config (
 );
 
 -- Insert default config row
-INSERT INTO config (id, sheet_url, last_sync_at) 
+INSERT INTO config (id, sheet_url, last_sync_at)
 VALUES (1, 'https://docs.google.com/spreadsheets/d/1QY8_Q8-ybLKNVs4hynPZslZDwUfC-PIJrViJfL0-tpM/export?format=csv', NULL)
-ON CONFLICT (id) DO NOTHING;
+ON CONFLICT (id) DO UPDATE SET sheet_url = 'https://docs.google.com/spreadsheets/d/1QY8_Q8-ybLKNVs4hynPZslZDwUfC-PIJrViJfL0-tpM/export?format=csv';
 
 -- Create function to update updated_at timestamp
 CREATE OR REPLACE FUNCTION update_updated_at_column()

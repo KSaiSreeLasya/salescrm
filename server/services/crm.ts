@@ -286,9 +286,14 @@ export async function createSalesperson(input: Pick<Salesperson, "name" | "email
 export async function updateSalesperson(id: string, patch: Partial<Salesperson>) {
   if (hasSupabase()) {
     try {
+      const supabasePatch: any = { ...patch };
+      if (supabasePatch.createdAt !== undefined) {
+        supabasePatch.created_at = supabasePatch.createdAt;
+        delete supabasePatch.createdAt;
+      }
       await supabaseFetch(`salespersons?id=eq.${id}`, {
         method: "PATCH",
-        body: JSON.stringify(patch),
+        body: JSON.stringify(supabasePatch),
       });
       const items = await supabaseGetSalespersons();
       const updated = items.find((s) => s.id === id) || null;

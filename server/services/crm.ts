@@ -47,7 +47,7 @@ async function supabaseFetch(path: string, opts: RequestInit = {}) {
 }
 
 async function supabaseListLeads(): Promise<Lead[]> {
-  const res = await supabaseFetch("leads?select=*&order=createdAt.desc");
+  const res = await supabaseFetch("leads?select=*&order=created_at.desc");
   const data = await res.json();
   // ensure types
   return (data || []).map((d: any) => ({
@@ -59,10 +59,10 @@ async function supabaseListLeads(): Promise<Lead[]> {
     company: d.company || undefined,
     source: d.source || undefined,
     status: d.status || "new",
-    ownerId: d.ownerId || null,
+    ownerId: d.owner_id || null,
     notes: d.notes || undefined,
-    createdAt: d.createdAt,
-    updatedAt: d.updatedAt,
+    createdAt: d.created_at,
+    updatedAt: d.updated_at,
   }));
 }
 
@@ -74,7 +74,7 @@ async function supabaseGetSalespersons(): Promise<Salesperson[]> {
     name: d.name,
     email: d.email || undefined,
     active: !!d.active,
-    createdAt: d.createdAt,
+    createdAt: d.created_at,
   }));
 }
 
@@ -84,8 +84,8 @@ async function supabaseGetConfig(): Promise<ConfigState> {
     const data = await res.json();
     const row = (data && data[0]) || {};
     return {
-      sheetUrl: row.sheetUrl || undefined,
-      lastSyncAt: row.lastSyncAt || undefined,
+      sheetUrl: row.sheet_url || undefined,
+      lastSyncAt: row.last_sync_at || undefined,
       headers: row.headers || undefined,
     };
   } catch (e) {
@@ -115,20 +115,31 @@ export async function getState(): Promise<CRMState> {
   return { leads, salespersons, config };
 }
 
-function getFieldValue(fields: Record<string, string | undefined>, candidates: string[]) {
+function getFieldValue(
+  fields: Record<string, string | undefined>,
+  candidates: string[],
+) {
   for (const c of candidates) {
     if (!c) continue;
-    if (fields[c] !== undefined && fields[c] !== null && String(fields[c]).trim() !== "") return String(fields[c]);
+    if (
+      fields[c] !== undefined &&
+      fields[c] !== null &&
+      String(fields[c]).trim() !== ""
+    )
+      return String(fields[c]);
   }
   return undefined;
 }
 
 function sanitizeKey(k?: string) {
-  if (!k) return '';
-  return k.replace(/[^a-z0-9]+/gi, '_').replace(/^_+|_+$/g, '').toLowerCase();
+  if (!k) return "";
+  return k
+    .replace(/[^a-z0-9]+/gi, "_")
+    .replace(/^_+|_+$/g, "")
+    .toLowerCase();
 }
 
-async function saveLeads(leads: Lead[]) {
+export async function saveLeads(leads: Lead[]) {
   if (hasSupabase()) {
     try {
       // Upsert each lead individually (simple and robust)
@@ -136,24 +147,52 @@ async function saveLeads(leads: Lead[]) {
         const fields = l.fields || {};
         // candidates mapping - check common header variations
         const whatType = getFieldValue(fields, [
-          'what_type_of_property_do_you_want_to_install_solar_on?',
-          'what_type_of_property',
-          'what type of property do you want to install solar on?',
-          'property_type',
+          "what_type_of_property_do_you_want_to_install_solar_on?",
+          "what_type_of_property",
+          "what type of property do you want to install solar on?",
+          "property_type",
         ]);
         const avgBill = getFieldValue(fields, [
-          'what_is_your_average_monthly_electricity_bill?',
-          'average_monthly_bill',
-          'what is your average monthly electricity bill?',
+          "what_is_your_average_monthly_electricity_bill?",
+          "average_monthly_bill",
+          "what is your average monthly electricity bill?",
         ]);
-        const fullName = getFieldValue(fields, ['full name', 'Full Name', 'name', 'Name']);
-        const phoneField = getFieldValue(fields, ['phone', 'Phone', 'mobile', 'Mobile']);
-        const emailField = getFieldValue(fields, ['email', 'Email', 'e-mail', 'E-mail']);
-        const street = getFieldValue(fields, ['street address', 'street_address', 'Street Address']);
-        const postCode = getFieldValue(fields, ['post_code', 'post code', 'Post Code']);
-        const leadStatusField = getFieldValue(fields, ['lead_status', 'Lead Status', 'lead status', 'status']);
-        const note1 = getFieldValue(fields, ['note1', 'note 1', '']);
-        const note2 = getFieldValue(fields, ['note2', 'note 2', '']);
+        const fullName = getFieldValue(fields, [
+          "full name",
+          "Full Name",
+          "name",
+          "Name",
+        ]);
+        const phoneField = getFieldValue(fields, [
+          "phone",
+          "Phone",
+          "mobile",
+          "Mobile",
+        ]);
+        const emailField = getFieldValue(fields, [
+          "email",
+          "Email",
+          "e-mail",
+          "E-mail",
+        ]);
+        const street = getFieldValue(fields, [
+          "street address",
+          "street_address",
+          "Street Address",
+        ]);
+        const postCode = getFieldValue(fields, [
+          "post_code",
+          "post code",
+          "Post Code",
+        ]);
+        const leadStatusField = getFieldValue(fields, [
+          "lead_status",
+          "Lead Status",
+          "lead status",
+          "status",
+        ]);
+        const note1 = getFieldValue(fields, ["note1", "note 1", ""]);
+        const note2 = getFieldValue(fields, ["note2", "note 2", ""]);
 
         const body: any = {
           id: l.id,
@@ -163,11 +202,11 @@ async function saveLeads(leads: Lead[]) {
           phone: l.phone || phoneField || null,
           company: l.company || null,
           source: l.source || null,
-          status: l.status || (leadStatusField as LeadStatus) || 'new',
-          ownerId: l.ownerId || null,
+          status: l.status || (leadStatusField as LeadStatus) || "new",
+          owner_id: l.ownerId || null,
           notes: l.notes || null,
-          createdAt: l.createdAt,
-          updatedAt: l.updatedAt,
+          created_at: l.createdAt,
+          updated_at: l.updatedAt,
         };
 
         // add top-level sheet columns if available (these columns should exist in DB schema)
@@ -181,8 +220,8 @@ async function saveLeads(leads: Lead[]) {
         if (leadStatusField) body.lead_status = leadStatusField;
 
         // upsert via POST with on_conflict requires query param ?on_conflict=id
-        await supabaseFetch('leads?on_conflict=id', {
-          method: 'POST',
+        await supabaseFetch("leads?on_conflict=id", {
+          method: "POST",
           body: JSON.stringify(body),
         });
       }
@@ -194,7 +233,7 @@ async function saveLeads(leads: Lead[]) {
   await writeJSON(FILE_LEADS, leads);
 }
 
-async function saveSalespersons(salespersons: Salesperson[]) {
+export async function saveSalespersons(salespersons: Salesperson[]) {
   if (hasSupabase()) {
     try {
       for (const s of salespersons) {
@@ -203,7 +242,7 @@ async function saveSalespersons(salespersons: Salesperson[]) {
           name: s.name,
           email: s.email || null,
           active: s.active,
-          createdAt: s.createdAt,
+          created_at: s.createdAt,
         };
         await supabaseFetch("salespersons?on_conflict=id", {
           method: "POST",
@@ -221,7 +260,12 @@ async function saveSalespersons(salespersons: Salesperson[]) {
 export async function saveConfig(config: ConfigState) {
   if (hasSupabase()) {
     try {
-      const body = { id: 1, sheetUrl: config.sheetUrl || null, lastSyncAt: config.lastSyncAt || null, headers: config.headers || null };
+      const body = {
+        id: 1,
+        sheet_url: config.sheetUrl || null,
+        last_sync_at: config.lastSyncAt || null,
+        headers: config.headers || null,
+      };
       await supabaseFetch("config?on_conflict=id", {
         method: "POST",
         body: JSON.stringify(body),
@@ -238,16 +282,43 @@ export async function listLeads(): Promise<Lead[]> {
   const state = await getState();
   const leads = state.leads;
   const filtered = leads.filter((l) => {
-    const vals = Object.values(l.fields || {}).map((v) => (v || "").toString().trim());
+    const vals = Object.values(l.fields || {}).map((v) =>
+      (v || "").toString().trim(),
+    );
     const nonEmpty = vals.filter((v) => v !== "");
     if (nonEmpty.length === 0) return false;
+
+    // Check if only one non-empty value - likely junk
     if (nonEmpty.length === 1) {
       const v = nonEmpty[0];
-      const dateLike = /^\d{1,2}[\-/]\d{1,2}[\-/]\d{2,4}$/.test(v) || /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(v);
+      const dateLike =
+        /^\d{1,2}[\-/]\d{1,2}[\-/]\d{2,4}$/.test(v) ||
+        /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(v) ||
+        /^`\d{2}-\d{2}-\d{4}$/.test(v);
       const totalLike = /^sum|^total|^subtotal/i.test(v);
-      const numericOnly = /^[-+]?\d{1,3}(?:[\,\d]*)(?:\.\d+)?$/.test(v.replace(/\s+/g, ""));
+      const numericOnly = /^[-+]?\d{1,3}(?:[\,\d]*)(?:\.\d+)?$/.test(
+        v.replace(/\s+/g, ""),
+      );
       if (dateLike || totalLike || numericOnly) return false;
     }
+
+    // Also check if this is a real lead (has name, email or phone)
+    const hasRealData = !!(l.name || l.email || l.phone);
+    if (!hasRealData) {
+      // If no name, email or phone, at least need 3+ meaningful fields
+      const keyFields = [
+        "full name",
+        "phone",
+        "email",
+        "what_is_your_average_monthly_electricity_bill?",
+        "what_type_of_property_do_you_want_to_install_solar_on?",
+      ];
+      const realFieldCount = keyFields.filter(
+        (k) => (l.fields?.[k] || "").toString().trim() !== "",
+      ).length;
+      if (realFieldCount < 2) return false;
+    }
+
     return true;
   });
   return filtered.sort((a, b) => b.createdAt.localeCompare(a.createdAt));
@@ -258,7 +329,9 @@ export async function listSalespersons(): Promise<Salesperson[]> {
   return state.salespersons.sort((a, b) => a.name.localeCompare(b.name));
 }
 
-export async function createSalesperson(input: Pick<Salesperson, "name" | "email">) {
+export async function createSalesperson(
+  input: Pick<Salesperson, "name" | "email">,
+) {
   const now = new Date().toISOString();
   const person: Salesperson = {
     id: randomUUID(),
@@ -283,12 +356,20 @@ export async function createSalesperson(input: Pick<Salesperson, "name" | "email
   return person;
 }
 
-export async function updateSalesperson(id: string, patch: Partial<Salesperson>) {
+export async function updateSalesperson(
+  id: string,
+  patch: Partial<Salesperson>,
+) {
   if (hasSupabase()) {
     try {
+      const supabasePatch: any = { ...patch };
+      if (supabasePatch.createdAt !== undefined) {
+        supabasePatch.created_at = supabasePatch.createdAt;
+        delete supabasePatch.createdAt;
+      }
       await supabaseFetch(`salespersons?id=eq.${id}`, {
         method: "PATCH",
-        body: JSON.stringify(patch),
+        body: JSON.stringify(supabasePatch),
       });
       const items = await supabaseGetSalespersons();
       const updated = items.find((s) => s.id === id) || null;
@@ -311,7 +392,10 @@ export async function deleteSalesperson(id: string) {
     try {
       await supabaseFetch(`salespersons?id=eq.${id}`, { method: "DELETE" });
       // unassign leads
-      await supabaseFetch(`leads?ownerId=eq.${id}`, { method: "PATCH", body: JSON.stringify({ ownerId: null }) });
+      await supabaseFetch(`leads?owner_id=eq.${id}`, {
+        method: "PATCH",
+        body: JSON.stringify({ owner_id: null }),
+      });
       return true;
     } catch (e) {
       // fallback
@@ -320,7 +404,9 @@ export async function deleteSalesperson(id: string) {
   const state = await getState();
   const next = state.salespersons.filter((s) => s.id !== id);
   await saveSalespersons(next);
-  const leads = state.leads.map((l) => (l.ownerId === id ? { ...l, ownerId: null } : l));
+  const leads = state.leads.map((l) =>
+    l.ownerId === id ? { ...l, ownerId: null } : l,
+  );
   await saveLeads(leads);
   return true;
 }
@@ -351,7 +437,10 @@ export async function createLead(input: Partial<Lead>) {
   };
   if (hasSupabase()) {
     try {
-      await supabaseFetch("leads", { method: "POST", body: JSON.stringify(lead) });
+      await supabaseFetch("leads", {
+        method: "POST",
+        body: JSON.stringify(lead),
+      });
       return lead;
     } catch (e) {
       // fallback
@@ -365,7 +454,23 @@ export async function createLead(input: Partial<Lead>) {
 export async function updateLead(id: string, patch: Partial<Lead>) {
   if (hasSupabase()) {
     try {
-      await supabaseFetch(`leads?id=eq.${id}`, { method: "PATCH", body: JSON.stringify(patch) });
+      const supabasePatch: any = { ...patch };
+      if (supabasePatch.ownerId !== undefined) {
+        supabasePatch.owner_id = supabasePatch.ownerId;
+        delete supabasePatch.ownerId;
+      }
+      if (supabasePatch.createdAt !== undefined) {
+        supabasePatch.created_at = supabasePatch.createdAt;
+        delete supabasePatch.createdAt;
+      }
+      if (supabasePatch.updatedAt !== undefined) {
+        supabasePatch.updated_at = supabasePatch.updatedAt;
+        delete supabasePatch.updatedAt;
+      }
+      await supabaseFetch(`leads?id=eq.${id}`, {
+        method: "PATCH",
+        body: JSON.stringify(supabasePatch),
+      });
       const items = await supabaseListLeads();
       return items.find((l) => l.id === id) || null;
     } catch (e) {
@@ -384,7 +489,8 @@ export async function updateLead(id: string, patch: Partial<Lead>) {
     name: (patch.name as string) || mergedFields["Name"] || current.name,
     email: (patch.email as string) || mergedFields["Email"] || current.email,
     phone: (patch.phone as string) || mergedFields["Phone"] || current.phone,
-    company: (patch.company as string) || mergedFields["Company"] || current.company,
+    company:
+      (patch.company as string) || mergedFields["Company"] || current.company,
     notes: (patch.notes as string) || mergedFields["Notes"] || current.notes,
     updatedAt: new Date().toISOString(),
   };
@@ -414,7 +520,9 @@ export async function assignUnassignedLeads() {
   if (active.length === 0) return 0;
   const load = new Map<string, number>();
   for (const s of active) load.set(s.id, 0);
-  for (const l of state.leads) if (l.ownerId && load.has(l.ownerId)) load.set(l.ownerId, (load.get(l.ownerId) || 0) + 1);
+  for (const l of state.leads)
+    if (l.ownerId && load.has(l.ownerId))
+      load.set(l.ownerId, (load.get(l.ownerId) || 0) + 1);
 
   let assigned = 0;
   const leads = state.leads.map((l) => {
@@ -423,7 +531,11 @@ export async function assignUnassignedLeads() {
       if (target) {
         assigned++;
         load.set(target, (load.get(target) || 0) + 1);
-        return { ...l, ownerId: target, updatedAt: new Date().toISOString() } as Lead;
+        return {
+          ...l,
+          ownerId: target,
+          updatedAt: new Date().toISOString(),
+        } as Lead;
       }
     }
     return l;
@@ -444,10 +556,21 @@ function findLeastLoaded(load: Map<string, number>): string | null {
   return minKey;
 }
 
-export async function importFromCsvRows(rows: Record<string, string>[], headers?: string[]) {
+export async function importFromCsvRows(
+  rows: Record<string, string>[],
+  headers?: string[],
+) {
   const state = await getState();
-  const byEmail = new Map(state.leads.filter((l) => l.email).map((l) => [l.email!.toLowerCase(), l] as const));
-  const byPhone = new Map(state.leads.filter((l) => l.phone).map((l) => [normalizePhone(l.phone!), l] as const));
+  const byEmail = new Map(
+    state.leads
+      .filter((l) => l.email)
+      .map((l) => [l.email!.toLowerCase(), l] as const),
+  );
+  const byPhone = new Map(
+    state.leads
+      .filter((l) => l.phone)
+      .map((l) => [normalizePhone(l.phone!), l] as const),
+  );
 
   let imported = 0;
   let updated = 0;
@@ -461,15 +584,34 @@ export async function importFromCsvRows(rows: Record<string, string>[], headers?
 
     if (nonEmpty.length === 1) {
       const v = nonEmpty[0];
-      const dateLike = /^\d{1,2}[\-/] \d{1,2}[\-/] \d{2,4}$/.test(v) || /^\d{1,2}[\-/]\d{1,2}[\-/]\d{2,4}$/.test(v) || /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(v);
+      const dateLike =
+        /^\d{1,2}[\-/] \d{1,2}[\-/] \d{2,4}$/.test(v) ||
+        /^\d{1,2}[\-/]\d{1,2}[\-/]\d{2,4}$/.test(v) ||
+        /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(v);
       const totalLike = /^sum|^total|^subtotal/i.test(v);
-      const numericOnly = /^[-+]?\d{1,3}(?:[\,\d]*)(?:\.\d+)?$/.test(v.replace(/\s+/g, ""));
+      const numericOnly = /^[-+]?\d{1,3}(?:[\,\d]*)(?:\.\d+)?$/.test(
+        v.replace(/\s+/g, ""),
+      );
       if (dateLike || totalLike || numericOnly) continue;
     }
 
-    const name = r["name"] || r["Name"] || r["full_name"] || r["Full Name"] || r["lead_name"] || "";
-    const email = (r["email"] || r["Email"] || r["e-mail"] || r["E-mail"] || "").trim() || undefined;
-    const phoneRaw = (r["phone"] || r["Phone"] || r["mobile"] || r["Mobile"] || "").trim();
+    const name =
+      r["name"] ||
+      r["Name"] ||
+      r["full_name"] ||
+      r["Full Name"] ||
+      r["lead_name"] ||
+      "";
+    const email =
+      (r["email"] || r["Email"] || r["e-mail"] || r["E-mail"] || "").trim() ||
+      undefined;
+    const phoneRaw = (
+      r["phone"] ||
+      r["Phone"] ||
+      r["mobile"] ||
+      r["Mobile"] ||
+      ""
+    ).trim();
     const phone = phoneRaw ? normalizePhone(phoneRaw) : undefined;
     const company = r["company"] || r["Company"] || undefined;
     const source = r["source"] || r["Source"] || r["utm_source"] || undefined;
@@ -497,7 +639,9 @@ export async function importFromCsvRows(rows: Record<string, string>[], headers?
         fields: { ...existing.fields, ...fields },
         updatedAt: now,
       };
-      state.leads = state.leads.map((l) => (l.id === existing!.id ? merged : l));
+      state.leads = state.leads.map((l) =>
+        l.id === existing!.id ? merged : l,
+      );
       updated++;
     } else {
       const newLead: Lead = {

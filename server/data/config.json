@@ -1,14 +1,16 @@
 {
   "sheetUrl": "https://docs.google.com/spreadsheets/d/1QY8_Q8-ybLKNVs4hynPZslZDwUfC-PIJrViJfL0-tpM/export?format=csv",
-  "lastSyncAt": "2025-11-13T06:30:20.827Z",
+  "lastSyncAt": "2025-11-13T06:32:11.074Z",
   "headers": [
+    "what_type_of_property_do_you_want_to_install_solar_on?",
+    "what_is_your_average_monthly_electricity_bill?",
     "full name",
     "phone",
     "email",
     "street address",
     "post_code",
     "lead_status",
-    "what_is_your_average_monthly_electricity_bill?",
-    "what_type_of_property_do_you_want_to_install_solar_on?"
+    "",
+    ""
   ]
 }

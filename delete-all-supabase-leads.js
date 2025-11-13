@@ -35,7 +35,8 @@ async function deleteAllLeads() {
     // Delete in batches
     for (let i = 0; i < leads.length; i += 100) {
       const batch = leads.slice(i, i + 100);
-      const ids = batch.map(l => `'${l.id}'`).join(',');
+      // Format as UUID list without extra quotes
+      const ids = batch.map(l => l.id).join(',');
 
       console.log(`Deleting leads ${i} to ${Math.min(i + 100, leads.length)}...`);
       const deleteRes = await fetch(
@@ -51,7 +52,9 @@ async function deleteAllLeads() {
 
       if (!deleteRes.ok) {
         const text = await deleteRes.text();
-        console.warn(`Delete request status: ${deleteRes.status}`, text);
+        console.warn(`Delete request status: ${deleteRes.status}`, text.substring(0, 200));
+      } else {
+        console.log(`✓ Deleted batch`);
       }
     }
 

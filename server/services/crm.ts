@@ -311,7 +311,7 @@ export async function deleteSalesperson(id: string) {
     try {
       await supabaseFetch(`salespersons?id=eq.${id}`, { method: "DELETE" });
       // unassign leads
-      await supabaseFetch(`leads?ownerId=eq.${id}`, { method: "PATCH", body: JSON.stringify({ ownerId: null }) });
+      await supabaseFetch(`leads?owner_id=eq.${id}`, { method: "PATCH", body: JSON.stringify({ owner_id: null }) });
       return true;
     } catch (e) {
       // fallback

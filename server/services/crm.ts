@@ -74,7 +74,7 @@ async function supabaseGetSalespersons(): Promise<Salesperson[]> {
     name: d.name,
     email: d.email || undefined,
     active: !!d.active,
-    createdAt: d.createdAt,
+    createdAt: d.created_at,
   }));
 }
 

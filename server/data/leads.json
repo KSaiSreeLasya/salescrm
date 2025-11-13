@@ -14,9 +14,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:32:10.28+00:00",
-    "updatedAt": "2025-11-13T06:32:10.28+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "6a27a0d5-fa01-479f-a897-2ab447ef851e",
@@ -33,9 +33,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:31:02.741+00:00",
-    "updatedAt": "2025-11-13T06:31:02.741+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "16d9823d-84d3-4009-85d1-87a29504dc32",
@@ -52,9 +52,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:28:10.173+00:00",
-    "updatedAt": "2025-11-13T06:28:10.173+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "440b6698-10b9-4f6a-8cfc-0996fdf50a43",
@@ -71,9 +71,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:28:09.953+00:00",
-    "updatedAt": "2025-11-13T06:28:09.953+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "9fc78a79-af9a-4256-8fe8-88ce44f4405e",
@@ -90,9 +90,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:27:30.152+00:00",
-    "updatedAt": "2025-11-13T06:27:30.152+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c1975e72-5f70-40f6-b2c5-8d97ba5c9a96",
@@ -109,9 +109,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:27:16.426+00:00",
-    "updatedAt": "2025-11-13T06:27:16.426+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "d14ccad7-9e6e-475e-b95f-1999df8997db",
@@ -128,9 +128,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:26:02.751+00:00",
-    "updatedAt": "2025-11-13T06:26:02.751+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "b0535a66-a518-43fe-8173-cf0eb051e445",
@@ -147,9 +147,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:23:10.208+00:00",
-    "updatedAt": "2025-11-13T06:23:10.208+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "eb922b62-c006-44b3-8549-e9cf8922ff22",
@@ -166,9 +166,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:23:10.155+00:00",
-    "updatedAt": "2025-11-13T06:23:10.155+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "e127c87e-191d-405f-ba01-a8b61ccdaf0a",
@@ -185,9 +185,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:22:30.165+00:00",
-    "updatedAt": "2025-11-13T06:22:30.165+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "fab8c3a5-7b95-4fdb-81d1-3349652d2066",
@@ -204,9 +204,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:21:02.796+00:00",
-    "updatedAt": "2025-11-13T06:21:02.796+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "436f090c-1979-47f1-88eb-26724bb941e6",
@@ -223,9 +223,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:18:15.255+00:00",
-    "updatedAt": "2025-11-13T06:18:15.255+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c4c8421b-735d-443a-bf38-f6a603d77201",
@@ -242,9 +242,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:18:15.021+00:00",
-    "updatedAt": "2025-11-13T06:18:15.021+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "cf27d1e3-846d-4dcf-b8cf-d8d5940f418f",
@@ -261,9 +261,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:17:35.295+00:00",
-    "updatedAt": "2025-11-13T06:17:35.295+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "4ef69d3b-b15b-4bf3-b96f-9472a048af6e",
@@ -280,9 +280,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:16:02.925+00:00",
-    "updatedAt": "2025-11-13T06:16:02.925+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "935b84e6-2b9d-4ab1-bfeb-67758dcf2030",
@@ -299,9 +299,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:11:07.938+00:00",
-    "updatedAt": "2025-11-13T06:11:07.938+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "07a387c5-6be9-4111-ba32-5e8b1a43631e",
@@ -318,9 +318,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:10:12.975+00:00",
-    "updatedAt": "2025-11-13T06:10:12.975+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "a2c79cc0-a372-42c0-9f9e-1b0dce77993c",
@@ -339,9 +339,9 @@
     "email": "satish.143@yahoo.com",
     "phone": "919966776123",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:59.111+00:00",
-    "updatedAt": "2025-11-13T06:09:59.111+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "8518d170-9470-4707-a7ea-d2df48fe70a5",
@@ -358,9 +358,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:59.111+00:00",
-    "updatedAt": "2025-11-13T06:09:59.111+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "68378fac-4949-47e3-bbde-34e4328cffd5",
@@ -379,9 +379,9 @@
     "email": "vssbkingdom@gmail.com",
     "phone": "917386061616",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "f8b5d855-aed9-49f6-9e47-4f6a353a00e8",
@@ -400,9 +400,9 @@
     "email": "pilot.rahul@gmail.com",
     "phone": "919685568444",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "daa944ea-5dd3-4804-9f59-5eaeb9d47b90",
@@ -421,9 +421,9 @@
     "email": "Kashirajuharish@gmail.com",
     "phone": "918523061126",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "0270f737-5e40-41a0-97ac-17029a16f8df",
@@ -442,9 +442,9 @@
     "email": "singaraveni135@gmail.com",
     "phone": "919652757480",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "490ae758-0769-4406-a9a7-3c0ee7591943",
@@ -463,9 +463,9 @@
     "email": "jabbarmohammd1995@gmail.com",
     "phone": "919908528236",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "de25b3bd-751a-4898-862b-6045d57d0f48",
@@ -484,9 +484,9 @@
     "email": "mrcraobdl47086@gmail.com",
     "phone": "919849015097",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "15641aac-ecf9-4fcc-9ed9-408a9c70f394",
@@ -505,9 +505,9 @@
     "email": "santoshyadav9989@yahoo.com",
     "phone": "918686316102",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "3025c2d5-0619-4183-9726-d6e1c79a07df",
@@ -524,9 +524,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "6779f68f-1020-4efa-84de-b2c6bb067f8c",
@@ -545,9 +545,9 @@
     "email": "laxman.laxman.a167@gmail.com",
     "phone": "919396571413",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "7c884205-ced3-4090-b7e8-6c1e9b51d801",
@@ -566,9 +566,9 @@
     "email": "ajayladdu78@gmail.com",
     "phone": "917997661112",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "99d67459-5df1-4576-87d5-57efee57fdc9",
@@ -587,9 +587,9 @@
     "email": "suresh_lav2005@yahoo.com",
     "phone": "917674882129",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "87cd3855-f1b9-4bfe-b548-6b4546c6cc49",
@@ -608,9 +608,9 @@
     "email": "aneeladasari@gmail.com",
     "phone": "919491114578",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "b82d5686-1fc7-49ad-8c58-63976f8a0065",
@@ -629,9 +629,9 @@
     "email": "geethika186@gmail.com",
     "phone": "917032627330",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "4d2d258c-68ac-441e-9d81-836feefd2ce1",
@@ -650,9 +650,9 @@
     "email": "bvenkat6434@gmail.com",
     "phone": "919666916947",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "dbb4b617-d01a-4d15-9040-987f6e1468ce",
@@ -671,9 +671,9 @@
     "email": "smv_purush@yahoo.co.in",
     "phone": "919291490492",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "f54cd928-940d-4a61-9ef3-61ab3d1da748",
@@ -692,9 +692,9 @@
     "email": "kuthadisantoshkumar8026@gmail.com",
     "phone": "917337368800",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "3cef456a-2846-4cbe-8b5b-8119ebf07c9d",
@@ -713,9 +713,9 @@
     "email": "anem.dileepkumar305@gmail.com",
     "phone": "919291207481",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "2e740017-98d7-4395-9f94-2f792cf3ad9c",
@@ -734,9 +734,9 @@
     "email": "sasi10137@gmail.com",
     "phone": "919491903739",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "fb37f22e-e975-4da0-9e5c-642fdec59da6",
@@ -755,9 +755,9 @@
     "email": "dhanvin.g@gmail.com",
     "phone": "919652601708",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "d2b1ff7d-5238-4457-a9c2-3fff243129c8",
@@ -776,9 +776,9 @@
     "email": "ashusavi.daddy@gmail.com",
     "phone": "918008531927",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "b2eab80d-4709-4a4e-bd8c-da47d3f7d8a1",
@@ -797,9 +797,9 @@
     "email": "haraharaengnirangworks@gmail.com",
     "phone": "918341997322",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "e188f7d4-cbf6-46bc-888d-b4310cf701c3",
@@ -818,9 +818,9 @@
     "email": "kesh.mamidi@yahoo.com",
     "phone": "919393930122",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "20ba2683-8f04-45a8-ada3-8e4f33754344",
@@ -838,9 +838,9 @@
     "name": "N.Venkata Narayana",
     "phone": "919000292864",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "6ffce170-c4de-4a97-ad11-787d0819c1c0",
@@ -859,9 +859,9 @@
     "email": "yadaugjaipal@gmail.com",
     "phone": "919177345047",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "434a70d4-0ff6-4472-aa48-bf5ab0b252f1",
@@ -880,9 +880,9 @@
     "email": "kiranjcnncm@gmail.com",
     "phone": "919618977014",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "33e6cbc4-039e-46a9-a3e3-4f62c777a039",
@@ -901,9 +901,9 @@
     "email": "Vrpharma15@gmail.com",
     "phone": "917799320895",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "5228a246-4d2d-43f0-b232-806dd7786bb3",
@@ -922,9 +922,9 @@
     "email": "kethavathrajeshkumar@gmail.com",
     "phone": "919951057160",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "d9e59f32-47ea-47b9-b02f-9b1492f7e13a",
@@ -943,9 +943,9 @@
     "email": "www.krishnan77@gmail.com",
     "phone": "919705452474",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "0df1f907-795e-4411-9048-f7066750c78b",
@@ -964,9 +964,9 @@
     "email": "nagapradad.svnr@gmail.com",
     "phone": "919440258533",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "1fc97586-1978-421c-abc5-3b5a721cfcf5",
@@ -985,9 +985,9 @@
     "email": "nani9985859199@gmail.com",
     "phone": "919866159144",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "3d1f4ed6-d56f-4368-95f6-fbc767fbe0b0",
@@ -1006,9 +1006,9 @@
     "email": "saivamsi8369@gmail.com",
     "phone": "919398654489",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "f45c4d8c-a0ee-4693-8755-1e12c1c92356",
@@ -1027,9 +1027,9 @@
     "email": "rajulodelly@gmail.com",
     "phone": "919948495976",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "cc99f080-1458-42d6-8694-484cc5fa0346",
@@ -1048,9 +1048,9 @@
     "email": "info@kpsuites.in",
     "phone": "919505667554",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c5b574c0-933c-42bc-9717-6caac4b16e08",
@@ -1069,9 +1069,9 @@
     "email": "palthineninaveenrao@gmail.com",
     "phone": "919505096252",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "e9e177ad-21b2-4bc2-a118-700d556c7679",
@@ -1090,9 +1090,9 @@
     "email": "ramillarvind@gmail.com",
     "phone": "917799600076",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "6078e762-5e2c-40d3-9578-f91c69febe64",
@@ -1111,9 +1111,9 @@
     "email": "aveeavis1@gmail.com",
     "phone": "919700444417",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "b463a1ae-324e-4a47-aa90-e08d1c6b04ba",
@@ -1132,9 +1132,9 @@
     "email": "satish.143@yahoo.com",
     "phone": "919966776123",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:49.213+00:00",
-    "updatedAt": "2025-11-13T06:09:49.213+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "d304a222-0685-4e7d-a1fe-e80056ca4405",
@@ -1153,9 +1153,9 @@
     "email": "parnamlokesh333@gmail.com",
     "phone": "919100842461",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "f77b2799-d99b-4ef4-8495-f3a007e3b68f",
@@ -1174,9 +1174,9 @@
     "email": "ranadheerreddy.kaluvala@gmail.com",
     "phone": "919618241491",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "b8bb9fcf-2725-41d0-a53a-19351178ebf4",
@@ -1195,9 +1195,9 @@
     "email": "malleshyadav611@gmail.com",
     "phone": "919391353485",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "216e30fd-34ec-42a6-91e5-1733fa21c01d",
@@ -1216,9 +1216,9 @@
     "email": "banoth.dilipnaik@gmail.com",
     "phone": "917993450438",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "bf83810f-5c92-4d4b-ac68-5adf61f5bf0c",
@@ -1237,9 +1237,9 @@
     "email": "kvgraoamruth@gmail.com",
     "phone": "919000217174",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "bb444943-85fc-45d0-9c9c-0dc12a9a500b",
@@ -1258,9 +1258,9 @@
     "email": "vamshimohan12@gmail.com",
     "phone": "918367355747",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "8233e279-62e0-452d-a4fa-7986b014d60e",
@@ -1279,9 +1279,9 @@
     "email": "harshadevaraya2612@gmail.com",
     "phone": "917799442612",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "b5d5560d-79d8-4225-9ce0-0982611c9a36",
@@ -1300,9 +1300,9 @@
     "email": "chintukrishna@gmail.com",
     "phone": "919705318610",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "fa40d660-c178-4d6b-8663-e37b8ce24231",
@@ -1321,9 +1321,9 @@
     "email": "alekhyarajesh567@gmail.com",
     "phone": "918143488803",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "d4b4f729-8df3-4558-962d-dd0651795c12",
@@ -1342,9 +1342,9 @@
     "email": "kishanyadav9000@gmail.com",
     "phone": "919000120559",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "484101b0-9304-40cc-8572-1a873819d887",
@@ -1363,9 +1363,9 @@
     "email": "namalaprakash7369@gmail.com",
     "phone": "919949635761",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "040c095e-6002-494c-949e-631e45cf92be",
@@ -1384,9 +1384,9 @@
     "email": "raghuthetutor@gmail.com",
     "phone": "919989925499",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "5ee5b514-8bb2-454c-9a1d-b0d0bc906683",
@@ -1405,9 +1405,9 @@
     "email": "nirajanpurru@gmail.com",
     "phone": "919963223730",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "e2c66d7c-80c9-4413-84f2-95aee1f1a0ac",
@@ -1426,9 +1426,9 @@
     "email": "pinkulirout09@gmail.com",
     "phone": "919959674025",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "b9fcd07a-f255-479b-aff1-3d4bb5b16827",
@@ -1447,9 +1447,9 @@
     "email": "harishpatnaik22@gmail.com",
     "phone": "919959802777",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "9f775e71-c6ce-4685-b810-21f41ab3822d",
@@ -1468,9 +1468,9 @@
     "email": "kannappa.skating@gmail.com",
     "phone": "919396212161",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "af070f6d-04fc-43fd-a2ff-8d6a976f8c34",
@@ -1489,9 +1489,9 @@
     "email": "photographybylara5@gmail.com",
     "phone": "918885914491",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "3f77eb85-e0ff-499e-971d-e4b8ef2f476d",
@@ -1510,9 +1510,9 @@
     "email": "ganiganesh784@gmail.com",
     "phone": "919966322266",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "485b4b40-58ea-4457-8c0b-bc62501617ac",
@@ -1531,9 +1531,9 @@
     "email": "Malothsuresh803@mail.com",
     "phone": "918185807472",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "60362245-6485-4b49-ad6d-5bd8e99eb3aa",
@@ -1552,9 +1552,9 @@
     "email": "santoshyadav9989@yahoo.com",
     "phone": "918686316102",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "23fed107-bc06-4bfc-a99d-05ab3505d8ba",
@@ -1573,9 +1573,9 @@
     "email": "geethika186@gmail.com",
     "phone": "917032627330",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "9e76577a-dfbd-41b5-a45b-f3344b4137f4",
@@ -1594,9 +1594,9 @@
     "email": "bvenkat6434@gmail.com",
     "phone": "919666916947",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "b41aba56-7d7f-47f0-91bc-f75401eef5c1",
@@ -1615,9 +1615,9 @@
     "email": "diwakarlawyer72@gmail.com",
     "phone": "7989592253",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "138f4bc0-9910-49f0-b898-e2da0ca16684",
@@ -1636,9 +1636,9 @@
     "email": "chpadmavathi36@gmail.com",
     "phone": "919298609679",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "99a58832-b902-4174-b8c7-857a2a31f40d",
@@ -1657,9 +1657,9 @@
     "email": "sugandhamramarao@gmail.com",
     "phone": "919441248842",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "d1e27c8e-aecf-4a42-87e5-c544acc9c9dd",
@@ -1678,9 +1678,9 @@
     "email": "vssbkingdom@gmail.com",
     "phone": "917386061616",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "e1e05812-06a0-4fcb-9c29-45bccdf04875",
@@ -1699,9 +1699,9 @@
     "email": "ajayladdu78@gmail.com",
     "phone": "917997661112",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "0bc30e06-88b6-415a-a579-b72b250f79b7",
@@ -1720,9 +1720,9 @@
     "email": "suresh_lav2005@yahoo.com",
     "phone": "917674882129",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "6711a795-a51c-45a7-b9f9-7eea02aa43a9",
@@ -1741,9 +1741,9 @@
     "email": "kanapuram111@gmail.com",
     "phone": "919948222426",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "9d637df1-bd8b-4b50-a9bc-56a3bad6ecb5",
@@ -1762,9 +1762,9 @@
     "email": "mrcraobdl47086@gmail.com",
     "phone": "919849015097",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "5feae3f8-bd21-4bd0-9006-b6b771b6ffd5",
@@ -1783,9 +1783,9 @@
     "email": "pilot.rahul@gmail.com",
     "phone": "919685568444",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "a9833074-0318-41b7-9eab-fb0ff880b652",
@@ -1804,9 +1804,9 @@
     "email": "Kashirajuharish@gmail.com",
     "phone": "918523061126",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "1ca2f6ef-7d2c-4d53-bb76-2f3dd40a0cdf",
@@ -1825,9 +1825,9 @@
     "email": "singaraveni135@gmail.com",
     "phone": "919652757480",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "b2d85525-8632-4cae-a6d7-8162f3cd38fc",
@@ -1846,9 +1846,9 @@
     "email": "jabbarmohammd1995@gmail.com",
     "phone": "919908528236",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "f5d54940-21bb-498d-9d2f-0b58d33db27e",
@@ -1865,9 +1865,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "bca79fc6-296e-4349-9a0c-f140cabf1c9d",
@@ -1886,9 +1886,9 @@
     "email": "laxman.laxman.a167@gmail.com",
     "phone": "919396571413",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "0076f3dd-48e8-4b78-8605-be11ffd2006e",
@@ -1907,9 +1907,9 @@
     "email": "sairam.chilukamari786@gmail.com",
     "phone": "918074579271",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "2b272dae-8341-4e69-a202-391d6585012d",
@@ -1928,9 +1928,9 @@
     "email": "srikanthgoudssg9@gmail.com",
     "phone": "919959481308",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "888bee3d-2056-473e-817e-50c77a00e1b6",
@@ -1949,9 +1949,9 @@
     "email": "naribangaru07@gmail.com",
     "phone": "919640501907",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "78550f29-c5c3-4b75-95b8-41621262b59e",
@@ -1970,9 +1970,9 @@
     "email": "smv_purush@yahoo.co.in",
     "phone": "919291490492",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "f9ee82c5-07c0-4c99-86bf-7260c519973a",
@@ -1991,9 +1991,9 @@
     "email": "kuthadisantoshkumar8026@gmail.com",
     "phone": "917337368800",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "b9c5e842-86f2-495f-96ca-5a70f2421f0f",
@@ -2012,9 +2012,9 @@
     "email": "anem.dileepkumar305@gmail.com",
     "phone": "919291207481",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "f8a88a3d-eca9-4e1e-b390-0039c7b18980",
@@ -2033,9 +2033,9 @@
     "email": "sasi10137@gmail.com",
     "phone": "919491903739",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "a27484e4-71b6-4807-b667-a41476eed028",
@@ -2054,9 +2054,9 @@
     "email": "yadaugjaipal@gmail.com",
     "phone": "919177345047",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "8fd6273d-a8d6-4312-a3b3-92dcd73fd41d",
@@ -2075,9 +2075,9 @@
     "email": "dhanvin.g@gmail.com",
     "phone": "919652601708",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "4a921103-7078-45b2-ae35-1fb0efb8097f",
@@ -2096,9 +2096,9 @@
     "email": "ashusavi.daddy@gmail.com",
     "phone": "918008531927",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "46d3b885-f4d3-4af1-94e6-14fcb573a70f",
@@ -2117,9 +2117,9 @@
     "email": "haraharaengnirangworks@gmail.com",
     "phone": "918341997322",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "485fc378-4c9c-4e26-9919-f287b6c35df2",
@@ -2138,9 +2138,9 @@
     "email": "kesh.mamidi@yahoo.com",
     "phone": "919393930122",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "98f79425-abb5-45bc-afae-f1af7f36c0b2",
@@ -2158,9 +2158,9 @@
     "name": "N.Venkata Narayana",
     "phone": "919000292864",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "4493175e-3228-432d-a189-849863ee5a43",
@@ -2179,9 +2179,9 @@
     "email": "kiranjcnncm@gmail.com",
     "phone": "919618977014",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "e1d73ec6-5e2d-43de-a66d-916295143134",
@@ -2200,9 +2200,9 @@
     "email": "Vrpharma15@gmail.com",
     "phone": "917799320895",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "746567fc-d7fe-406e-937e-9ca077a9df56",
@@ -2221,9 +2221,9 @@
     "email": "www.krishnan77@gmail.com",
     "phone": "919705452474",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "e74bef58-7537-4140-aaa1-4b93d510f78a",
@@ -2242,9 +2242,9 @@
     "email": "nani9985859199@gmail.com",
     "phone": "919866159144",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "048dbf63-97f2-4ef1-a4da-1de064a3a933",
@@ -2263,9 +2263,9 @@
     "email": "aveeavis1@gmail.com",
     "phone": "919700444417",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "2f58ff7f-a4e4-4341-8771-eef10b039f4c",
@@ -2284,9 +2284,9 @@
     "email": "saivamsi8369@gmail.com",
     "phone": "919398654489",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "4be6cdf7-9980-416b-93ff-177d3096541c",
@@ -2305,9 +2305,9 @@
     "email": "nagapradad.svnr@gmail.com",
     "phone": "919440258533",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "0de9a3de-380e-4132-b9a7-cb0711ef6a24",
@@ -2326,9 +2326,9 @@
     "email": "rajulodelly@gmail.com",
     "phone": "919948495976",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "1bfee58e-4032-4053-b68b-4f99c00c1454",
@@ -2347,9 +2347,9 @@
     "email": "info@kpsuites.in",
     "phone": "919505667554",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "d7f5f81f-265a-40d5-b2ad-9358cbcf9dc6",
@@ -2368,9 +2368,9 @@
     "email": "kethavathrajeshkumar@gmail.com",
     "phone": "919951057160",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "03c3dfe3-f89e-4168-a221-7d3395a08ac2",
@@ -2389,9 +2389,9 @@
     "email": "palthineninaveenrao@gmail.com",
     "phone": "919505096252",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "10187ef4-69af-44cf-9f65-8992b82c5085",
@@ -2410,9 +2410,9 @@
     "email": "ramillarvind@gmail.com",
     "phone": "917799600076",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "71c75b50-58e7-44f9-a4ee-676484f392b3",
@@ -2431,9 +2431,9 @@
     "email": "aneeladasari@gmail.com",
     "phone": "919491114578",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "f483952b-69c0-4483-9691-389ae08a5f55",
@@ -2452,9 +2452,9 @@
     "email": "satish.143@yahoo.com",
     "phone": "919966776123",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:42.088+00:00",
-    "updatedAt": "2025-11-13T06:09:42.088+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "370f80e0-8650-46bb-8a43-943bc8d8bc17",
@@ -2473,9 +2473,9 @@
     "email": "krishna81190@gmail.com",
     "phone": "919959794348",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "631a2b30-2bc4-45b3-a5b6-2efae65ef44e",
@@ -2494,9 +2494,9 @@
     "email": "satyam.bandu@gmail.com",
     "phone": "919871734404",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "bf9fa331-7a3b-4a89-ab10-f66fce8134ac",
@@ -2515,9 +2515,9 @@
     "email": "malleshyadav611@gmail.com",
     "phone": "919391353485",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c6872df2-8f51-44bf-b406-790af60b8874",
@@ -2536,9 +2536,9 @@
     "email": "harishpatnaik22@gmail.com",
     "phone": "919959802777",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "07c48a86-613f-4a3b-a5a0-f7f36e8bc63f",
@@ -2557,9 +2557,9 @@
     "email": "kannappa.skating@gmail.com",
     "phone": "919396212161",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "04a20c7e-2fda-40c2-bad4-b0702812379d",
@@ -2578,9 +2578,9 @@
     "email": "photographybylara5@gmail.com",
     "phone": "918885914491",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "8d93ee86-f6a4-4fa5-b077-7b89be8a0716",
@@ -2599,9 +2599,9 @@
     "email": "raghuthetutor@gmail.com",
     "phone": "919989925499",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "34e9df1c-d0a1-459b-ba6a-0d4218f5b223",
@@ -2620,9 +2620,9 @@
     "email": "kvgraoamruth@gmail.com",
     "phone": "919000217174",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "adefa6e1-3447-4655-a861-57fa9bc31f1d",
@@ -2641,9 +2641,9 @@
     "email": "narendar.r0@gmail.com",
     "phone": "919542407679",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "20da4ebc-a8e4-4d7f-afc3-0c673930fb11",
@@ -2662,9 +2662,9 @@
     "email": "sairam30673@gmail.com",
     "phone": "919951590091",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "83373cec-c983-4bad-9cc4-b648183efccf",
@@ -2683,9 +2683,9 @@
     "email": "bsrpavan567@gmail.com",
     "phone": "919440177949",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "1b110cc0-4b8a-4983-85d9-5ad687012379",
@@ -2704,9 +2704,9 @@
     "email": "namalaprakash7369@gmail.com",
     "phone": "919949635761",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "21cc5095-ba86-4592-a6fe-dac587ee97c4",
@@ -2725,9 +2725,9 @@
     "email": "alekhyarajesh567@gmail.com",
     "phone": "918143488803",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "21b0206d-d1ec-4c39-85d3-f605a32073cb",
@@ -2746,9 +2746,9 @@
     "email": "Malothsuresh803@mail.com",
     "phone": "918185807472",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "f5e12fb7-910b-4be2-9d5d-d98d1fcad649",
@@ -2767,9 +2767,9 @@
     "email": "Manitejagoud11@gmail.com",
     "phone": "918712807264",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "f1ec103e-0144-45a9-b41e-369c9213a670",
@@ -2788,9 +2788,9 @@
     "email": "Mohdriyan8055@gmail.com",
     "phone": "919885330313",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "42f2e790-7884-4c6f-a2c0-a7675e70962c",
@@ -2809,9 +2809,9 @@
     "email": "enagic.kangenhyd@gmail.com",
     "phone": "919666248880",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "bf097a8a-b94e-4e13-b6ee-da1bdc84ccd2",
@@ -2830,9 +2830,9 @@
     "email": "pinkulirout09@gmail.com",
     "phone": "919959674025",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c2a6e81b-3f06-4e7f-8932-1ad6a183e6f0",
@@ -2851,9 +2851,9 @@
     "email": "rteja305@gmail.com",
     "phone": "919396145146",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "789b6518-25c6-4618-a29f-3e3e90d2db3c",
@@ -2872,9 +2872,9 @@
     "email": "akhilesh.vudutha@gmail.com",
     "phone": "919010400427",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "f4f925d8-f15e-43f1-93c8-a445ed2a0e35",
@@ -2893,9 +2893,9 @@
     "email": "nirajanpurru@gmail.com",
     "phone": "919963223730",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "e57997cf-d1ba-44e7-90ce-d04fd009705a",
@@ -2914,9 +2914,9 @@
     "email": "chintukrishna@gmail.com",
     "phone": "919705318610",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "8d0c9b6c-8ff6-4db9-9296-7c5842612f74",
@@ -2935,9 +2935,9 @@
     "email": "parnamlokesh333@gmail.com",
     "phone": "919100842461",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "62b8c883-0f47-4410-a71e-33efddb5db77",
@@ -2956,9 +2956,9 @@
     "email": "ganiganesh784@gmail.com",
     "phone": "919966322266",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c26eeefb-bc50-4b41-b2db-4a69f8df4cc7",
@@ -2977,9 +2977,9 @@
     "email": "ranadheerreddy.kaluvala@gmail.com",
     "phone": "919618241491",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "1be068d4-0f1f-40ed-937f-4dff64a10913",
@@ -2998,9 +2998,9 @@
     "email": "diwakarlawyer72@gmail.com",
     "phone": "7989592253",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c72c4799-94fd-4de1-b3c7-10c33906595d",
@@ -3019,9 +3019,9 @@
     "email": "viki.walker@gmail.com",
     "phone": "918885652360",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "253c3f08-798b-4b8d-9e76-5636267aaba7",
@@ -3040,9 +3040,9 @@
     "email": "vikyath.kumar8@gmail.com",
     "phone": "919014938391",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "eb1cddb2-6830-4792-9896-0e757182b400",
@@ -3061,9 +3061,9 @@
     "email": "vamshimohan12@gmail.com",
     "phone": "918367355747",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "27fc42fa-a3e7-44ad-8087-da679bd9dfd2",
@@ -3082,9 +3082,9 @@
     "email": "swetha.L1988@gmail.com",
     "phone": "919290642035",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "86df3c03-3eb1-45bb-895e-d3e5810132a0",
@@ -3103,9 +3103,9 @@
     "email": "vijaybunty34@gmail.com",
     "phone": "919949418687",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "ae319e9f-535b-46fa-a0ea-9bdece0d538f",
@@ -3124,9 +3124,9 @@
     "email": "harshadevaraya2612@gmail.com",
     "phone": "917799442612",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "bf9893ad-d4fa-4709-9c49-e95c838043a6",
@@ -3145,9 +3145,9 @@
     "email": "banoth.dilipnaik@gmail.com",
     "phone": "917993450438",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "d29c90e8-0ffc-4d9a-8911-0cab39ad6f28",
@@ -3166,9 +3166,9 @@
     "email": "kishanyadav9000@gmail.com",
     "phone": "919000120559",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "d4965083-cf47-43b1-b445-33c8214e137c",
@@ -3187,9 +3187,9 @@
     "email": "sugandhamramarao@gmail.com",
     "phone": "919441248842",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "92c915a2-6fe6-4c5d-a2f1-29e34ffd2b36",
@@ -3208,9 +3208,9 @@
     "email": "chpadmavathi36@gmail.com",
     "phone": "919298609679",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "19b159b2-e489-485d-b05a-d591435711e2",
@@ -3229,9 +3229,9 @@
     "email": "pilot.rahul@gmail.com",
     "phone": "919685568444",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "74cf25ed-bec8-4730-8a76-84d633f94a07",
@@ -3250,9 +3250,9 @@
     "email": "Kashirajuharish@gmail.com",
     "phone": "918523061126",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "1345546f-7731-47f2-a922-be42c4967d61",
@@ -3271,9 +3271,9 @@
     "email": "singaraveni135@gmail.com",
     "phone": "919652757480",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "540fb00e-85c8-4249-bada-e0f319c42e88",
@@ -3290,9 +3290,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c99cebcf-d5c6-4ffa-b716-acfb8567b5fb",
@@ -3311,9 +3311,9 @@
     "email": "kanapuram111@gmail.com",
     "phone": "919948222426",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "1c923efb-bd90-4a29-8495-def0609bca6b",
@@ -3332,9 +3332,9 @@
     "email": "naribangaru07@gmail.com",
     "phone": "919640501907",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "e2f931dd-f2e9-4bfc-b416-e410961d6f56",
@@ -3353,9 +3353,9 @@
     "email": "mrcraobdl47086@gmail.com",
     "phone": "919849015097",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "6a05df92-cde1-4de4-8227-0b3fa99df9d0",
@@ -3374,9 +3374,9 @@
     "email": "smv_purush@yahoo.co.in",
     "phone": "919291490492",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "4b0452e0-1398-4696-bbd1-67e7b0240d69",
@@ -3395,9 +3395,9 @@
     "email": "sairam.chilukamari786@gmail.com",
     "phone": "918074579271",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "9ef4a380-45a8-477b-aa92-2cfbdb54a760",
@@ -3416,9 +3416,9 @@
     "email": "vssbkingdom@gmail.com",
     "phone": "917386061616",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "2d2e8462-0cda-4a5d-8e5f-628a30cff866",
@@ -3437,9 +3437,9 @@
     "email": "ajayladdu78@gmail.com",
     "phone": "917997661112",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "80f2e75b-f892-4c1e-895c-6718dae17dda",
@@ -3458,9 +3458,9 @@
     "email": "suresh_lav2005@yahoo.com",
     "phone": "917674882129",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "da571611-20c0-4823-88f0-9fe4a7a4d04b",
@@ -3479,9 +3479,9 @@
     "email": "sasi10137@gmail.com",
     "phone": "919491903739",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "366ba223-8efd-4f2b-b65a-70385700ad9d",
@@ -3500,9 +3500,9 @@
     "email": "yadaugjaipal@gmail.com",
     "phone": "919177345047",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "dbab28ee-db08-4baa-a33b-8a2740921e5f",
@@ -3521,9 +3521,9 @@
     "email": "srikanthgoudssg9@gmail.com",
     "phone": "919959481308",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "991066f8-b219-4491-98f6-a5cc302e5541",
@@ -3542,9 +3542,9 @@
     "email": "santoshyadav9989@yahoo.com",
     "phone": "918686316102",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "bb16ed90-5bf4-4e72-9d6a-28d052dff6f6",
@@ -3563,9 +3563,9 @@
     "email": "geethika186@gmail.com",
     "phone": "917032627330",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "1e71ef08-1133-46b8-ac46-8936c85c40d4",
@@ -3584,9 +3584,9 @@
     "email": "bvenkat6434@gmail.com",
     "phone": "919666916947",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "b23a1e33-053f-421c-8fba-bd264b419685",
@@ -3605,9 +3605,9 @@
     "email": "jabbarmohammd1995@gmail.com",
     "phone": "919908528236",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "542fd2d7-0692-4d85-bbff-d62289744858",
@@ -3626,9 +3626,9 @@
     "email": "laxman.laxman.a167@gmail.com",
     "phone": "919396571413",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "2154f3e8-5599-4e58-9220-3946abe1ce19",
@@ -3647,9 +3647,9 @@
     "email": "Vrpharma15@gmail.com",
     "phone": "917799320895",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "352059af-f42f-478f-b9ce-63362bb0dc78",
@@ -3668,9 +3668,9 @@
     "email": "kethavathrajeshkumar@gmail.com",
     "phone": "919951057160",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "e31e3f9c-99cb-4838-b72e-4df1b9107fba",
@@ -3689,9 +3689,9 @@
     "email": "kuthadisantoshkumar8026@gmail.com",
     "phone": "917337368800",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "2baddd5a-ed4c-4510-97ab-53d681f15782",
@@ -3710,9 +3710,9 @@
     "email": "anem.dileepkumar305@gmail.com",
     "phone": "919291207481",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c150f4c4-3ced-41d1-ac22-4083dadc970b",
@@ -3731,9 +3731,9 @@
     "email": "saivamsi8369@gmail.com",
     "phone": "919398654489",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "dd047c52-ecf1-436b-a97c-03f270c5d461",
@@ -3752,9 +3752,9 @@
     "email": "haraharaengnirangworks@gmail.com",
     "phone": "918341997322",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "72e30139-89dd-465e-9b70-695d75f09b1e",
@@ -3773,9 +3773,9 @@
     "email": "www.krishnan77@gmail.com",
     "phone": "919705452474",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "f37ab475-ab5a-459a-abe3-bbd881bac42a",
@@ -3794,9 +3794,9 @@
     "email": "nagapradad.svnr@gmail.com",
     "phone": "919440258533",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "e30504cb-8cc0-47a0-a5a3-a0e2876991bb",
@@ -3815,9 +3815,9 @@
     "email": "nani9985859199@gmail.com",
     "phone": "919866159144",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "821b3379-1ca6-46e6-aa71-7b0083a240d7",
@@ -3836,9 +3836,9 @@
     "email": "dhanvin.g@gmail.com",
     "phone": "919652601708",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "21517b32-cae5-4dd9-88b7-6d245b6b16a0",
@@ -3857,9 +3857,9 @@
     "email": "ashusavi.daddy@gmail.com",
     "phone": "918008531927",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "b3aad440-4198-48c1-8db3-cd46eca3d840",
@@ -3878,9 +3878,9 @@
     "email": "kiranjcnncm@gmail.com",
     "phone": "919618977014",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "e7e48b2a-7130-4d31-8346-7facfe1bf857",
@@ -3899,9 +3899,9 @@
     "email": "kesh.mamidi@yahoo.com",
     "phone": "919393930122",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "88642cc9-67d9-4f25-af05-f95db79bad31",
@@ -3919,9 +3919,9 @@
     "name": "N.Venkata Narayana",
     "phone": "919000292864",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "37307397-a9b5-49b0-98fc-4e79413f2a57",
@@ -3940,9 +3940,9 @@
     "email": "palthineninaveenrao@gmail.com",
     "phone": "919505096252",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "dfc76ee6-c4ed-48b8-a6f1-c9003c099f9a",
@@ -3961,9 +3961,9 @@
     "email": "rajulodelly@gmail.com",
     "phone": "919948495976",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "9b670c00-7dc0-4317-b5b4-152bdf71a831",
@@ -3982,9 +3982,9 @@
     "email": "info@kpsuites.in",
     "phone": "919505667554",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "249994dd-4d57-4c17-bce1-8347a55896a3",
@@ -4003,9 +4003,9 @@
     "email": "aneeladasari@gmail.com",
     "phone": "919491114578",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "5517ba0b-d89d-4e4e-879d-9f8e70442766",
@@ -4024,9 +4024,9 @@
     "email": "aveeavis1@gmail.com",
     "phone": "919700444417",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "bc369255-ebe8-40be-8d3a-437e99d7e645",
@@ -4045,9 +4045,9 @@
     "email": "satish.143@yahoo.com",
     "phone": "919966776123",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "5ec8123a-d523-4310-9e98-7694f4b394c8",
@@ -4066,9 +4066,9 @@
     "email": "ramillarvind@gmail.com",
     "phone": "917799600076",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:38.054+00:00",
-    "updatedAt": "2025-11-13T06:09:38.054+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "49256032-3961-47d9-8fc1-0d9747348425",
@@ -4087,9 +4087,9 @@
     "email": "ysantosh13@gmail.com",
     "phone": "917416138391",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "8d677840-b8db-42a7-87a4-afbe5f68c0ff",
@@ -4108,9 +4108,9 @@
     "email": "vinodboddam@gmail.com",
     "phone": "919848291860",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "e981b259-73c5-4147-8b5c-d95a2d671c51",
@@ -4129,9 +4129,9 @@
     "email": "kmbasha7434@gmail.com",
     "phone": "919010487434",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "3cb5f993-3e77-4b41-b5ce-13650a2127c3",
@@ -4150,9 +4150,9 @@
     "email": "sridevir1805@gmail.com",
     "phone": "919246151600",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "6ef0e5c7-309c-4952-b855-4546499368a2",
@@ -4171,9 +4171,9 @@
     "email": "boyapallysaikrishna@gmail.com",
     "phone": "919640006741",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "3dbaa3f5-f07f-444f-a049-5ddadede2875",
@@ -4192,9 +4192,9 @@
     "email": "pandukumar@lords.ac.in",
     "phone": "919966380856",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "9ce255b1-7464-4960-905b-8095dadc88ca",
@@ -4212,9 +4212,9 @@
     "name": "S",
     "phone": "919347703046",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c7414120-ad30-4426-ab1f-329bad2803d1",
@@ -4233,9 +4233,9 @@
     "email": "Benhhur.Mj@gmail.com",
     "phone": "918520873792",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "b8590dc4-fdbb-4a2e-8d0f-e06954163cc3",
@@ -4254,9 +4254,9 @@
     "email": "sankar.6422@gmail.com",
     "phone": "919100022371",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "74c3fa0e-6577-4ba6-aab5-af1e032f1c1e",
@@ -4275,9 +4275,9 @@
     "email": "saichandsingarapu@gmail.com",
     "phone": "917569297458",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "996c4bb0-739e-4a26-9820-9a062c01d9e3",
@@ -4296,9 +4296,9 @@
     "email": "prasadyenni2@gmail.com",
     "phone": "919866772219",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "b425485f-3d8d-469b-ad5e-626c8345a7a9",
@@ -4317,9 +4317,9 @@
     "email": "vikramkammagani1990@gmail.com",
     "phone": "919000666404",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "076d9830-b7a0-4b1c-8416-59bf17859150",
@@ -4338,9 +4338,9 @@
     "email": "swathigunda1@gmail.com",
     "phone": "917416552044",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "f3a60596-3302-4db4-989b-21fdb55dc011",
@@ -4359,9 +4359,9 @@
     "email": "chanduthak@gmail.com",
     "phone": "919440590429",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c0467dc5-b3fd-4104-bd0e-a8f6d78f9eb9",
@@ -4380,9 +4380,9 @@
     "email": "narendar.r0@gmail.com",
     "phone": "919542407679",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "f23e6c95-90e3-47f9-9d91-1f9b56ee10c0",
@@ -4401,9 +4401,9 @@
     "email": "sairam30673@gmail.com",
     "phone": "919951590091",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "d722eed0-6c97-41d3-8c36-042c5c469df1",
@@ -4422,9 +4422,9 @@
     "email": "vijaybunty34@gmail.com",
     "phone": "919949418687",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "31489592-3a4b-4cdb-bea8-1d0fecccae63",
@@ -4443,9 +4443,9 @@
     "email": "nirajanpurru@gmail.com",
     "phone": "919963223730",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "d5de9408-2fd1-4520-ae2a-0c5fc67c27d2",
@@ -4464,9 +4464,9 @@
     "email": "krishna81190@gmail.com",
     "phone": "919959794348",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "6fb9b59d-c485-405e-b318-ae3ed5dba824",
@@ -4485,9 +4485,9 @@
     "email": "satyam.bandu@gmail.com",
     "phone": "919871734404",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "37e7fb4d-6488-449e-a346-f6bd381b550d",
@@ -4506,9 +4506,9 @@
     "email": "pinkulirout09@gmail.com",
     "phone": "919959674025",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c0fa4948-410a-4c61-8523-c6a4f2280dbc",
@@ -4527,9 +4527,9 @@
     "email": "harishpatnaik22@gmail.com",
     "phone": "919959802777",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "9d255a30-47e0-44c2-9ec5-9489bb7d85a4",
@@ -4548,9 +4548,9 @@
     "email": "photographybylara5@gmail.com",
     "phone": "918885914491",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "af984441-ad69-4087-8354-87a6e2529815",
@@ -4569,9 +4569,9 @@
     "email": "rteja305@gmail.com",
     "phone": "919396145146",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "6d23311f-8b6c-4b13-b8da-de94dd99f208",
@@ -4590,9 +4590,9 @@
     "email": "bsrpavan567@gmail.com",
     "phone": "919440177949",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "a35d48a3-c907-49c5-bda3-ccf419d1dc6d",
@@ -4611,9 +4611,9 @@
     "email": "malleshyadav611@gmail.com",
     "phone": "919391353485",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "be845871-6d9b-416c-afbc-bd24b9c245f3",
@@ -4632,9 +4632,9 @@
     "email": "parnamlokesh333@gmail.com",
     "phone": "919100842461",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "6eaf3a30-c80d-48d4-b5a8-ebb548c40ae9",
@@ -4653,9 +4653,9 @@
     "email": "ganiganesh784@gmail.com",
     "phone": "919966322266",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "2c6fdbf9-0556-441d-bee1-4399c7d0cf07",
@@ -4674,9 +4674,9 @@
     "email": "Malothsuresh803@mail.com",
     "phone": "918185807472",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "9aea8817-444d-40b9-9d20-957264091f78",
@@ -4695,9 +4695,9 @@
     "email": "Manitejagoud11@gmail.com",
     "phone": "918712807264",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "bda5491d-3758-467e-a09a-5faead61f627",
@@ -4716,9 +4716,9 @@
     "email": "Mohdriyan8055@gmail.com",
     "phone": "919885330313",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "a59ef40e-7c98-4b9f-91c2-6266fae054f9",
@@ -4737,9 +4737,9 @@
     "email": "enagic.kangenhyd@gmail.com",
     "phone": "919666248880",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "2da237cd-b2d7-4dca-8c7d-2810f329c34e",
@@ -4758,9 +4758,9 @@
     "email": "kannappa.skating@gmail.com",
     "phone": "919396212161",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "bb82cd3e-efd7-4512-b5d4-ccefb9b7c8a4",
@@ -4779,9 +4779,9 @@
     "email": "swetha.L1988@gmail.com",
     "phone": "919290642035",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "f834ce62-fb9b-47e3-b4c3-6dac3fddc963",
@@ -4800,9 +4800,9 @@
     "email": "akhilesh.vudutha@gmail.com",
     "phone": "919010400427",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c1159bc9-4bbe-46a3-a6b4-07b6b4662fa5",
@@ -4821,9 +4821,9 @@
     "email": "banoth.dilipnaik@gmail.com",
     "phone": "917993450438",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "8b643fcd-4d0a-412e-bcd7-f5da993e2f97",
@@ -4842,9 +4842,9 @@
     "email": "raghuthetutor@gmail.com",
     "phone": "919989925499",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "1928296e-a539-43eb-9709-62eba9a8e239",
@@ -4863,9 +4863,9 @@
     "email": "kvgraoamruth@gmail.com",
     "phone": "919000217174",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "4e102fe5-ac44-4865-959c-a7cf3d67a069",
@@ -4884,9 +4884,9 @@
     "email": "kishanyadav9000@gmail.com",
     "phone": "919000120559",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "2eb7f3d5-7fea-41b6-8131-2b2b0f4e2465",
@@ -4905,9 +4905,9 @@
     "email": "viki.walker@gmail.com",
     "phone": "918885652360",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c177ad65-ef85-4ac9-8541-b338ffd5cf28",
@@ -4926,9 +4926,9 @@
     "email": "vikyath.kumar8@gmail.com",
     "phone": "919014938391",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "2839cb04-447b-431d-bc59-e582d449403a",
@@ -4947,9 +4947,9 @@
     "email": "vamshimohan12@gmail.com",
     "phone": "918367355747",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c4d16a25-af2e-4823-a568-36162470b6b3",
@@ -4968,9 +4968,9 @@
     "email": "namalaprakash7369@gmail.com",
     "phone": "919949635761",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "38703fbd-fb29-4df4-87be-a5ec6b408b92",
@@ -4989,9 +4989,9 @@
     "email": "harshadevaraya2612@gmail.com",
     "phone": "917799442612",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "a1702e56-094a-430e-885a-cf0a6587831a",
@@ -5010,9 +5010,9 @@
     "email": "chintukrishna@gmail.com",
     "phone": "919705318610",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "1960c93b-5fac-434e-a131-b6fd1566f04d",
@@ -5031,9 +5031,9 @@
     "email": "alekhyarajesh567@gmail.com",
     "phone": "918143488803",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "a4a01bcc-4302-496a-a59e-346c088c65d7",
@@ -5052,9 +5052,9 @@
     "email": "ranadheerreddy.kaluvala@gmail.com",
     "phone": "919618241491",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "9b680085-f866-4261-9bf7-494ccfc09c70",
@@ -5073,9 +5073,9 @@
     "email": "chpadmavathi36@gmail.com",
     "phone": "919298609679",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "34fe7ca1-4ab7-490d-b64b-490f8d32e8ac",
@@ -5094,9 +5094,9 @@
     "email": "sugandhamramarao@gmail.com",
     "phone": "919441248842",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "12753260-2a5b-42a4-8745-245870ef8d77",
@@ -5115,9 +5115,9 @@
     "email": "sairam.chilukamari786@gmail.com",
     "phone": "918074579271",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "8fef0fff-4608-476b-9f82-0bbe00dc4364",
@@ -5136,9 +5136,9 @@
     "email": "srikanthgoudssg9@gmail.com",
     "phone": "919959481308",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "7ab32250-2e5f-4b2a-9cc9-b266c543afbd",
@@ -5157,9 +5157,9 @@
     "email": "naribangaru07@gmail.com",
     "phone": "919640501907",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "d46a13e9-2ddc-417f-aef5-612fd1fc56d9",
@@ -5178,9 +5178,9 @@
     "email": "ajayladdu78@gmail.com",
     "phone": "917997661112",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "4f248f57-d396-4a0a-b7f2-46b4a59695cf",
@@ -5199,9 +5199,9 @@
     "email": "suresh_lav2005@yahoo.com",
     "phone": "917674882129",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "66eaecd5-db5a-4abe-9452-b59dde1a407c",
@@ -5220,9 +5220,9 @@
     "email": "kanapuram111@gmail.com",
     "phone": "919948222426",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "f4a379df-1a80-4108-9559-a84c1c43c3d0",
@@ -5241,9 +5241,9 @@
     "email": "mrcraobdl47086@gmail.com",
     "phone": "919849015097",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "fd336844-1dd7-4f27-9225-7e42a8f45ef6",
@@ -5260,9 +5260,9 @@
     },
     "name": null,
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:09:34.179+00:00"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "dd43660a-5edf-4db5-99de-8effeb2dabac",
@@ -5281,9 +5281,9 @@
     "email": "pilot.rahul@gmail.com",
     "phone": "919685568444",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "3dcc079e-2f12-4500-9f22-3438ae9797fd",
@@ -5302,9 +5302,9 @@
     "email": "Kashirajuharish@gmail.com",
     "phone": "918523061126",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "fcc36e7d-090e-4492-b6f5-3a92c7fe9e0e",
@@ -5323,9 +5323,9 @@
     "email": "singaraveni135@gmail.com",
     "phone": "919652757480",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "06fd77df-3220-43f4-b43d-b2d4e3a30739",
@@ -5344,9 +5344,9 @@
     "email": "diwakarlawyer72@gmail.com",
     "phone": "7989592253",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "a5f53758-8064-464b-96d3-f527ad0ac58e",
@@ -5365,9 +5365,9 @@
     "email": "geethika186@gmail.com",
     "phone": "917032627330",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c1709bc0-8378-4f8f-a040-6bce407eb581",
@@ -5386,9 +5386,9 @@
     "email": "bvenkat6434@gmail.com",
     "phone": "919666916947",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "de11f147-1529-4031-bc67-449298937140",
@@ -5407,9 +5407,9 @@
     "email": "vssbkingdom@gmail.com",
     "phone": "917386061616",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "e2c3342d-07e0-47b0-871c-02157d3261ff",
@@ -5428,9 +5428,9 @@
     "email": "sasi10137@gmail.com",
     "phone": "919491903739",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c00a4f36-cc3e-474b-bb1c-465d1938eae9",
@@ -5449,9 +5449,9 @@
     "email": "yadaugjaipal@gmail.com",
     "phone": "919177345047",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "7b50c50c-a938-4aab-9331-bd0be3637eb2",
@@ -5470,9 +5470,9 @@
     "email": "santoshyadav9989@yahoo.com",
     "phone": "918686316102",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "00152322-c7e0-42c0-af8b-39d9f1cc7ebf",
@@ -5491,9 +5491,9 @@
     "email": "jabbarmohammd1995@gmail.com",
     "phone": "919908528236",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "7e06ea76-cd67-4542-a824-734886623265",
@@ -5512,9 +5512,9 @@
     "email": "kiranjcnncm@gmail.com",
     "phone": "919618977014",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "70204ec2-0e55-4c7f-adb7-81836170bf56",
@@ -5533,9 +5533,9 @@
     "email": "Vrpharma15@gmail.com",
     "phone": "917799320895",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "d78a50ac-55e8-4a97-acd3-335671f9d88a",
@@ -5554,9 +5554,9 @@
     "email": "kethavathrajeshkumar@gmail.com",
     "phone": "919951057160",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "21a87e29-e61b-42d7-98ff-dc22c50b079e",
@@ -5575,9 +5575,9 @@
     "email": "smv_purush@yahoo.co.in",
     "phone": "919291490492",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "9e01216a-dfaa-4809-9809-65b49f367735",
@@ -5596,9 +5596,9 @@
     "email": "kuthadisantoshkumar8026@gmail.com",
     "phone": "917337368800",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c01f1153-74f8-4483-b778-e97b0bb2937f",
@@ -5617,9 +5617,9 @@
     "email": "anem.dileepkumar305@gmail.com",
     "phone": "919291207481",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c1979b69-d2b0-46ba-af77-ce3c54eef70b",
@@ -5638,9 +5638,9 @@
     "email": "saivamsi8369@gmail.com",
     "phone": "919398654489",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "874d0e47-0160-42d0-8ebc-5475c36206a1",
@@ -5659,9 +5659,9 @@
     "email": "laxman.laxman.a167@gmail.com",
     "phone": "919396571413",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "e6740be8-08fc-4a05-959a-2c53cb4a9718",
@@ -5680,9 +5680,9 @@
     "email": "www.krishnan77@gmail.com",
     "phone": "919705452474",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "0e5a18fc-47c1-4365-ba04-65a87dd7f0a2",
@@ -5701,9 +5701,9 @@
     "email": "nagapradad.svnr@gmail.com",
     "phone": "919440258533",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "c18dcaa4-9cd0-48ed-9d34-0e654f7d9af8",
@@ -5722,9 +5722,9 @@
     "email": "nani9985859199@gmail.com",
     "phone": "919866159144",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "de71fcdb-e8e1-4eec-940c-38125eb67cfa",
@@ -5743,9 +5743,9 @@
     "email": "dhanvin.g@gmail.com",
     "phone": "919652601708",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "b92f26d8-4f43-4276-bc05-caab4931e46f",
@@ -5764,9 +5764,9 @@
     "email": "ashusavi.daddy@gmail.com",
     "phone": "918008531927",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "53e9fe06-1c61-4934-8a33-f09935232829",
@@ -5785,9 +5785,9 @@
     "email": "haraharaengnirangworks@gmail.com",
     "phone": "918341997322",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "6c83dde9-270d-4fa5-83b2-a094ce73ba3e",
@@ -5806,9 +5806,9 @@
     "email": "kesh.mamidi@yahoo.com",
     "phone": "919393930122",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "e0fd5b90-11f8-4ddb-8a60-a218856977e5",
@@ -5826,9 +5826,9 @@
     "name": "N.Venkata Narayana",
     "phone": "919000292864",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "6f479b7c-ea80-4829-8c7a-56cbfc4ce42b",
@@ -5847,9 +5847,9 @@
     "email": "palthineninaveenrao@gmail.com",
     "phone": "919505096252",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "a162a882-7ec6-4cd8-a843-fb0dad8cc614",
@@ -5868,9 +5868,9 @@
     "email": "rajulodelly@gmail.com",
     "phone": "919948495976",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "09a8068e-278d-4e4d-bc64-106da3bf7f69",
@@ -5889,9 +5889,9 @@
     "email": "info@kpsuites.in",
     "phone": "919505667554",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "28b8151c-8c20-44ef-968d-007a442d2456",
@@ -5910,9 +5910,9 @@
     "email": "ramillarvind@gmail.com",
     "phone": "917799600076",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "5698aba8-4fc8-4089-83d3-3c709051fda4",
@@ -5931,9 +5931,9 @@
     "email": "aneeladasari@gmail.com",
     "phone": "919491114578",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "35c843fd-9b8e-45ae-89cc-bf4579eab09c",
@@ -5952,9 +5952,9 @@
     "email": "aveeavis1@gmail.com",
     "phone": "919700444417",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "dcd6fc2e-c0eb-400c-82c6-88c817738987",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   },
   {
     "id": "038e4179-68ce-4885-92f8-6d0f78475606",
@@ -5973,8 +5973,8 @@
     "email": "satish.143@yahoo.com",
     "phone": "919966776123",
     "status": "new",
-    "ownerId": null,
+    "ownerId": "19f86927-59f9-4067-a761-1196e6143f43",
     "createdAt": "2025-11-13T06:09:34.179+00:00",
-    "updatedAt": "2025-11-13T06:36:27.737Z"
+    "updatedAt": "2025-11-13T06:38:27.879Z"
   }
 ]

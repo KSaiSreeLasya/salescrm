@@ -30,13 +30,10 @@ function expressPlugin(): Plugin {
     name: "express-plugin",
     apply: "serve", // Only apply during development (serve mode)
     configureServer(server) {
-      const app = createServer();
-
-      // Return post middleware hook to add Express app
       return () => {
-        server.middlewares.use((req: any, res: any, next: any) => {
-          app(req, res, next);
-        });
+        const app = createServer();
+        // Use post middleware to ensure it runs after other middlewares
+        server.middlewares.use(app);
       };
     },
   };

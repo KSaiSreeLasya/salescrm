@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: salescrm
+    runtime: node
+    plan: standard
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: SUPABASE_URL
+        scope: build,run
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        scope: build,run
+      - key: ADMIN_TOKEN
+        scope: build,run
+      - key: NODE_ENV
+        value: production

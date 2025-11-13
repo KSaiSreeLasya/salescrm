@@ -9,8 +9,6 @@
     "email",
     "street address",
     "post_code",
-    "lead_status",
-    "",
-    ""
+    "lead_status"
   ]
 }

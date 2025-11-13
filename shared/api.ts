@@ -66,6 +66,7 @@ export interface ImportSheetResponse {
   imported: number;
   updated: number;
   assigned: number;
+  skipped?: number;
   lastSyncAt: string;
 }
 

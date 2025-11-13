@@ -365,7 +365,20 @@ export async function createLead(input: Partial<Lead>) {
 export async function updateLead(id: string, patch: Partial<Lead>) {
   if (hasSupabase()) {
     try {
-      await supabaseFetch(`leads?id=eq.${id}`, { method: "PATCH", body: JSON.stringify(patch) });
+      const supabasePatch: any = { ...patch };
+      if (supabasePatch.ownerId !== undefined) {
+        supabasePatch.owner_id = supabasePatch.ownerId;
+        delete supabasePatch.ownerId;
+      }
+      if (supabasePatch.createdAt !== undefined) {
+        supabasePatch.created_at = supabasePatch.createdAt;
+        delete supabasePatch.createdAt;
+      }
+      if (supabasePatch.updatedAt !== undefined) {
+        supabasePatch.updated_at = supabasePatch.updatedAt;
+        delete supabasePatch.updatedAt;
+      }
+      await supabaseFetch(`leads?id=eq.${id}`, { method: "PATCH", body: JSON.stringify(supabasePatch) });
       const items = await supabaseListLeads();
       return items.find((l) => l.id === id) || null;
     } catch (e) {
